@@ -1,0 +1,6 @@
+.idea/*
+codigo/node_modules/*
+codigo/.idea/
+
+/nbproject/private/
+nbproject/

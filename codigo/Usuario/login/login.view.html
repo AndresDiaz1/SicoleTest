@@ -1,0 +1,32 @@
+
+    <div ng-show="vm.error" class="alert alert-danger">{{vm.error}}</div>
+    <form id="iniciar" name="form" ng-submit="vm.login()" role="form">
+          <div class="titulo1">
+                <h1>Iniciar Sesión</h1>
+          </div>
+        <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }" style="margin-top:6%">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario"  class="inputAzul" ng-model="vm.username" required  />
+            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+            <label for="contrasena">Password</label>
+            <input type="password" name="contrasena" id="contrasena" class="inputAzul" ng-model="vm.password" required />
+            <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+        </div>
+        
+        <div class="form-actions">
+            <button id="loginbutton" type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="botonesIniciar"><h1>Iniciar</h1></button>
+             <p id="olvidoSuContrasena" style="margin-top:-5.2%; color:#AAA">¿Olvidó su contraseña?</p>
+             <a id="crearPerfilBoton" class="botonesIniciar" href="#/register">Crear Perfil</a>
+        </div>
+        <div id="volver">Volver</div>
+    </form>
+
+
+            
+        
+             
+               
+
+

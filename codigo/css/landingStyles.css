@@ -1,0 +1,100 @@
+.row_flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column_flex{
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+
+    #type-of-users-desktop-layout{
+        display: inherit;
+    }
+
+    #type-of-users-mobile-layout{
+        display: none;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    ._15{
+        flex:1.5;
+    }
+
+    ._20{
+        flex:2.0;
+    }
+
+    ._30{
+        flex:3.0;
+    }
+
+    ._60{
+        flex: 6.0;
+    }
+
+
+    ._70{
+        flex:7.0;
+    }
+
+    ._80{
+        flex:8.0;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    #type-of-users-desktop-layout{
+        display: none;
+    }
+
+    #type-of-users-mobile-layout{
+        display: inherit;
+    }
+}
+
+
+
+
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: rgba(100,100,100,0.6);
+    display: none;
+}
+
+#boxes .window {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 440px;
+    height: 200px;
+    display: none;
+    z-index: 9999;
+    text-align: center;
+    margin-bottom: 30px !important;
+
+}
+
+#boxes #landing {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 15pt;
+    margin-bottom: 30px !important;
+}
+
+
+.landing-option-label{
+    padding: 0px;
+    color: white;
+    font-size: 1rem;
+}

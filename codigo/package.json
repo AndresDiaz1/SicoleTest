@@ -1,0 +1,22 @@
+{
+  "name": "karma-seed",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "build": "browserify ./js/focus-traps -o ./js/bundle-focus-traps.js",
+    "watch": "watchify ./js/focus-traps -o ./js/bundle-focus-traps.js"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "focus-trap": "^2.3.0"
+  }
+}

@@ -1,0 +1,2942 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+        <link href="css/codigos.css?" rel="stylesheet" type="text/css" />
+        <link href="css/responsivo.css" rel="stylesheet" type="text/css" />
+        <link href="css/estilosWeb.css" rel="stylesheet" type="text/css" />
+        <!--<link href="css/jquery-ui-1.8.21.custom.css" rel="stylesheet" />-->
+        <link href="css/jquery-ui.css" rel="stylesheet" />
+        <link href="css/iniciarSesionStyles.css" rel="stylesheet" type="text/css" />
+        <link href="css/alertstyles.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-confirm.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/responsivo.css" rel="stylesheet" type="text/css" />
+        <link href="css/estilosNuevos.css" rel="stylesheet" type="text/css" />
+        <link href="css/datepicker.css" rel="stylesheet" type="text/css" />
+        <link href="css/autocomplete.css" rel="stylesheet" type="text/css" />
+        <link href="css/accesibilidad.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon"  type="image/x-icon" href="si_ico.png" />
+        <link href="css/validacion.css" rel="stylesheet" type="text/css" />
+        <link href="css/landingStyles.css" rel="stylesheet" type="text/css" />
+
+        <script src="js/loader.js"></script>
+        <script src="js/jquery-2.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <!--<script src="js/autocomplete.jquery.js"></script>-->
+        <!--<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery-confirm.min.js"></script>
+        <script src="js/Guiar.js"></script>
+        <script src="js/photo.js"></script>
+        <script src="js/mensaje.js"></script>
+        <script src="js/BpTspSolver.js" type="text/javascript" ></script>
+        <script src="js/markerclusterer.js"></script>
+        <script src="js/d3.v3.min.js"></script>
+        <!--<script src="http://maps.googleapis.com/maps/api/js?libraries=places,visualization" type="text/javascript"></script>-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYOdGRixmJhD6gHYde602Zlk5fNqpTEDk&v=3&libraries=places,visualization" type="text/javascript"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script src="js/MapController.js"></script>
+        <script src="js/landing.js"></script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+        <title>DANE - SICOLE</title>
+    </head>
+
+    <body>
+        <div id="boxes">
+            <div tabindex="0" id="landing" class="window">
+
+                <div class="row_flex" style="height: 50%">
+                    <div class="column_flex" style="flex: 3.05"></div>
+                    <div class="column_flex" style="flex: 5.0">
+                        <div class="row_flex" style="height: 100%">
+                            <div class="column" style="height: 80%; margin-top:auto; margin-bottom: auto">
+                                <div class="row_flex" style="height: 44%">
+                                    <div class="column" style="background-color: blue; height: 100%; flex:0.85">
+
+                                    </div>
+                                </div>
+                                <div class="row_flex" style="height: 25%; margin-top: 4.6%">
+                                    <div class="column" style="background-color: purple; height: 100%">
+
+                                    </div>
+                                </div>
+                                <div class="row_flex" style="height: 12.5%; margin-top: 2.6%">
+                                    <div class="column" style="background-color: orange; height: 100%; flex: 0.46">
+                                        <button onclick="onClickCloseLandingpage()">ir al mapa</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="column_flex" style="flex: 3.05"></div>
+                </div>
+
+                
+                <div class="row_flex" style="height: 50%">
+                    <div class="column_flex" style="flex: 2.2"></div>
+                    <div class="column_flex" style="flex: 2.2">
+                        <div class="row_flex" style="height: 100%;">
+                            <div class="column" style="height: 85%; margin-top:auto; margin-bottom: auto;">
+                                <div class="row_flex" style="height: 25%; background-color: purple">
+                                    <div class="column" style="flex: 0.37; height: 100%; background-color: orange">
+
+                                    </div>
+                                    <div class="column" style="flex: 0.63; height: 100%; background-color: green">
+                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
+
+                                        </div>
+                                        <div class="row_flex" style="height: 70%; background-color: gray">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_flex" style="height: 22%; margin-top: 2%; background-color: purple">
+                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
+
+                                    </div>
+                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
+                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
+
+                                        </div>
+                                        <div class="row_flex" style="height: 70%; background-color: gray">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_flex" style="height: 22%; margin-top: 2%;">
+                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
+
+                                    </div>
+                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
+                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
+
+                                        </div>
+                                        <div class="row_flex" style="height: 70%; background-color: gray">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_flex" style="height: 22%; margin-top: 2%; background-color: purple">
+                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
+
+                                    </div>
+                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
+                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
+
+                                        </div>
+                                        <div class="row_flex" style="height: 70%; background-color: gray">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column_flex" style="flex: 0.83"></div>
+                    <div class="column_flex" style="flex: 2.2">
+                        <div class="row_flex" style="height: 100%;">
+                            <div class="column" style="height: 85%; margin-top:auto; margin-bottom: auto;">
+                                <div class="row_flex" style="height: 25%;">
+                                    <div class="column" style="flex: 0.37; height: 100%; background-color: orange">
+
+                                    </div>
+                                    <div class="column" style="flex: 0.63; height: 100%; background-color: green">
+                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
+
+                                        </div>
+                                        <div class="row_flex" style="height: 70%; background-color: gray">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_flex" style="height: 22%; margin-top: 2%;">
+                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
+
+                                    </div>
+                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
+                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
+
+                                        </div>
+                                        <div class="row_flex" style="height: 70%; background-color: gray">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_flex" style="height: 22%; margin-top: 2%;">
+                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
+
+                                    </div>
+                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
+                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
+
+                                        </div>
+                                        <div class="row_flex" style="height: 70%; background-color: gray">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_flex" style="height: 22%; margin-top: 2%;">
+                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
+
+                                    </div>
+                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
+                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
+
+                                        </div>
+                                        <div class="row_flex" style="height: 70%; background-color: gray">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column_flex" style="flex: 2.2"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id = "contenedorZoom">
+            <div id= "botongps"></div>
+            <div id = "rangeImagen">
+                <input type = "range" id = "rangeZoom" min="12" max="20" value="16" step="1" onchange="showZoom(this.value)"/>
+            </div>
+            <div id = "hombrecito" draggable="true" ></div>
+        </div>
+        <div id="barrasuperior"></div>
+        <div id="barrainferior">
+            <p class="textoblancofooter">Departamento Administrativo Nacional de Estadística (DANE)    © todos los derechos reservados.</p>
+        </div>
+
+        <div id="sicoleimagen">
+            <img id="sicimg" alt="logo sicole" src="imagenes/logo_sicole.png" style="opacity: 0.8; width: 40%;
+                 height: auto; margin-left: 30%; position: absolute; top: 50px;"/>
+        </div>
+
+        <div id="daneimagen">
+            <img id="daneimg" alt="logo dane" src="imagenes/logo_dane.png" style="opacity: 0.8; width: 20%;
+                 margin-left: 40%; bottom: 50px; position: absolute;"/>
+        </div>
+
+        <div id="preaload" style="width: 100%; background-image: url(./imagenes/loading.gif); background-color: rgba(0,0,0,0.3); background-repeat: no-repeat; background-position: 50% 50%; position: absolute; z-index: 10000; height: 100%; display: none;">
+        </div>
+
+        <div id="preaload1" style="width: 100%; background-image: url(./imagenes/loading.gif); background-color: rgba(0,0,0,0.3); background-repeat: no-repeat; background-position: 50% 50%; position: absolute; z-index: 10000; height: 100%; display: none;">
+        </div>
+        <!-- Marco de mapa -->
+
+        <div id='marco' style='width:100%;height:100%; position:absolute; margin:0'></div>
+
+        <div id = "divMascara">
+            <div id = "popupConfirmar">
+                <div id="containerPopUpConfirmar">
+                    <p id="deleteSchoolSentence" tabindex="0"> ¿Desea eliminar esta sede del perfil?</p>
+                    <div class = "confirmarBotones">
+                        <button id = "cancelarEliminar" class = "botonesConfirmar">Cancelar</button>
+                        <button id = "confirmarEliminar" class = "botonesConfirmar">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id = "atrasRecuperar"></div>
+        <div id = "ventanaRecuperar">
+            <div id = "encabezadoRecuperar">
+                <h1>Recuperar contraseña</h1>
+            </div>
+            <div id = "cuerpoRecuperar">
+                <div id = "errorMail" class = "errorTeclado"><p>Introduzca un correo válido</p></div>
+                <div id ="digitarcorreo">
+                    <input id="inputRecuCorreo" class="inputRecuperar" type="text" placeholder="Correo asociado"/>
+                    <div id = "botonRecuperaMail" class = "botonIrRecuperar" style = "margin-bottom:20px" ></div>
+                </div>
+                <div id = "mensajeEnviocorreo" style = "display: none">
+                    <p id = "mensajeConfirmación">El correo no se encuentra en la base de datos. Por favor vuelva a intentarlo. </p>
+                    <div class = "botonera" style = "margin: 1% 0 10px 0">
+                        <button type="button" id="errorEmail" class="Guardar2">Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "displayMicroAyuda">
+            <div id = "ayudaTransp" class= "microAyudaCate">
+                <p>Muestra la ruta entre un origen y un destino en el medio de transporte seleccionado.</p>
+                <h3> Medios de transporte</h3>
+
+                <div class = "textoMiniAyuda" style = "margin-top:5%; height: 50px;">
+                    <div class = "mediosTransporte" style = "background-image: url(imagenes/carro1.png)"></div>
+                    <div class = "mediosTransporte" style = "background-image: url(imagenes/bici1.png)"></div>
+                    <div class = "mediosTransporte"></div>
+                </div>
+
+                <div class = "textoMiniAyuda" style= "height: 3%">
+                    <p> Paticular</p>
+                    <p> Bicicleta</p>
+                    <p> A pie</p>
+                </div>
+                <h3>Puntos inicial y final de la ruta seleccionada</h3>
+                <img id="imagenPuntoInicialFinal" src= "imagenes/miniayuda/origen.png" alt="imagen campos de busqueda punto inicial y final de la ruta" width= "100%"/>
+                <img id="imagenResultadoDeLaRuta" src= "imagenes/miniayuda/resultado.png" alt="resultado de la ruta"  width= "100%"/>
+            </div>
+
+            <div id = "ayudaMapa" class= "microAyudaCate">
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/mapas.png); background-size:auto 90%; margin-top:-7%"></div>
+                <h4 style= "margin: 20% 0 0 3%"> Sí-mapas </h4>
+                <p style = "margin-top: 20%; padding-right:5%">Sí-mapas permite visualizar la distribución de algunas variables educativas mediante mapas. Estos presentan colores más oscuros cuando la variable tiene valores más altos y más claros cuando estos son más bajos.</p>
+
+
+                <p style = "width:100%; text-align:left"><strong>Filtro de mapas: </strong>Los mapas pueden verse para los colegios oficiales –públicos-, no oficiales –privados- o para todos en su conjunto.</p>  
+
+                <p><strong>Tipos de mapas:</strong> Existen mapas para la mayoría de los indicadores de SICOLE: características generales del colegio; pruebas de calidad; deserción, aprobación, reprobación y transferencia; y recursos humanos.</p> 
+
+                <p><strong>Leyenda del mapas</strong>valores más oscuros representan valores más altos de la variable. </p>
+
+                <p><strong>Comparación geográfica:</strong> Se pueden comparar los mapas de los sectores oficial –público- y no oficial –privado-. Cuando se compara con mapas paralelos se divide la pantalla en dos partes, una para cada sector. Cuando se utilizan mapas continuos los mapas están superpuestos y se pueden ver las diferencias mediante una cortina que se puede correr. </p>
+
+                <p><strong>Comparación estadística: </strong>El objetivo de esta funcionalidad es hacerse una idea de la ubicación relativa de una sede respecto a otras. Se implementa mediante un histograma. En el eje de las “x” se representa una variable dividida por rangos, en el eje de las “y” el número de colegios que están en este rango.  </p>
+                <img id="ejemploComparacionColegios" alt="ejemplo comparacion colegios" src= "imagenes/miniayuda/comparacioncolefios.png" width= "95%" style = "margin:-3% 0 0 0"/>
+            </div>
+
+
+            <div id = "ayudaFiltro" class= "microAyudaCate">
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/filtros.png); background-size:auto 90%; margin-top:-5%"></div>
+                <h4 style= "margin: 6% 0 0 3%"> Filtros </h4>
+                <p style = "margin-top: 20px;">SICOLE permite realizar filtros dinámicos a las sedes educativas. Cuando un usuario quiere conocer los colegios que tienen determinadas características, debe seleccionarlas en la pestaña de “filtros” y la pantalla de visualización se actualizará automáticamente, dejando sólo las sedes que correspondan a estos criterios. Los filtros se encuentran en dos pestañas: filtros y filtros avanzados. El usuario puede descargar una tabla de reporte con el resultado de su selección.</p>
+                <p><strong>Filtro por lugar: </strong> Bogotá, Soacha, todo.</p>
+                <img id="filtroPorLugar" alt="filtro por lugar" src="imagenes/miniayuda/lugar.png" width="90%" style="margin:-2% 0 0 5%">
+                <p><strong>Filtro por calendario escolar: </strong> A, B, Otro.</p>
+                <img id="filtroPorCalendario" alt="filtro por calendario" src= "imagenes/miniayuda/calendario.png" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro por población atendida: </strong>Masculino, femenino, mixto.</p>
+                <img id="filtroPorPoblacionAtendida" alt="filtro por poblacion atendida" src= "imagenes/miniayuda/sexo.png" width= "60%" style = "margin:0% 0 0 20%"/>
+                <p><strong>Filtro por jornada:  </strong> Mañana, tarde, noche, sábados y festivos y completa respectivamente</p>
+                <img id="filtroPorJornada" alt="filtro por jornada" src= "imagenes/miniayuda/jornada.png" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro por niveles  </strong> Preescolar, primaria, secundaria y media </p>
+                <img id="filtro por niveles" alt="filtro por niveles" src= "imagenes/miniayuda/niveles.png" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro por distancia:  </strong> radio entre 100 metros y 4 kilómetros desde el centro del mapa hasta la sede escolar</p>
+                <img id="filtroPorDistancia" alt="filtro por distancia" src= "imagenes/miniayuda/distancia.png" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro prueba Saber 11:  </strong> rangos de puntaje obtenido en las pruebas Saber 11</p>
+                <img id="filtroPruebaSaber11" alt="filtro prueba saber 11" src= "imagenes/miniayuda/saber.png" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro estudiantes por docente:  </strong> rangos de puntaje obtenido en las pruebas Saber 11</p>
+                <img id="filtroEstudiantesPorDocente" alt="filtro estudiantes por docente"src= "imagenes/miniayuda/docentes.png" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Borrar filtros, ver y descargar reportes de resultados</strong> </p>
+                <img id="opcionesDeReporte" alt="opciones de reporte" src= "imagenes/miniayuda/botones.png" width= "70%" style = "margin:0% 0 0 15%"/>
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/filtros.png); background-size:auto 90%; margin-top: 3%;"></div>
+                <h4 style= "margin: 10% 0 0 3%"> Extrafiltros </h4>
+                <p style = "    margin-top: 10%;">Criterios adicionales para realizar búsquedas, investigaciones o establecer patrones entre las sedes educativas.</p>
+                <p> Muestra el valor, por nivel educativo, de algunas tasas que indican la eficiencia interna de las instituciones educativas:</p>
+                <ul>
+                    <li><i>Tasa de deserción:</i> estudiantes que abandonan el colegio y el sistema educativo, antes de que finalice el año lectivo.</li>
+                    <li><i>Tasa de aprobación:</i> proporción de alumnos que cumplieron con los requisitos académicos para ser promovidos al curso siguiente.</li>
+                    <li><i>Tasa de reprobación:</i> proporción de alumnos que no cumplieron con los requisitos académicos y no pueden ser promovidos al curso siguiente.</li>
+                    <li><i>Tasa de transferencia:</i> estudiantes que, habiéndose matriculado al principio del año escolar, se trasladan a otra institución educativa.</li>
+                </ul>
+            </div>
+            <div id = "ayudaCerca" class= "microAyudaCate">
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/cerca.png); background-size:auto 90%; margin-top: -15px;"></div>
+                <h4 style="margin-top: 25px;"> Cerca a tu sede </h4>
+                <p style="margin-top: 25px;">Muestra, en un radio entre 100 metros y 2 kilómetros, a partir de la sede seleccionada, la ubicación de establecimientos como bancos, hospitales, bibliotecas y lugares de culto.  Para utilizarla se debe seleccionar una sede,  escoger una distancia y seleccionar el tipo de lugares que quiere ver.</p>
+                <p><strong>Ubicación y especificación del radio de ubicación de los establecimientos</strong></p>
+                <img id="barraDeslizanteDeCercania" alt="barra delizante de cercania"src= "imagenes/miniayuda/distanciacerca.png" width= "80%" style = "margin:0% 0 0 10%"/>
+                <p><strong>Tipos de establecimientos</strong></p>
+                <img id="tipoDeEstablecimientos" alt="tipo de establecimientos" src= "imagenes/miniayuda/tipo.png" width= "80%" style = "margin:0% 0 0 10%"/>
+            </div>
+
+
+
+
+        </div>
+		<!--<div id = "ventanaFondoTips"> </div>
+        <div id = "tips">
+            <div tabindex="0" id ="cabezoteTips">
+                <div id = "logoTips"></div>
+            </div>
+            <div tabindex="0" id = "infoTips">
+                <div id = "infoTipsLetras">
+                    <h3>1. ¿Qué es  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;?</h3>
+                    <img  id = "logoQueEs" alt="si cole" src ="imagenes/logo_cabezote.png"/>
+                    <p>Sicole es un aplicativo que permite al usuario encontrar información sobre educación formal, desde el nivel preescolar hasta el grado 11, inicialmente para Bogotá y Soacha y, próximamente para otras ciudades del país. </p>
+                </div>
+                <div id = "infoTipsImagen"></div>
+            </div>
+            <svg id = "masTips"  viewBox="0 0 544 26">
+            <line x1="20" y1="10" x2="230" y2="10" style="stroke: #19B3E9;stroke-width:2" />
+            <circle tabindex="0" role="button" id = "circle1" class = "escogerCircle" cx="250" cy="10" r="10"/>
+            <circle tabindex="0" role="button" id = "circle2" class = "escogerCircle" cx="270" cy="10" r="5" />
+            <circle tabindex="0" role="button" id = "circle3" class = "escogerCircle"  cx="290" cy="10" r="5"/>
+            <circle tabindex="0" role="button" id = "circle4" class = "escogerCircle"  cx="310" cy="10" r="5"/>
+            <line x1="330" y1="10" x2="530" y2="10" style="stroke: #19B3E9;stroke-width:2" />
+            </svg>
+            <div tabindex="0" role="boton" id = "cerrarTips">CERRAR</div>
+            <div id = "pieTips"></div>
+        </div>-->
+        <div id = "ventanaMiniAyuda">
+            <div id = "areaEditable1" class = "areaEditable" style = "display:none">
+                <h3>1. ¿Qué es  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;?</h3>
+                <img  id = "logoQueEs" alt="si cole" style = "margin-top:3px; margin-left: -70%" src ="imagenes/logo_cabezote.png"/>
+                <img  id = "ventanaMiniImagen" alt ="ventana mini imagen" src ="imagenes/imagenTips.png"/>
+                <div id = "textoMiniAyuda">
+                    <p>SICOLE busca responder a las necesidades de disponibilidad y oportunidad de información detallada e integrada (desde diversas fuentes) sobre educación, mediante una aplicación de visualización geográfica, interactiva (de navegación GPS) centrada en el usuario, para los padres de familia, tomadores de decisiones locales y ciudadanos en general.</p>
+                    <p>Para ello trabaja con tres pílares: la accesibilidad, la integración y la recolección.  Mediante la accesibilidad se busca propiciar el acceso a microdatos por parte de los usuarios, en consonancia con la Política de Datos Abiertos del Gobierno Nacional, la accesibilidad también busca una mayor comprensión de la información estadística mediante mecanismos de visualización.</p>
+                    <p>Se busca también integrar información de diferentes fuentes, con el fin de presentar una visión más completa de los colegios: por ahora se unido información del Instituto Colombiano  para el Fomento de la Educación Superior –ICFES- y del DANE. Por otra parte, con SICOLE el DANE quiere tener una herramienta para generar información estadística interactuando con los usuarios. </p>
+                </div>
+
+            </div>
+            <div id = "areaEditable2" class = "areaEditable"  >
+                <h3>2. Funciones SIG</h3>
+                <div id ="ventanaMiniImagenFuncion"></div>
+                <h4> Isócronas </h4>
+                <p>Isócrona significa: igual tiempo. Suponga que está parado en un punto, esta función le dirá que área puede cubrir en una cantidad de tiempo escogida por usted. También puede elegir el medio de transporte: a pie, en bus o en carro.   Es muy útil para planificar los desplazamientos de los estudiantes desde y hasta el colegio. </p>
+
+                <div class = "textoMiniAyuda" style= "height: 3%; margin-top: 9%">
+                    <p style = "width:100%; font-weight: 600;"> Medios de transporte</p>
+                </div>
+
+                <div class = "textoMiniAyuda" style = "margin-top:5%;">
+                    <div class = "mediosTransporte" style = "background-image: url(imagenes/carro1.png)"></div>
+                    <div class = "mediosTransporte" style = "background-image: url(imagenes/bici1.png)"></div>
+                    <div class = "mediosTransporte"></div>
+                </div>
+
+                <div class = "textoMiniAyuda" style= "height: 3%">
+                    <p> Paticular</p>
+                    <p> Bicicleta</p>
+                    <p> A pie</p>
+                </div>
+                <div class = "textoMiniAyuda" style= "height: 3%; margin-top: 13%">
+                    <p style = "width:100%; font-weight: 600;"> Rango de tiempo (de 0 a 60 minutos) </p>
+                </div>
+
+                <div class = "textoMiniAyuda" style= "height: 15%; margin-top:5%">
+                    <img id="barraDeslizanteRangoDeTiempo" alt="barra deslizante rango de tiempo" src="imagenes/barra.png" width= "100%" height= "50%"/>
+                </div>
+
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/transporte.png); background-size:auto 90%"></div>
+                <h4> Transporte </h4>
+                <p>Muestra la ruta entre un origen y un destino en el medio de transporte seleccionado.</p>
+                <div class = "textoMiniAyuda" style= "height: 3%; margin-top: 9%">
+                    <p style = "width:100%; font-weight: 600;"> Medios de transporte</p>
+                </div>
+                <div class = "textoMiniAyuda" style = "margin-top:5%;">
+                    <div class = "mediosTransporte" style = "background-image: url(imagenes/carro1.png)"></div>
+                    <div class = "mediosTransporte" style = "background-image: url(imagenes/bici1.png)"></div>
+                    <div class = "mediosTransporte"></div>
+                </div>
+
+                <div class = "textoMiniAyuda" style= "height: 3%">
+                    <p> Paticular</p>
+                    <p> Bicicleta</p>
+                    <p> A pie</p>
+                </div>
+                <div class = "textoMiniAyuda" style= "height: 3%; margin-top: 9%">
+                    <p style = "width:100%; font-weight: 600;">Puntos inicial y final de la ruta seleccionada</p>
+                </div>
+                <img id="imagenPuntoInicialFinal2" src= "imagenes/miniayuda/origen.png" alt="imagen campos de busqueda punto inicial y final de la ruta"  width= "95%" style = "margin-top:4%"/>
+                <img id="imagenResultadoDeLaRuta2" src= "imagenes/miniayuda/resultado.png" alt="resultado de la ruta" width= "95%" style = "margin-top:4%"/>
+
+
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/filtros.png); background-size:auto 90%; margin-top:3%"></div>
+                <h4 style= "margin: 6% 0 0 3%"> Filtros </h4>
+                <p>SICOLE permite realizar filtros dinámicos a las sedes educativas. Cuando un usuario quiere conocer los colegios que tienen determinadas características, debe seleccionarlas en la pestaña de “filtros” y la pantalla de visualización se actualizará automáticamente, dejando sólo las sedes que correspondan a estos criterios. Los filtros se encuentran en dos pestañas: filtros y filtros avanzados. El usuario puede descargar una tabla de reporte con el resultado de su selección.</p>
+                <p><strong>Filtro por lugar: </strong> Bogotá, Soacha, todo.</p>
+                <img id="filtroPorLugar2" src="imagenes/miniayuda/lugar.png" alt="filtro por lugar" width="90%" style="margin:-2% 0 0 5%">
+                <p><strong>Filtro por calendario escolar: </strong> A, B, Otro.</p>
+                <img id="filtroPorCalendario2" src= "imagenes/miniayuda/calendario.png" alt="filtro por calendario" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro por población atendida: </strong>Masculino, femenino, mixto.</p>
+                <img id="filtroPorPoblacionAtendida2" src= "imagenes/miniayuda/sexo.png" alt="filtro por poblacion atendida" width= "60%" style = "margin:0% 0 0 20%"/>
+                <p><strong>Filtro por jornada:  </strong> Mañana, tarde, noche, sábados y festivos y completa respectivamente</p>
+                <img id="filtroPorJornada2" src= "imagenes/miniayuda/jornada.png" alt="filtro por jornada" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro por niveles  </strong> Preescolar, primaria, secundaria y media </p>
+                <img id="filtroPorNiveles2" src= "imagenes/miniayuda/niveles.png" alt="filtro por niveles" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro por distancia:  </strong> radio entre 100 metros y 4 kilómetros desde el centro del mapa hasta la sede escolar</p>
+                <img id="filtroPorDistancia2" src= "imagenes/miniayuda/distancia.png" alt="filtro por distancia" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro prueba Saber 11:  </strong> rangos de puntaje obtenido en las pruebas Saber 11</p>
+                <img id="filtroPruebaSaber112" src= "imagenes/miniayuda/saber.png" alt="filtro prueba saber 11" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Filtro estudiantes por docente:  </strong> rangos de puntaje obtenido en las pruebas Saber 11</p>
+                <img id="filtroEstudiantesPorDocente2" src= "imagenes/miniayuda/docentes.png" alt="filtro estudiantes por docente" width= "70%" style = "margin:0% 0 0 15%"/>
+                <p><strong>Borrar filtros, ver y descargar reportes de resultados</strong> </p>
+                <img id="opcionesDeReporte2" src= "imagenes/miniayuda/botones.png" alt="opciones de reporte" width= "70%" style = "margin:0% 0 0 15%"/>
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/filtros.png); background-size:auto 90%; margin-top: 3%;"></div>
+                <h4 style= "margin: 6% 0 0 3%"> Extrafiltros </h4>
+                <p style = "    margin-top: 8%;">Criterios adicionales para realizar búsquedas, investigaciones o establecer patrones entre las sedes educativas.</p>
+                <p> Muestra el valor, por nivel educativo, de algunas tasas que indican la eficiencia interna de las instituciones educativas:</p>
+                <ul>
+                    <li><i>Tasa de deserción:</i> estudiantes que abandonan el colegio y el sistema educativo, antes de que finalice el año lectivo.</li>
+                    <li><i>Tasa de aprobación:</i> proporción de alumnos que cumplieron con los requisitos académicos para ser promovidos al curso siguiente.</li>
+                    <li><i>Tasa de reprobación:</i> proporción de alumnos que no cumplieron con los requisitos académicos y no pueden ser promovidos al curso siguiente.</li>
+                    <li><i>Tasa de transferencia:</i> estudiantes que, habiéndose matriculado al principio del año escolar, se trasladan a otra institución educativa.</li>
+                </ul>
+                <img id="imagenDeTasas" src= "imagenes/miniayuda/tasas.png" alt="ejemplo de tasas" width= "80%" style = "margin:0% 0 0 10%"/>
+
+
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/cerca.png); background-size:auto 90%"></div>
+                <h4> Cerca a tu sede </h4>
+                <p>Muestra, en un radio entre 100 metros y 2 kilómetros, a partir de la sede seleccionada, la ubicación de establecimientos como bancos, hospitales, bibliotecas y lugares de culto. </p>
+                <p><strong>Ubicación y especificación del radio de ubicación de los establecimientos</strong></p>
+                <img id="barraDeslizanteDeCercania2" src= "imagenes/miniayuda/distanciacerca.png" alt="barra deslizante de cercania" width= "80%" style = "margin:0% 0 0 10%"/>
+                <p><strong>Tipos de establecimientos</strong></p>
+                <img id="tipoDeEstablecimiento2" src= "imagenes/miniayuda/tipo.png" alt="tipo de establecimiento" width= "80%" style = "margin:0% 0 0 10%"/>
+
+            </div>
+
+            <div id = "areaEditable3" class = "areaEditable" >
+                <h3>3. Barra de búsqueda, Sí-mapas y registro. </h3>
+                <h4 style= "margin: 6% 0 0 3%">Barra de Búsqueda</h4>
+                <img id="barraDeBusqueda" src= "imagenes/miniayuda/busqueda.png" alt="barra de busqueda" width= "80%" style = "margin:0% 0 0 10%"/>
+                <p>Permite buscar con google maps y con SICOLE. En el primer caso sólo se obtienen resultados de sedes educativas. </p>
+
+                <div class = "contenedorOtrosFiltros">
+                    <div class = "otrasFuncionalidadesImg" style = "background-image: url(imagenes/miniayuda/pregunta.png)"></div>
+                    <div class = "otrasFuncionalidadesText">Contiene el módulo de ayuda sobre Sicole y las opciones de Contáctenos y Acerca de.</div>
+                </div>
+                <div class = "contenedorOtrosFiltros">
+                    <div class = "otrasFuncionalidadesImg" style = "background-image: url(imagenes/miniayuda/ingresar.png); background-size: auto 35%;"></div>
+                    <div class = "otrasFuncionalidadesText">Permite crear o ingresar como usuario registrado, para tener acceso a la comunidad Sicole, encuestas y favoritos</div>
+                </div>
+
+                <div class = "contenedorOtrosFiltros">
+                    <div class = "otrasFuncionalidadesImg" style = "background-size: auto 75%; background-image: url(imagenes/miniayuda/asistencia.jpg); background-color: white"></div>
+                    <div class = "otrasFuncionalidadesText">Participación de los estudiantes para recoger información acerca de la permanencia en clases de los docentes en el colegio.</div>
+                </div>
+                <div class = "contenedorOtrosFiltros">
+                    <div class = "otrasFuncionalidadesImg" style = "background-size: auto 75%; background-image: url(imagenes/miniayuda/transp.jpg); background-color: white"></div>
+                    <div class = "otrasFuncionalidadesText">Participación de los estudiantes para conocer tiempos y medios de transporte.</div>
+                </div>
+                <div class = "contenedorOtrosFiltros">
+                    <div class = "otrasFuncionalidadesImg" style = "background-size: auto 75%; background-size: auto 75%; background-image: url(imagenes/miniayuda/convivencia.jpg); background-color: white"></div>
+                    <div class = "otrasFuncionalidadesText"><p>Participación de los estudiantes para conocer acerca del clima escolar en su colegio </p></div>
+                </div>
+
+                <div id ="ventanaMiniImagenFuncion" style = "background-image: url(imagenes/mapas.png); background-size:auto 90%; margin-top:3%"></div>
+                <h4 style= "margin: 6% 0 0 3%"> Sí-mapas </h4>
+                <p style = "margin-top: 6%; padding-right:5%">Sí-mapas es una herramienta de visualización. Busca que el usuario pueda entender cómo se distribuye en la ciudad un fenómeno, por ejemplo los puntajes en Saber 11.  Existen mapas para diversas variables, entre ellas: tamaño de la población estudiantil, los resultados de las pruebas saber 11, las tasas de aprobación, las tasas de deserción, el porcentaje de docentes con postgrado. Estos conceptos son fáciles de entender gracias a una breve explicación que acompaña al mapa. Adicionalmente, esta sección incluye herramientas intuitivas para hacer análisis y comparaciones, por ejemplo entre el sector público y el privado.</p>
+                <div class = "textoMiniAyuda" style= "height: 3%; margin-top: 9%">
+                    <p style = "width:100%; font-weight: 600;">Filtros de los indicadores para el sector <font color = "#0A738C">Público</font> y el <font color = "#70A12E">Privado</font></p>
+                </div>
+                <img id="filtroSectorOficialNoOficial2" src= "imagenes/miniayuda/sector.png" alt="filtro sector público y privado" width= "95%" style = "margin-top:8%"/>
+                <div class = "textoMiniAyuda" style= "height: 3%; margin-top: 9%">
+                    <p style = "width:100%; font-weight: 600;">Clasificación por temas de los mapas disponibles.</p>
+                </div>
+                <img id="filtroPorTemas2" src= "imagenes/miniayuda/mapasportemas.png" alt="filtro por temas" width= "95%" style = "margin-top:8%"/>
+                <div class = "textoMiniAyuda" style= "height: 3%; margin-top: 9%">
+                    <p style = "width:100%; font-weight: 600;">Leyenda del mapa</p>
+                </div>
+                <img id="leyendaDelMapa2" src= "imagenes/miniayuda/leyenda.png" alt="leyenda del mapa" width= "95%" style = "margin-top:4%"/>
+
+                <div class = "textoMiniAyuda" style= "height: 3%; margin-top: 9%">
+                    <p style = "width:100%; font-weight: 600;">Clasificación secundaria de los indicadores espacializados</p>
+                </div>
+                <img id="ejemploCaracteristicas2" src= "imagenes/miniayuda/caracteristicas.png" alt="ejemplo caracteristicas" width= "95%" style = "margin-top:8%"/>
+
+                <p><strong>Comparación geográfica </strong>en dos formas: </p>
+                <ul>
+                    <li><i>Mapas paralelos:</i> divide la pantalla en dos partes, presentando en una de ellas el mapa de una variable para el sector público y en otra el del sector privado.</li>
+                    <li><i>Mapas continuos: </i>los dos mapas de la variable por sector –público y privado- están superpuestos, una cortina permite desvelar uno o el otro gradualmente.</li>
+                </ul>
+                <img id="comparacionesPorSector2" src= "imagenes/miniayuda/comparacionporsector.png" alt="comparaciones por sector" width= "70%" style = "margin:-4% 0 0 15%"/>
+                <p><strong>Comparación estadística </strong>El objetivo de esta funcionalidad es hacerse una idea de la ubicación relativa de una sede respecto a otras. Se implementa mediante un histograma. En el eje de las “x” se representa una variable dividida por rangos, en el eje de las “y” el número de colegios que están en este rango. </p>
+                <img id="ejemploComparacionColegios2" src= "imagenes/miniayuda/comparacioncolefios.png" alt="ejemplo comparacion colegios" width= "95%" style = "margin:-3% 0 0 0"/>
+                <h4>Registro</h4>
+                <p>Al registrarse puede guardar los colegios consultados, participar en diferentes encuestas del aplicativo, comunicarse con el equipo de SICOLE en el DANE y enterarse primero de nuevas funcionalidades y actualizaciones de información. </p>
+            </div>
+
+            <div id = "areaEditable4" class = "areaEditable" >
+                <h3>4. Tip del mes</h3>
+                <p>Puede descargar una tabla con la información de los colegios (microdatos). Esta función está ubicada en la parte izquierda del aplicativo, en la pestaña “filtros”. Si quiere descargar únicamente los colegios filtrados, escoja: “ver reporte completo”.  Si quiere descargar todos los colegios del área de estudio escoja: descargar todos los colegios. </p>
+            </div>
+
+            <div id = "seleccion" style= "margin-left:34.5%; margin-top:5%">
+                <div id = "seccion1" class = "numeros">1</div>
+                <div class = "puntos numeros">•</div>
+                <div id = "seccion2" class = "numeros">2</div>
+                <div class = "puntos numeros">•</div>
+                <div id = "seccion3" class = "numeros">3</div>
+                <div class = "puntos numeros">•</div>
+                <div id = "seccion4" class = "numeros">4</div>
+            </div>
+        </div>
+
+        <header id="cabezote" onmouseup= "ocultarBusqueda()" class="header-sicole">
+            
+            <div id="logoSicoleHeader"></div>
+
+            <div class="section-search">
+                
+                <div class="search-school">
+                
+                    <div id = "busquedaPopup">
+                
+                        <div id="panel">
+                            <div class="autocomplete">
+                                <input id="inputBusqueda" class="inputBusqueda" type="text" placeholder="Busque por colegio o dirección "/>
+                                <input id="inputBusqueda2" class="inputBusqueda" type="text" placeholder="Busque por colegio o dirección " style="display:none"/>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+                <div class="search-city"> 
+                    <input type = "text" placeholder = "Busque la ciudad" id = "buscarCiudad"/>
+                </div>
+
+				<div id = "textoBusquedaAvanzada" class="search-advanced"><a href="#" class="a-tag-no-decoration a-white-color" >Búsqueda avanzada</a></div>
+                
+            </div>
+            
+            <div class="section-login">
+                    
+                <div class="section-register">
+                    <button id="registrarse" class="register-button" aria-label="Ingresar botón de menú, presione escape para salir del menú" aria-expanded="false">Ingresar</button>
+                    <ul id = "menulogueo" class = "menuEmegente">
+                        <li id = "crearCuenta"><a class="menu-element-no-decoration" href="#" aria-label="Formulario crear cuenta, presione escape para cerrar el formulario">Crear cuenta</a> </li>
+                        <li id= "ingresarUsuario" style = "padding-bottom:10%"><a class="menu-element-no-decoration"  aria-label="Formulario iniciar sesión, presione escape para cerrar el formulario" href="#">Ingresar</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-help">
+                    <button id="iconoAyuda" title="ayuda" aria-label="Ayuda botón de menú, presione escape para salir del menú" aria-expanded="false">
+                        <img class="help-button" alt="ayuda" src="imagenes/ayuda2.png">
+                    </button>
+
+                    <ul id = "menuAyuda" class = "menuEmegente">
+						<li><button onclick="onClickLaningFrommenu()" class="landing-option-label" aria-label="Inicio">Inicio</button></li>
+                        <li id = "contacto"><a class="menu-element-no-decoration" href="#" aria-label="Formulario de contacto, presione escape para cerrar el formulario">Contáctenos</a></li>
+                        <li id= "acercade" style = "padding-bottom:10%"><a class="menu-element-no-decoration" href="#"  aria-label="Información acerca de Sicole, presione escape para cerrar la pestaña">Acerca de</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div id= "iconosCabezote">
+                <div id = "recuadroMapa" class = "iconosHeader" style = "background-image: url(imagenes/cuadro.png)" title= "Acercar a recuadro en el mapa"></div>
+                <div id = "alejarMapa" class = "iconosHeader" style = "background-image: url(imagenes/global.png)" title = "Vista completa del mapa"></div>
+                <div id = "prevMapa" class = "iconosHeader" style = "background-image: url(imagenes/atras.png); background-size: auto 60%; opacity:0.4" title = "Anterior"></div>
+                <div id = "nextMapa" class = "iconosHeader" style = "background-image: url(imagenes/adelante.png); background-size: auto 60%; opacity:0.4" title = "Posterior"></div>
+            </div>
+
+            <button id= "contenedorLogin" tabindex="0" aria-label="Desplegar menú perfil de usuario, presione escape para cerrar menú" aria-expanded="false">
+                <div id="fotoLoginBarra"></div>
+                <p id = "UsuarioNombre" tabindex="0" class = "barraIdentificacion"> <strong>Nombres Apellidos</strong><p>
+                <p id ="rolEscogido" tabindex="0"> rol elegido</p>
+            </button>
+
+            <button id="menuHamburguesa" tabindex="0" aria-label="Menú de usuario, presione escape para salir del menú" aria-expanded="false"></button>
+            <ul id = "menuSesionIniciada" class = "menuEmegente links-hamburg-menu">
+                <li id = "tusede" style = "padding-bottom:3%"><a class="a-tag-no-decoration" href="#">Tu sede: cuéntanos</a></li>
+                <li id= "favoritos"><a class="a-tag-no-decoration" href="#">&#9733; Favoritos</a></li>
+                <li id= "cerrarSesion" style = "padding-bottom:10%"><a class="a-tag-no-decoration" href="#">Cerrar sesión</a></li>
+            </ul>
+
+        </header>
+
+<div id = "ventanaAno">
+    <svg id = "2013Cab" viewBox="0 0 100 30" class = "ventanaAnoLetras">
+    <text x="30" y="27" style="fill: white;font-size: 1.1rem; font-weight:600"> 2013</text>
+    <circle r="5" cx="13" cy="20" id="circle2013" fill="white"></circle>
+    </svg>
+    <svg id = "2015Cab" viewBox="0 0 100 30" class = "ventanaAnoLetras">
+    <text x="30" y="27" style="fill: white;font-size: 1.1rem; font-weight:600"> 2015</text>
+    <circle r="5" cx="13" cy="20" id="circle2015" fill="white" style = "display: none"></circle>
+    </svg>
+</div>
+
+<div id= "ventanaTipoBusqueda">
+    <ul>
+        <li role="button" tabindex="0" id ="busquedaGeoportal">
+            <div class ="imagenTipoBusqueda"></div>
+            <div class ="textoTipoBusqueda">Búsquedas en Geoportal</div>
+        </li>
+        <li role="button" tabindex="0" id = "busquedaSicole">
+            <div class ="imagenTipoBusqueda" style = "background-image: url(imagenes/si_ico.png);"></div>
+            <div class ="textoTipoBusqueda">Búsquedas en Sícole</div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<!-- Panel para info colegios -->
+
+<div id="busqueda" style="display:none">
+    <div id ="contenidoBusqueda">
+        <h2 tabindex="0" id="advancedOptionsSearch">Opciones Avanzadas</h2>
+
+        <div class="opcionesBusqueda">
+            Código Sede
+        </div>
+        <input type="text" name="codigo" id="codigo"/>
+        <div id="selectores">
+            <div tabindex="0" class = "textoSelectores" >Sector público</div>
+            <div class="botonRadio">
+                <input type="checkbox" value="Publico" id="Publico" class="checkbox-visible sicoleSearchCheckboxHeight" name="sector" checked/>
+                <label for="Publico"></label>
+            </div>
+            <div class ="textoSelectores" style="margin-left: 7%">Sector privado</div>
+
+            <div class="botonRadio">
+                <input type="checkbox" value="Privado" id="Privado" class="checkbox-visible sicoleSearchCheckboxHeight" name="sector" checked/>
+                <label for="Privado"></label>
+            </div>
+        </div>
+        <!-- <div class="opcionesBusqueda" >
+                Localidad
+         </div>
+<div class ="select-style">
+             <select name="localidad" id="localidad" name="dia">
+     <option value="0">Seleccione localidad</option>
+     <option value="1">01-Usaquén</option>
+       <option value="2">02-Chapinero</option>
+       <option value="3">03-Santa fe</option>
+       <option value="4">04-San Cristóbal</option>
+       <option value="5">05-Usme</option>
+       <option value="6">06-Tunjuelito</option>
+       <option value="7">07-Bosa</option>
+       <option value="8">08-Kennedy</option>
+       <option value="9">09-Fontibón</option>
+       <option value="10">10-Engativá</option>
+       <option value="11">11-Suba</option>
+       <option value="12">12-Barrios Unidos</option>
+       <option value="13">13-Teusaquillo</option>
+       <option value="14">14-Los Martíres</option>
+       <option value="15">15-Antonio Nariño</option>
+       <option value="16">16-Puente Aranda</option>
+       <option value="17">17-La Candelaria</option>
+       <option value="18">18-Rafael Uribe Uribe</option>
+       <option value="19">19-Ciudad Bolívar</option>
+       <option value="20">20-Sumapaz</option>
+         </select>
+</div>
+         <div class="opcionesBusqueda" >Barrio</div>
+         <input type="text" name="barrio" id="barrio"/>
+        --><div tabindex="0" class="opcionesBusqueda" style="margin: 7% 0 2% 0; font-size:0.9" >Sexo de la población atendida</div>
+
+        <div id="selectores">
+            <div class = "textoSelectores" >Masculino</div>
+            <div class="botonRadio">
+                <input type="checkbox" value="Masculino" id="Masculino" class="checkbox-visible sicoleSearchCheckboxHeight" name="sexo" checked/>
+                <label for="Masculino"></label>
+            </div>
+
+            <div class = "textoSelectores" style="margin-left:5%">Femenino
+            </div>
+            <div class="botonRadio">
+                <input type="checkbox" value="Femenino" id="Femenino" class="checkbox-visible sicoleSearchCheckboxHeight" name="sexo" checked/>
+                <label for="Femenino"></label>
+            </div>
+            <div class = "textoSelectores" style="margin-left:5%">Mixto
+            </div>
+            <div class="botonRadio">
+                <input type="checkbox" value="Mixto" id="Mixto" class="checkbox-visible sicoleSearchCheckboxHeight" name="sexo" checked/>
+                <label for="Mixto"></label>
+            </div>
+        </div>
+        <div class = "botonera" style = "margin-top: 18%">
+            <button type="button" id="buscar" class="Guardar2">Buscar</button>
+        </div>
+        <div class = "botonera">
+            <button id="limpiar" type="button" class="Guardar2"> Limpiar filtro </button>
+        </div>
+
+    </div>
+</div>
+<button id="menuDesplegableIzq" class = "menusDesplegables" aria-label="Barra de herramientas botón de menú" aria-expanded="false"></button>
+<div id = "ventanaCategoriasIzq" class = "ventanaCategorias">
+    <div id = "contenedorFuncionalidades">
+        <!--<div id="botonisocronas"class= "categoria">
+<img src="imagenes/isocrona.png"/>
+<div class= "textoCategorias">Isócrona</div>
+<div id ="despliegueIsocrona" class = "trianguloVerde"></div>
+</div>-->
+        <!--
+<div id="isocronas" class = "ventanasCategorias" style="text-align:center">
+        <!--<p style="margin:auto; margin-top:6px; font-size:1.25rem; border-bottom: #52B8DA solid 3px;"> Isócronas </p>
+        <div id="BotonesMedio" style="height:70px;width:100%; margin-top:11%">
+            <div id="drive" class="botonesMedio" onclick="modo(1)" style="background-image:url(imagenes/carro1.png)"></div>
+            <div id="bicycle" class="botonesMedio" onclick="modo(2)" style="background-image:url(imagenes/bici2.png)"></div>
+            <div id="caminar" class="botonesMedio" onclick="modo(3)" style="background-image:url(imagenes/camina1.png)"></div>
+         </div>
+        <div id="sliderisocronas" style="width:100%; height:24%; display:flex; margin-top:2%">
+                <div style="margin:auto;width:86%;height:auto;text-align:center;">
+                    <input id="minutos" type="range" name="points" min="1" max="15" value="10" step="1" onchange="showVal(this.value)"/>
+                    <p style=" margin-top:0%; color: rgb(1, 180, 237)"> 10 minutos</p>
+                </div>
+        </div>
+
+         <div id = "botonConfirmarIsocronas" class = "botonConfirmar">Confirmar</div>
+         <div id = "botonPregunta" class = "botonPregunta">?</div>
+    </div>-->
+        <div id= "botondist" class= "categoria">
+            <img id="iconoTransporte" src="imagenes/transporte.png" alt="icono de transporte"/>
+            <div class= "textoCategorias"><a href="#" class="a-tag-no-decoration textoCategorias">Transporte</a></div>
+            <div id = "despliegueTransporte" class = "trianguloVerde"></div>
+        </div>
+
+        <div id="transporte" class = "ventanasCategorias" style="text-align:center;">
+            <div style = "width:auto">
+                <input type="text" id="desde_distancia" name="desde_distancia" class="inputAzul" style="cursor: pointer; width: 75%; height: 29px; margin-left: -10%; margin-top: 5%;" placeholder="Origen (Dirección o nombre de colegio)" required onclick="setUbicacionGeocodigo('marker_origen')">
+            </div>
+            <div id = "marker_origen" class = "ubicadorTransporte2" onclick="setUbicacionGeocodigo('marker_origen');"> </div>
+            <input type="text" id="hasta_distancia" name="hasta_distancia" class="inputAzul" style="cursor: pointer; width: 75%; height: 29px; margin: 3% 0 0 -10%;"  placeholder = "Destino (Dirección o nombre de colegio)" required onclick="setUbicacionGeocodigo('marker_destino')">
+            <div id = "marker_destino" class = "ubicadorTransporte2" onclick="setUbicacionGeocodigo('marker_destino')"> </div>
+            <div id="BotonesMedio" style="height:70px;width:100%; margin-top:10%">
+                <button id="DRIVING" class="botonesMedio" onclick="setModoRecorrido('DRIVING');" aria-label="En auto" style="background-image:url(imagenes/carro1.png)"></button>
+                <button id="TRANSIT" class="botonesMedio" onclick="setModoRecorrido('TRANSIT');" aria-label="En bus" style="background-image:url(imagenes/bus1.png)"></button>
+                <button id="WALKING" class="botonesMedio" onclick="setModoRecorrido('WALKING');" aria-label="Caminando" style="background-image:url(imagenes/camina1.png)"></button>
+            </div>
+            <div id='infocoledist' style="margin-top: 10px;"></div>
+            <!--<div id = "hacerruta" class= "botonConfirmar" style = "width: 60%" onclick='ruta()'>Mostrar recorrido</div>-->
+            <div id = "botonPreguntaTransp" class = "botonPregunta" style = "margin-top: 0">?</div>
+            <div id = "infocoledistancia"></div>
+
+        </div>
+
+        <!-- <div id= "botonra" class= "categoria" onclick="">
+ <img src="imagenes/ra.png"/>
+ <div class= "textoCategorias">Realidad Aumentada</div>
+ <div class = "trianguloVerde"></div>
+</div>
+        -->
+        <div id= "botonmapas" class= "categoria">
+            <img id="iconoMapas" src="imagenes/mapas.png" alt="icono de mapas"/>
+            <div class= "textoCategorias"><a href="#" class="a-tag-no-decoration textoCategorias">Sí-Mapas</a></div>
+            <div id = "despliegueMapas" class = "trianguloVerde"></div>
+        </div>
+        <div id ="barraMapa" class = "ventanasCategorias">
+            <div class = "categoriasMargen">
+                <div id = "botoneraSiMapa">
+                    <div id = "oficialSiMapa" class = "botonSectorSiMapa gradiante1" style = "margin-left:0%">
+                        <div class= "imagenSectorSiMapa"></div>
+                        <button class = "textoSectorSiMapa">Público</button>
+                    </div>
+                    <div id = "noOficialSiMapa" class = "botonSectorSiMapa gradiante1">
+                        <div class= "imagenSectorSiMapa" style = "background-image: url(imagenes/no-oficial.png)"></div>
+                        <button class = "textoSectorSiMapa">Privado</button>
+                    </div>
+                    <div id = "todosSiMapa" class = "botonSectorSiMapa gradiante2">
+                        <div class= "imagenSectorSiMapa"></div>
+                        <button class = "textoSectorSiMapa" style = "text-align: center;">Todos</button>
+                        <div class= "imagenSectorSiMapa" style = "background-image: url(imagenes/no-oficial.png)"></div>
+                    </div>
+                </div>
+                <div class = "lineaSiMapa" style = "margin-top: 2%;">	</div>
+                <div class = "botonera2SiMapa">
+                    <button class= "boton2SiMapa gradiente3" >Características</button>
+                    <button class= "boton2SiMapa gradiente3" style = "margin-left: 1%">Pruebas de Calidad</button>
+                    <button id = "eficienciaInterna" class= "boton2SiMapa gradiente3">Eficiencia interna</button>
+                    <button class= "boton2SiMapa gradiente3"style = "margin-left: 1%">Recurso humano</button>
+                </div>
+                <div class = "lineaSiMapa">	</div>
+                <div id = "contenedorVariablesSiMapa">
+                    <div id = "tituloSiMapa">Recursos</div>
+                    <div id = "contenedorSubtemas" style = "width: 100%; height: auto;">
+                        <div class = "subTituloSiMapa">Tasa de aprobación
+                            <div class = "imagenSubtitulo"></div>
+                        </div>
+                        <div class = "subTituloSiMapa">Tasa de aprobación
+                            <div class = "imagenSubtitulo"></div>
+                        </div>
+                        <div class = "subTituloSiMapa">Tasa de aprobación
+                            <div class = "imagenSubtitulo"></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><div class = "colorLiMapa">Total docentes</div></li>
+                        <li><div class = "colorLiMapa">Estudiantes por docente</div></li>
+                        <li><div class = "colorLiMapa">Docentes con posgrado</div></li>
+                    </ul>
+                    <div id = "barraCalor1" class = "barraCalor" style = "display: none"></div>
+                    <div id = "barraCalor" class = "barraCalor"></div>
+                    <div id = "textoBarra1" class = "textosBarras">Menos Docentes</div>
+                    <div id = "textoBarra2" class = "textosBarras" style = "text-align:right;">Más Docentes</div>
+                </div>
+
+            </div>
+
+            <div id = "botonPreguntaMapa" class = "botonPregunta" style = "margin-top: 4px">?</div>
+        </div>
+        <div id= "botonfiltro" class= "categoria">
+            <img id="iconoFiltros" src="imagenes/filtros.png" alt="icono de filtros"/>
+            <div class= "textoCategorias"><a href="#" class="a-tag-no-decoration textoCategorias">Filtros</a></div>
+            <div id = "despliegueFiltro" class = "trianguloVerde"></div>
+        </div>
+
+        <div id="barrafiltro" class = "ventanasCategorias" style="text-align:center; height:auto">
+            <div id = "encabezadoFiltro">
+                <div id = "filtrosNormales" tabindex="0" role="button" aria-expanded="true" aria-label="Filtros pestaña de menú" class= "pestana"><p style = "color:#01B4ED">Filtros</p></div>
+                <div id = "filtrosOtros" tabindex="0"  role="button" aria-expanded="false" aria-label="Filtros avanzados pestaña de menú" class= "pestana sombra" style = "background-color:#01B4ED"><p style = "color: white">Filtros avanzados</p></div>
+            </div>
+            <div id= "filtrosPrincipales" class = "categoriasMargen">
+                <svg viewBox="0 0 320 30"  id="tituloIcronas" class ="tituloEnFiltro" tabindex="0" role="button" aria-label="tiempo de viaje botón de menú" aria-expanded="false">
+                <polygon  id = "poligono1Titulo" points="0,0 10,7 0,14" fill="#01B4ED"/>
+                <polygon  id="poligono2Titulo" style= "display:none" points="0,0 14,0, 7 10" fill="#01B4ED"></polygon>
+                <text x="25" y="12" style="fill: #01b4ed; font-size: 0.9rem; font-weight: 600;"> Tiempo de viaje</text>
+
+                </svg>
+
+
+                <div id ="mostrarIsocronas" style = "width: 100%; height: 30px; display: none">
+                    <p style = "float: left">Tiempo de Viaje</p>
+                    <div id = "checkIsocronas" class="squaredOne" style = "margin-top: 17px; margin-left: 10px;">
+                        <input type="checkbox" value="activarIso" id="activarIso" name="activarIso" disabled checked = "false"/>
+                        <label for="activarIso"></label>
+                    </div>
+                </div>
+
+                <div id="isocronas2" class = "ventanasCategorias" style="text-align:center; display: none">
+
+
+                    <!--<p style="margin:auto; margin-top:6px; font-size:1.25rem; border-bottom: #52B8DA solid 3px;"> Isócronas </p>-->
+                    <div id="BotonesMedio" style="height:70px;width:100%; margin-top:11%">
+                        <div id="drive2" class="botonesMedio" onclick="modo(1, 2)" style="background-image:url(imagenes/carro1.png)"></div>
+                        <div id="bicycle2" class="botonesMedio"  onclick="modo(2, 2)" style="background-image:url(imagenes/bici2.png)"></div>
+                        <div id="caminar2" class="botonesMedio"  onclick="modo(3, 2)" style="background-image:url(imagenes/camina1.png)"></div>
+                    </div>
+                    <div id="sliderisocronas" style="width:100%; height:24%; display:flex; margin-top:2%">
+                        <div style="margin:auto;width:86%;height:auto;text-align:center;">
+                            <input id="minutos" type="range" name="points" min="1" max="60" value="10" step="1" onchange="showVal(this.value)"/>
+                            <p style=" margin-top:0%; color: rgb(1, 180, 237)"> 10 minutos</p>
+                        </div>
+                    </div>
+                    <div id = "botonPregunta" class = "botonPregunta">?</div>
+
+
+
+                </div>
+                <div id = "distanciaFiltro" style = "display:none; width: 100%">
+                    <div class = "lineaDivisoria finalSesion" style = "margin-top: 8%"></div>
+                    <div id = "distancia2" style = "width:100%; height:40px; float: none; margin-left:0; display: block;">
+                        <div class = "contenedorLimites">100m</div>
+                        <form class = "rangeFiltro">
+                            <input type = "range" id = "filtroDistanciaR" name = "filtroDistanciaR" min ="100" max = "4000" value = "2000"/>
+                            <output id ="outputDistancia1" for="filtroDistanciaR" onforminput="value = filtroDistanciaR.valueAsNumber;" style= "margin-left:42%">2.0Km</output>
+                        </form>
+                        <div class = "contenedorLimites">4Km</div>
+                    </div>
+                </div>
+                <svg viewBox="0 0 320 30"  id="tituloTematicos" tabindex="0" class ="tituloEnFiltro" aria-label="Filtros temáticos botón de menú" role="button" aria-expanded="false">
+                <polygon id = "poligono3Titulo" points="0,0 10,7 0,14" fill="#01B4ED"/>
+                <polygon id="poligono4Titulo" style= "display:none" points="0,0 14,0, 7 10" fill="#01B4ED"></polygon>
+                <text id= "filtrosTematicos" x="25" y="12" style="fill: #01b4ed; font-size: 0.9rem; font-weight: 600;"> Filtros temáticos</text>
+
+                </svg>
+
+                <div id ="filtrosTema" style = "display: none">
+                    <p>Sector:</p>
+
+                    <div class = "sectoresCheck" style = "width: 100%; height: 30px; margin: -2% 0 0 3%" >
+                        <div class = "checkBoxSectores" style = "width: 38%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="oficial" id="Oficial" name="Oficial" checked/>
+                                <label for="Oficial"></label>
+                            </div>
+                            <div class = "textoSectores" style = "color: #0A738C">Público</div>
+                            <div class = "imagenSectores imagenFiltros "></div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 50%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="NoOficial" id="NoOficial" name="NoOficial" checked/>
+                                <label for="NoOficial"></label>
+                            </div>
+                            <div class = "textoSectores" style = "color : #70A12E">Privado</div>
+                            <div id = "imagenNoOficial2" class = " imagenSectores imagenFiltros" style = "background-image:url(imagenes/no-oficial.png);"></div>
+                        </div>
+                    </div>
+                    <div class = "lineaDivisoria"></div>
+                    <p>Calendario:</p>
+                    <div class = "sectoresCheck" style = "width: 100%; height: 30px; margin: -2% 0 0 3%" >
+                        <div class = "checkBoxSectores" style = "width: 20%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="calendarioA" id="calendarioA" name="calendarioA" checked/>
+                                <label for="calendarioA"></label>
+                            </div>
+                            <div class = "textoSectores">A</div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 20%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="calendarioB" id="calendarioB" name="calendarioB" checked/>
+                                <label for="calendarioB"></label>
+                            </div>
+                            <div class = "textoSectores">B</div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 20%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="calendarioOtros" id="calendarioOtros" name="calendarioOtros" checked/>
+                                <label for="calendarioOtros"></label>
+                            </div>
+                            <div class = "textoSectores">Otros</div>
+                        </div>
+                    </div>
+                    <div class = "lineaDivisoria"></div>
+                    <p> Sexo población atendida:</p>
+                    <div class = "sectoresCheck" style = "width: 100%; height: 30px; margin: -2% 0 0 3%" >
+                        <div class = "checkBoxSectores" style = "width: 17%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="femenino" id="femenino" name="femenino" checked/>
+                                <label for="femenino"></label>
+                            </div>
+                            <div class = "imagenSectores imagenFiltros "  style = "background-image:url(imagenes/mujer1.png)" title = "Mujer"></div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 17%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="masculino" id="masculino" name="masculino" checked/>
+                                <label for="masculino"></label>
+                            </div>
+                            <div id = "imagenNoOficial2" class = " imagenSectores imagenFiltros" style = "background-image:url(imagenes/hombre1.png);" title= "Hombre"></div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 17%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="mixto" id="mixto" name="mixto" checked/>
+                                <label for="mixto"></label>
+                            </div>
+                            <div class = " imagenSectores imagenFiltros" style = "background-image:url(imagenes/mixto.png);" title = "Mixto"></div>
+                        </div>
+                    </div>
+                    <div class = "lineaDivisoria"></div>
+                    <p>Jornadas:</p>
+                    <div class = "sectoresCheck" style = "width: 100%; height: 30px; margin: -2% 0 0 3%" >
+                        <div class = "checkBoxSectores" style = "width: 17%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="filtroManana" id="filtroManana" name="filtroManana" checked/>
+                                <label for="filtroManana"></label>
+                            </div>
+                            <div class = "imagenSectores imagenFiltros "  style = "background-image:url(imagenes/filtromanana.png);margin-left: 10%;" title = "Mañana"></div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 17%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="filtroTarde" id="filtroTarde" name="filtroTarde" checked/>
+                                <label for="filtroTarde"></label>
+                            </div>
+                            <div id = "imagenNoOficial2" class = " imagenSectores imagenFiltros" style = "background-image:url(imagenes/filtrotarde.png); margin-left: 10%;" title = "Tarde"></div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 17%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="filtroNoche" id="filtroNoche" name="filtroNoche" checked/>
+                                <label for="filtroNoche"></label>
+                            </div>
+                            <div class = " imagenSectores imagenFiltros" style = "background-image:url(imagenes/filtronoche.png);margin-left: 10%;" title = "Noche"></div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 17%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="filtroSabado" id="filtroSabado" name="filtroSabado" checked/>
+                                <label for="filtroSabado"></label>
+                            </div>
+                            <div class = " imagenSectores imagenFiltros" style = "background-image:url(imagenes/filtrosf.png);margin-left: 10%;" title = "Fines de semana y festivos"></div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width: 17%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="filtroCompleta" id="filtroCompleta" name="filtroCompleta" checked/>
+                                <label for="filtroCompleta"></label>
+                            </div>
+                            <div class = " imagenSectores imagenFiltros" style = "background-image:url(imagenes/filtrocontin.png); margin-left: 10%;" title = "Completa"></div>
+                        </div>
+                    </div>
+                    <div class = "lineaDivisoria"></div>
+                    <p>Niveles:</p>
+                    <div class = "sectoresCheck" style = "width: 100%; height: 30px; margin: -2% 0 0 3%" >
+                        <div class = "checkBoxSectores" style = "width:50%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="PREESCOLAR" id="preescolar" name="preescolar" checked/>
+                                <label for="preescolar"></label>
+                            </div>
+                            <div class = "textoSectores" >Preescolar</div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width:50%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="PRIMARIA" id="primaria" name="primaria" checked/>
+                                <label for="primaria"></label>
+                            </div>
+                            <div class = "textoSectores" >Primaria</div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width:50%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="SECUNDARIA" id="secundaria" name="secundaria" checked/>
+                                <label for="secundaria"></label>
+                            </div>
+                            <div class = "textoSectores">Secundaria</div>
+                        </div>
+                        <div class = "checkBoxSectores" style = "width:50%">
+                            <div class="squaredOne">
+                                <input class="checkbox-visible" type="checkbox" value="MEDIA" id="media" name="media" checked/>
+                                <label for="media"></label>
+                            </div>
+                            <div class = "textoSectores">Media</div>
+                        </div>
+                    </div>
+
+
+                    <p style = "margin-top: 28%">Saber 11:</p>
+                    <div class = "contenedorLimites" style = "margin-top: 3.3%; background-image: url(imagenes/icfesmal.png); height: 25px"></div>
+                    <form class = "rangeFiltro" style = "margin:-14px 0 0 3%">
+                        <output id = "profes1Output" for="slider-range" onforminput="value = slider-range.valueAsNumber;" style= "left: -41.8%;">0</output>
+                        <output id = "profes2Output" for="slider-range" onforminput="value = slider-range.valueAsNumber;" style= "top: -238%; bottom: inherit; left: 8px;">100</output>
+                        <div id="slider-range" style = "top: 16px;"></div>
+
+                    </form>
+                    <div class = "contenedorLimites" style ="margin: 17px 0 0 -5%; background-image: url(imagenes/icfesbien.png); height: 25px;"></div>
+
+                    <p style = "margin-top: 25%">Estudiantes por docente</p>
+                    <div class = "auxiliar">
+                        <div class = "contenedorLimites" style= "margin-top: 8%; text-align: left">1</div>
+                        <form class = "rangeFiltro" style = "margin-top: -13px">
+                            <output id = "docenteEst1" for="numeroEstudiantes" onforminput="value = numeroEstudiantes.valueAsNumber;" style= "margin-left: 0">1</output>
+                            <output id = "docenteEst2" for="numeroEstudiantes" onforminput="value = numeroEstudiantes.valueAsNumber;" style= "margin-left: 279px">100</output>
+                            <div id = "numeroEstudiantes" style = " top: 15px;"></div>
+
+                        </form>
+                        <div class = "contenedorLimites" style= "margin-top: 8%; text-align: left; ">100</div>
+                    </div>
+                    <div class = "lineaDivisoria finalSesion"></div>
+                </div>
+            </div>
+            <div id= "filtrosAdicionales" class = "categoriasMargen" style= "display:none; overflow: initial;">
+
+
+            </div>
+
+            <div class= "botoneraReportes">
+                <div id= "borrarFiltros" tabindex="0" role="button" class = "botonesFiltros" style = "background-color: #1CB4E9; margin-top: 20px"><p>Borrar Filtros</p></div>
+                <p> Reporte:</p>
+                <div id = "reporteCompleto" tabindex="0" role="button" class = "botonesFiltros" style = "background-color: #8FBE2B;"><p>Ver reporte completo</p></div>
+                <div class = "botonesFiltros" id="descargarReporte" tabindex="0" role="button" style = "margin-top: 10px"><p>Descargar reporte completo</p></div>
+            </div>
+            <div id = "botonPreguntaFiltro" class = "botonPregunta" style = "margin-top: 4px">?</div>
+
+        </div>
+
+        <div id= "botonradar" class= "categoria">
+            <img id="iconoCerca" src="imagenes/cerca.png" alt="icono de cerca" />
+            <div class= "textoCategorias"><a href="#" class="a-tag-no-decoration textoCategorias">Cerca a tu sede</a></div>
+            <div id = "despliegueCerca" class = "trianguloVerde"></div>
+        </div>
+
+        <h1 id = "seleccioneSede">Seleccione una sede en el mapa</h1>
+        <div id="barraCercaAtuSede" class = "ventanasCategorias" style="text-align:center; height:auto;">
+            <div class = "categoriasMargen">
+                <h1 id = "nombreSedeCerca" style = "font-size: 1.1rem; color: rgb(1, 180, 237); margin-bottom: 0px;">Nombre del Colegio</h1>
+                <div style = "height: 70px; margin-top: 19px;">
+                    <div class = "contenedorLimites" style= "margin-top: 6%;">100m</div>
+                    <form class = "rangeFiltro" style = "width: 70%">
+                        <input type = "range" id = "sliderCerca" name = "slider_cerca" min ="100" max = "2000" value = "1000" style = "width: 100%" onchange = "cambiarRadio()"/>
+                        <output id ="outputDistancia" for="rangeCerca" onforminput="value = rangeCerca.valueAsNumber;" style= "margin-left:42%">1.0Km</output>
+                    </form>
+                    <div class = "contenedorLimites" style = "margin-left: 3%; margin-top: 6%;">2Km</div>
+                </div>
+
+                <div id = lugaresCercanos>
+                    <div class = "contenedorLugares" onClick = "convertirSitios('bank')">
+                        <div id= "bankImagen" class = "imagenesLugaresCercanos"></div>
+                        <p>Financiero</p>
+                    </div>
+                    <div class = "contenedorLugares" onClick = "convertirSitios('hospital')">
+                        <div id = "hospitalImagen" class = "imagenesLugaresCercanos" style = "background-image: url(imagenes/cerca2.png)"></div>
+                        <p>Salud</p>
+                    </div>
+                    <div class = "contenedorLugares" onClick = "convertirSitios('library')">
+                        <div id = "libraryImagen" class = "imagenesLugaresCercanos" style = "background-image: url(imagenes/cerca3.png)"></div>
+                        <p>Bibliotecas</p>
+                    </div>
+                    <div class = "contenedorLugares" onClick = "convertirSitios('church')">
+                        <div id = "churchImagen" class = "imagenesLugaresCercanos" style = "background-image: url(imagenes/cerca4.png)"></div>
+                        <p>Religioso</p>
+                    </div>
+                    <div class = "contenedorLugares" onClick = "convertirSitios('storage')">
+                        <div id = "storageImagen" class = "imagenesLugaresCercanos" style = "background-image: url(imagenes/cerca5.png)"></div>
+                        <p>Comercial</p>
+                    </div>
+                    <div class = "contenedorLugares" onClick = "convertirSitios('bus_station')">
+                        <div id = "bus_stationImagen" class = "imagenesLugaresCercanos" style = "background-image: url(imagenes/cerca6.png)"></div>
+                        <p>Transporte</p>
+                    </div>
+                    <div class = "contenedorLugares" onClick = "convertirSitios('local_government_office')">
+                        <div id = "local_government_officeImagen" class = "imagenesLugaresCercanos" style = "background-image: url(imagenes/cerca7.png)"></div>
+                        <p>Institucional</p>
+                    </div>
+                    <div class = "contenedorLugares" onClick = "convertirSitios('park')">
+                        <div id = "parkImagen" class = "imagenesLugaresCercanos" style = "background-image: url(imagenes/cerca8.png)"></div>
+                        <p>Parques</p>
+                    </div>
+                </div>
+                <div id= "auxiliar2" style = "width: 100%; height: auto; margin-top: 6%; position: relative">
+                    <div id = "botonPreguntaCerca" class = "botonPregunta">?</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--<div id = "pieIzquierda">
+            <div id = "sectores">
+    <!--&lt;!&ndash;<div id = "sectoresTexto"><p>Sedes educativas</p></div>&ndash;&gt;-->
+    <!--<div class = "sectoresCheck">-->
+    <!--<div class = "checkbox2" style = "height: 45%">-->
+    <!--<div class="squaredOne">-->
+    <!--<input class="checkbox-visible" type="checkbox" value="oficial" id="sectorOficial" name="sectorOficial" checked/>-->
+    <!--<label for="sectorOficial"></label>-->
+    <!--</div>-->
+    <!--<div class = "checktexto2" style = "color: #0A738C">Oficial</div>-->
+    <!--<div class = "imagenSectores"></div>-->
+    <!--</div>-->
+    <!--<div class = "checkbox2" style = "height: 45%">-->
+    <!--<div class="squaredOne">-->
+    <!--<input class="checkbox-visible" type="checkbox" value="noOficial" id="sectorNoOficial" name="sectorNoOficial" checked/>-->
+    <!--<label for="sectorNoOficial"></label>-->
+    <!--</div>-->
+    <!--<div class = "checktexto2" style = "color : #70A12E">No oficial</div>-->
+    <!--<div id = "imagenNoOficial" class = "imagenSectores" style = "background-image:url(imagenes/no-oficial.png)"></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>
+    <div id ="cambiarMapa">
+            <button id ="fijarMapa" class = "activoMapa cambiarMapaMenu change-map-button-text">Mapa</button>
+            <button id = "fijarSatelite" class = "cambiarMapaMenu change-map-button-text">Satélite</button>
+    </div>
+</div>-->
+</div>
+
+<button id="menuDesplegableDer" class = "menusDesplegables" aria-label="Sedes cercanas botón de menú, presione escape para cerrar el menu" aria-expanded="false"></button>
+
+<div id = "etiquetaMapa">Docentes con posgrado</div>
+<div id = "explicacionMapa">
+    <h3>Acerca del mapa</h3>
+    <div id = "desplegarExplicacion"></div>
+</div>
+<div id = "desplegadaExplicacion"></div>
+<div id = "comparacionMapas">
+    <div id = "iniciarComparacion" class = "comparacionGradiante1"><p>Comparar por sector</p></div>
+    <div id = "mapasParalelos" class ="cambiarComparacionMapas" style= "border-radius: 0 0 0 7px"><p>Mapas paralelos</p></div>
+    <div id = "mapasContinuos" class ="cambiarComparacionMapas" style= "border-radius: 0 0 7px 0"><p>Mapas continuos</p></div>
+</div>
+<div id = "graficaFuncion">
+    <div id = "tituloGrafica">Comparación de los colegios de Soacha y Bogotá</div>
+    <div id = "contenedorGrafica">
+        <div id = "leyendaGrafica">
+            <div class = "leyenda">
+                <div class = "colorLeyenda"></div>
+                <div class = " textoLeyenda">Valor del indicador</div>
+            </div>
+
+            <div class = "leyenda">
+                <div class = "colorLeyenda" style = "background-color: rgb(143, 190, 43)"></div>
+                <div class = " textoLeyenda">Media del indicador</div>
+            </div>
+
+        </div>
+        <div id = "graficaLinea" class= "graficaLinea">
+            <div id = "valorBarra"></div>
+        </div>
+    </div>
+</div>
+<div id = "ventanaCategoriasDer" class = "ventanaCategorias">
+    <div tabindex="0" id="contenedorColegiosCercanos">
+
+    </div>
+    <!--<div id ='scrollBajar'></div>
+    <div id ='scrollSubir'></div>-->
+
+</div>
+
+<div id="infocolepar" style="display:none;"></div>
+<div id = "infoColeEsp">
+
+    <div id= "barraTitulo"><h1 id="InfoSchoolTitle" tabindex="0">Colegio Súper pedagógico Nuestra Señora de Chiquinquira</h1></div>
+    <button id='MANANA' class='selectores'>
+        <div class= imagenSelectores></div>
+        <div class= letrasSelectores>Mañana</div>
+    </button>
+    <button id='TARDE' class='selectores'>
+        <div class= imagenSelectores style="background-image:url(imagenes/tarded.png)"></div>
+        <div class= letrasSelectores>Tarde</div>
+    </button>
+    <button id='NOCHE' class='selectores'>
+        <div class= imagenSelectores style="background-image:url(imagenes/noched.png)"></div>
+        <div class= letrasSelectores>Noche</div>
+    </button>
+    <button id='FINDESEMANA' class='selectores'>
+        <div class= imagenSelectores style="background-image:url(imagenes/sab-fesd.png)"></div>
+        <div class= letrasSelectores>Fin de Semana</div>
+    </button>
+    <button id='COMPLETA' class='selectores'>
+        <div class= imagenSelectores style="background-image:url(imagenes/completad.png)"></div>
+        <div class= letrasSelectores>Completa</div>
+    </button>
+
+    <div id ="contenidoInfoCole">
+
+
+        <div id = "colegioTitulo">
+            <div tabindex="0" role="button" id = 'colegioFavorito' onclick = 'agregarAFavoritos()' style = "display:none">
+                <div id = 'estrellaColegioFavorito'> </div>
+                <div  id= 'agregarColegioFavorito'>Agregar a favoritos</div>
+            </div>
+            <!--<div tabindex="0" id="botonAbrirFoto"  role="button">
+                    <div id="imagenAbrirFoto"></div>
+                    <div id="textoAbrirFoto"> Abrir Foto</div>
+            </div>-->
+        </div>
+        <button id= "uno" class= "categoria"  onclick='cargarinfor(1)' aria-expanded="false" aria-label="Primero identificación, menú desplegable">
+            <img id="iconoUno" src="imagenes/1web.png" alt="uno"/>
+            <div class= "textoCategorias">Identificación</div>
+            <div id = "despliegue1" class = "trianguloVerde"></div>
+        </button>
+
+        <div id= "contenidoIdentificacion" class ="contenidoIdentificacion" style = "display:none">
+        </div>
+        <button id= "dos" class= "categoria" onclick='cargarinfor(2)' aria-expanded="false" aria-label="Segundo características, menú desplegable">
+            <img id="iconoDos" src="imagenes/2web.png" alt="dos"/>
+            <div class= "textoCategorias">Características</div>
+            <div id = "despliegue2" class = "trianguloVerde"></div>
+        </button>
+        <div id= "contenidoCaracteristicas" class ="contenidoIdentificacion">
+            <div tabindex="0" role="button" id ="tituloJornadas" class="listasCaracteristicas" aria-expanded="false">
+                <div>Estudiantes por Jornada</div>
+                <div id="estudiantesJornadas" class ="imagenEstudiantes"></div>
+            </div>
+            <div tabindex="0" role="button" id ="tituloJornadas1" class="listasCaracteristicas" aria-expanded="true" style = "display: none">
+                <div>Estudiantes por Jornada</div>
+                <div id="estudiantesJornadas1" class ="imagenEstudiantes"></div>
+            </div>
+
+            <div id ="tablaJornadas" class ="tablacarac">
+                <div class = "lineaGraficas"></div>
+                <div id = "donaJornada" class= "columnaGraficas"></div>
+                <div tabindex="0" id = "columnaInfoJornadas" class= "columnaInfo">
+                </div>
+            </div>
+
+
+            <div tabindex="0" id= "tituloNiveles" class="listasCaracteristicas" aria-label="Estudiantes por nivel, botón contraido" style = "margin-top:5%">Estudiantes por Nivel
+                <div id="estudiantesNiveles" class ="imagenEstudiantes"></div>
+            </div>
+
+            <div tabindex="0" id= "tituloNiveles1" class="listasCaracteristicas" aria-label="Estudiantes por nivel, botón expandido" style = "margin-top:5%; display: none;">Estudiantes por Nivel
+                <div id="estudiantesNiveles1" class ="imagenEstudiantes"></div>
+            </div>
+
+
+            <div id ="tablaNiveles" class ="tablacarac" style = "margin-bottom: 5%; height: 160px">
+
+            </div>
+            <div class = "lineaGraficas" style = "margin-top: 5%;"></div>
+            <svg viewBox="0 0 350 130" id="graficosCaracteristicas">
+            <circle r="45" cx="50" cy="70" id="circle1" class="CircleCarac" fill="#318DA6"></circle>
+            <text x="18" y="55" style="font-size: 0.85rem;" fill="white">Calendario</text>
+            <text id = "calendarioColegio" y="105" x="28.5" style="font-weight: 700; font-size: 3.8rem;" fill="white">A</text>
+            <circle r="45" cx="285" cy="70" id="circle2" class="CircleCarac" fill="#318DA6"></circle>
+            <text y="60" x="262" style="font-size: 1rem;" fill="white">Sector</text>
+            <!--<text id = "sectorColegio"x="245" y="88" style="font-weight: 700; font-size: 1.5rem;" fill="white">Oficial</text>	-->
+            <text id = "sectorColegio"x="245" y="88" style="font-weight: 700; font-size: 1.05rem;" fill="white">Privado</text>
+            </svg>
+            <div id="caracteristicaSexo">
+                <div id = "textoSexo">Población atendida</div>
+                <div id = "imagenSexo" class = "imagenSexo"></div>
+                <div id = "imagenSexo1" class = "imagenSexo" style = "display: none"></div>
+            </div>
+
+            <svg viewBox="0 0 240 40" class = "botonVolverCole">
+            <polygon id="poligono1Titulo" points="30,20 40,10 40,30" fill="white"></polygon>
+            <text id = "textosAno1" x="90" y="27" style="fill: white;font-size: 1.3rem;font-weight: 600;">Volver</text>
+            </svg>
+            <div class='fuentesCole'>*Fuente: Investigación de Educación Formal, DANE. 2015</div>
+        </div>
+        <button id= "tres" class= "categoria" onclick='cargarinfor(3)' aria-expanded="false" aria-label="Tercero pruebas de calidad, menú desplegable">
+            <img id="iconoTres" src="imagenes/3web.png" alt="tres" />
+            <div class= "textoCategorias">Pruebas de calidad</div>
+            <div id = "despliegue3" class = "trianguloVerde"></div>
+        </button>
+
+        <div id= "contenidoCalidad" class ="contenidoIdentificacion">
+            <h3>Puntaje Saber 11</h3>
+            <div class = "divBarradeEstado">
+                <div id = "estadoSaber" class = "estadoBarra">
+                    <p id = "porcentajePrueba">100%</p>
+                </div>
+                <output id ="outputSaber1" style = "margin-left:-22px">Mín 100</output>
+                <output id ="outputSaber2" style = "margin-left: 22%;">257</output>
+                <div id = "IndicadorTotal" style="margin-left: 39.25%" class = "indicadorTotal"></div>
+            </div>
+            <output id ="outputSaber3" style = "margin-top: 18px; margin-left: 78%; bottom: 0%">Máx 500</output>
+            <div class = "leyendaBarra" style = "margin-top: 10px;">
+                <div class = "imagenLeyendaBarra" style= "background-color: rgb(182, 19, 78)"></div>
+                <div class = "textoLeyendaBarra">Promedio Sede</div>
+            </div>
+
+            <div class = "leyendaBarra">
+                <div class = "imagenLeyendaBarra" style= "background-color: #284D9D"></div>
+                <div class = "textoLeyendaBarra">Promedio Nacional </div>
+            </div>
+            <div class="lineaGraficas" style="margin: 5% 0 0 0; border-color: rgb(49, 141, 166);"></div>
+            <!--<p>Clasificación</p>
+            <p id = "clasificacionSaber" style = "font-weight: bold; font-size: 1.2rem; margin-top: -1%;">Medio/Alto</p>-->
+            <div class='fuentesCole'>*Fuente: ICFES 2016-2</div>
+        </div>
+        <div id= "contenidoCalidad1" class ="contenidoIdentificacion" style= "color: rgb(49, 141, 166); text-align: center; display: block; margin-top: 15%; margin-left: 0%; display:none">No aplica. La sede no cuenta con media vocacional</div>
+        <button id= "cuato" class= "categoria" onclick='cargarinfor(4)' aria-expanded="false" aria-label="Cuarto eficiencia interna, menú desplegable">
+            <img id="iconoCuatro" src="imagenes/4web.png" alt="cuatro" />
+            <div class= "textoCategorias">Eficiencia interna</div>
+            <div id = "despliegue4" class = "trianguloVerde"></div>
+        </button>
+        <div id= "contenidoEficiencia" class ="contenidoIdentificacion">
+            <div id = "divcontenedorMulticolor">
+                <center><p id ="errorMulticolor" styel = "display: none">Información no Encontrada</p></center>
+                <div id= "barraMulticolorTotal" class= "barraMulticolor">
+                    <div id = "tasaDesercion" class = "seccionMulticolor" style= "background-color:#2C519F"></div>
+                    <div id = "tasaReprobacion" class = "seccionMulticolor" style= "background-color:#139064"></div>
+                    <div id = "tasaAprobacion" class = "seccionMulticolor" style= "background-color: #5FBEEC"></div>
+                    <div id = "tasaTransferencia" class = "seccionMulticolor" style = "background-color:#6351A7;"></div>
+                </div>
+                <div class= "leyendaMulticolor">
+                    <div class = "seccionMulticolor">
+                        <svg class="imagenMulticolor" viewBox="0 0 18 18">
+                        <circle id = "circuloDesercion" r="9" cy="9" cx="9" fill="#2C519F"></circle>
+                        </svg>
+                        <div tabindex="0" class = "textoMulticolor">
+                            <p class = "tituloColor">Deserción</p>
+                            <h2 id = "textoDesercion">2%</h2>
+                        </div>
+                    </div>
+
+                    <div class = "seccionMulticolor">
+                        <svg class="imagenMulticolor" viewBox="0 0 18 18">
+                        <circle id = "circuloReprobacion" r="9" cy="9" cx="9" fill="#139064"></circle>
+                        </svg>
+                        <div tabindex="0" class = "textoMulticolor">
+                            <p class = "tituloColor">Repitencia</p>
+                            <h2 id = "textoReprobacion">2%</h2>
+                        </div>
+                    </div>
+
+                    <div class = "seccionMulticolor">
+                        <svg class="imagenMulticolor" viewBox="0 0 18 18">
+                        <circle id = "circuloAprobacion" r="9" cy="9" cx="9" fill="#5FBEEC"></circle>
+                        </svg>
+                        <div tabindex="0" class = "textoMulticolor">
+                            <p class = "tituloColor">Aprobación</p>
+                            <h2 id = "textoAprobacion">2%</h2>
+                        </div>
+                    </div>
+
+                    <div class = "seccionMulticolor">
+                        <svg class="imagenMulticolor" viewBox="0 0 18 18">
+                        <circle id = "circuloTransferencia" r="9" cy="9" cx="9" fill="#6351A7"></circle>
+                        </svg>
+                        <div tabindex="0" class = "textoMulticolor">
+                            <p class = "tituloColor">Transferencia</p>
+                            <h2 id = "textoTransferencia">2%</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <svg viewBox="0 0 240 40" class = "botonVolverCole">
+            <polygon id="poligono1Titulo" points="30,20 40,10 40,30" fill="white"></polygon>
+            <text id = "textosAno1" x="90" y="27" style="fill: white;font-size: 1.3rem;font-weight: 600;">Volver</text>
+            </svg>
+
+            <div class='fuentesCole'>*Fuente: Investigación de Educación Formal,DANE.  Periodo de recolección 2015, periodo de referencia 2014. **Esta información se calcula sólo para educación tradicional. </div>
+
+        </div>
+
+        <button id= "cinco" class= "categoria" onclick='cargarinfor(5)' aria-expanded="false" aria-label="Quinto recurso humano, menú desplegable">
+            <img id="iconoCinco" src="imagenes/5web.png" alt="cinco" />
+            <div class= "textoCategorias">Recurso humano</div>
+            <div id = "despliegue5" class = "trianguloVerde"></div>
+        </button>
+        <div id= "contenidoRecursos" class ="contenidoIdentificacion">
+            <h3>Docentes con posgrado</h3>
+            <div id ="docentePosgrado" class ="tablacarac" style = "display:block; color: rgb(95, 190, 236)">
+                <div id = "textoCon" class = "letrasGraficasRecursos" style = "text-align:right">
+                    <div class = "textoDonasRecursos" style = "color: #318DA6">
+                        <p id= "docenteConPosgrado" style = "font-size:1rem; font-weight: bold">16-80%</p>
+                        <p>Docentes con posgrado</p>
+                    </div>
+                </div>
+                <div id = "donaRecursos" class = "graficasRecursos" style = "color: #318DA6" ></div>
+                <div class = "letrasGraficasRecursos" style = " color: rgb(44, 81, 159)">
+                    <div id = "textoSin" class = "textoDonasRecursos" style = "margin-left: 8%; color: #318DA6">
+                        <p id = "docenteSinPosgrado" style = "font-size:1rem; font-weight: bold">16-80%</p>
+                        <p>Docentes sin posgrado</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Estudiantes por docentes</h3>
+            <div id = "barraPorEstudiantes" class = "divBarradeEstado">
+                <div id = "estudiantesPordocentes" class = "estadoBarra" style= "margin-top:1%">
+                    <p id = "numeroEstudiantesDocente">48</p>
+                </div>
+                <output id ="outputDocente1" style = "margin-left:-16px">Mín 0</output>
+                <output id ="outputDocente2" style = "margin-left: 39%;">24</output>
+                <div id= "indicadorDocente" class = "indicadorTotal"></div>
+            </div>
+            <output id ="outputDocente3" style = "margin-top: 18px; margin-left: 78%; bottom: 0px">Máx 48</output>
+            <div class = "leyendaBarra" style = "margin-top: 10px;">
+                <div class = "imagenLeyendaBarra" style= "background-color: rgb(182, 19, 78)"></div>
+                <div class = "textoLeyendaBarra">Promedio Sede</div>
+            </div>
+            <div class = "leyendaBarra">
+                <div class = "imagenLeyendaBarra" style= "background-color: #284D9D"></div>
+                <div class = "textoLeyendaBarra">Promedio Bogotá/ Soacha </div>
+            </div>
+            <svg viewBox="0 0 240 40" class = "botonVolverCole">
+            <polygon id="poligono1Titulo" points="30,20 40,10 40,30" fill="white"></polygon>
+            <text id = "textosAno1" x="90" y="27" style="fill: white;font-size: 1.3rem;font-weight: 600;">Volver</text>
+            </svg>
+            <div class='fuentesCole'>*Fuente: Investigación de Educación Formal. 2015</div>
+        </div>
+
+
+
+
+
+    </div>
+    <!--<div id = "barraSelectores">
+            <div id = "lineaBotones"></div>
+            <div id = "cinco" class = "botonesInfoColegios" style="margin-top: 87%; background-image: url(imagenes/5web.png);" onclick='cargarinfor(5)'>
+                    <div class = "nombreBoton" >Recursos</div>
+            </div>
+            <div id = "cuatro" class = "botonesInfoColegios" style="margin-top: 66%; background-image: url(imagenes/4web.png);" onclick='cargarinfor(4)'>
+                    <div class = "nombreBoton" style = "margin-left: -19%;">Eficiencia interna</div>
+            </div>
+            <div id = "tres" class = "botonesInfoColegios" style="margin-top: 43%; background-image: url(imagenes/3web.png);" onclick='cargarinfor(3)'>
+                    <div class = "nombreBoton" style = "margin-left: -9%;" >Calidad</div>
+            </div>
+            <div id = "dos" class = "botonesInfoColegios" style="margin-top: 21%;background-image: url(imagenes/2web.png);" onclick='cargarinfor(2)'>
+                    <div class = "nombreBoton" style = "margin-top: 43%; margin-left: -56%;">Características</div>
+            </div>
+            <div id = "uno" class = "botonesInfoColegios" style="height: 16%;" onclick='cargarinfor(1)'>
+                    <div class = "nombreBoton" style = "margin-top: 36%; margin-left: -49%;">Identificación</div>
+            </div>
+    </div>-->
+    <!--
+    <div id = "barraSelectores">
+            <div id = "lineaBotones"></div>
+            <div id = "cinco" class = "botonesInfoColegios" style="margin-top: 87%; background-image: url(imagenes/5web.png);" onclick='cargarinfor(5)'>
+                    <div class = "nombreBoton" >Recursos</div>
+            </div>
+            <div id = "cuatro" class = "botonesInfoColegios" style="margin-top: 66%; background-image: url(imagenes/4web.png);" onclick='cargarinfor(4)'>
+                    <div class = "nombreBoton" >Eficiencia interna</div>
+            </div>
+            <div id = "tres" class = "botonesInfoColegios" style="margin-top: 43%; background-image: url(imagenes/3web.png);" onclick='cargarinfor(3)'>
+                    <div class = "nombreBoton" >Calidad</div>
+            </div>
+            <div id = "dos" class = "botonesInfoColegios" style="margin-top: 21%;background-image: url(imagenes/2web.png);" onclick='cargarinfor(2)'>
+                    <div id = "dosTexto" class = "nombreBoton" >Características</div>
+            </div>
+            <div id = "uno" class = "botonesInfoColegios" style="height: 16%;" onclick='cargarinfor(1)'>
+                    <div id = "unoTexto" class = "nombreBoton">Identificación</div>
+            </div>
+    </div>
+    -->
+    <div id ="popUpFotoCole">
+        <div id="ventanaFotoCole">
+            <div id="botonSalir3" class="botonSalir" style ="display:block">
+                <button tabindex="0" id= "imagenSalir" aria-label="Botón cerrar foto"></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="infocolecerca" style="display:none;">
+
+    <div id="infocolecercatitulo">Seleccione una sede en el mapa</div>
+    <div id="salirLugaresCercanos" onclick='Regresar()'><p>X</p></div>
+    <div id="contenedorSliderCerca" style="padding: 10px;height: 23px;display:none">
+        <div id="area_cerca">500 m</div>
+        <div id="slider_cerca" style="background-color: #444341"></div>
+    </div>
+
+    <select id="infocolecercatipo" onchange="calcularSitios();">
+        <option value="">Seleccione una opción</option>
+        <option value="library">Biblioteca</option>
+        <option value="finance">Financiero</option>
+        <option value="hospital">Salud</option>
+        <option value="local_government_office">Instituciones</option>
+        <option value="bus_station">Transporte</option>
+        <option value="storage">Comercial</option>
+        <option value="church">Religioso</option>
+    </select>
+    <!--	<div onclick='Regresar()' id="volverrecorr2" class='selectoressup' style='cursor:pointer;' >Regresar</div>-->
+</div>
+<div id = "barraSesion">
+    <div id = "listaFavoritos">
+        <div id = "favoritosTitle">
+            <h1 id="favoritesTitle" tabindex="0">Favoritos</h1>
+        </div>
+        <div id = "contenedorColegiosCercanos"></div>
+    </div>
+    <div id="iniciar">
+        <div class="titulo1">
+            <h1 id="LoginTitle" tabindex="0" style="color:#52B8DA; margin-bottom: 0px;"><strong>Iniciar Sesión</strong></h1>
+        </div>
+        <div style="margin-top:8%">
+            <label>Usuario</label>
+            <input type="text" id="usuario" class="inputAzul" name="usuario" placeholder="Usuario">
+        </div>
+        <div style="margin-top: 6%; color:#AAA;">
+            <label>Contraseña</label>
+            <input type="password" id="contrasena" class="inputAzul" name="contrasena" placeholder="Contraseña">
+        </div>
+        <a id="olvidoSuContrasena" class="a-tag-no-decoration forgot-password-font-size" tabindex="0" href="#">¿Olvidó su contraseña?</a>
+        <a id ="botonIniciar" class="botonesIniciar a-tag-no-decoration login-links" tabindex="0" href="#">Iniciar</a>
+        <a  id="crearPerfilBoton" class="botonesIniciar2 a-tag-no-decoration login-links" tabindex="0" href="#">Registrarse</a>
+    </div>
+
+    <div id="formularioSesion" >
+        <form>
+            <div class="titulo1">
+                <h1 tabindex="0" id="registerTitle" style="color:#52B8DA; margin-bottom: 3%; margin-top:0">Registro</h1>
+            </div>
+
+
+            <label for="correo">Correo electrónico</label>
+            <!--class="mensaje-error"-->
+            <p class="mensaje-error">
+                <input type="email" id="correo" name="correo" class="inputAzul" placeholder="ejemplo midireccion@correo.com" data-validation="email" data-validation-error-msg='Ingrese un correo valido'required/>
+            </p>
+
+
+            <label>Contraseña</label>
+            <p class="mensaje-error">
+                <input name="pass_confirmation" type="password" id="password" class="inputAzul" placeholder="Contraseña" data-validation="strength" data-validation-strength="0	" data-validation-error-msg='La contraseña no es lo suficientemente fuerte'/>
+            </p>
+
+            <!--<p>
+                    Password
+                    <input type="password" name="pass_confirmation" data-validation="strength"
+                               data-validation-strength="2">
+            </p>-->
+            <p class="mensaje-error">
+                <label>Repetir contraseña</label>
+                <input name="pass" type="password" id="repassword" class="inputAzul" placeholder="Repetir contraseña" data-validation="confirmation" data-validation-error-msg='Las contraseñas no coinciden'/>
+            <p class="mensaje-error">
+
+                <!--<p>
+Repeat password
+<input type="password" name="pass" data-validation="confirmation">
+</p>-->
+
+                <label>Nombres</label>
+            <p class="mensaje-error">
+                <input type="text" id="nombres" class="inputAzul" placeholder="ejemplo Lina Maria" data-validation="alphanumeric" data-validation-allowing="áéíóúñ " data-validation-error-msg="El nombre de usuario no debe tener caracteres especiales"/>
+            </p>
+            <label>Apellidos</label>
+            <p class="mensaje-error">
+                <input type="text" id="apellidos" class="inputAzul" placeholder="ejemplo Rodriguez Gonzales" data-validation="alphanumeric" data-validation-allowing="áéíóúñ " data-validation-error-msg="El apellido no debe tener caracteres especiales"/>
+            </p>
+            <label for="tipoDoc" style="width: 100%; float: left;">Documento de identificación</label>
+            <select id="tipoDoc" name="tipoDoc" class="inputAzul" style="width: 98%;">
+                <option value=1 default> Cédula de ciudadanía</option>
+                <option value=2> Tarjeta de Identidad</option>
+                <option value=3> Cédula de extranjería o Identificación de Extranjería</option>
+                <option value=4> Registro Civil de Nacimiento</option>
+                <option value=5> Número de Identificación Personal (NIP) </option>
+                <option value=6> Número Único de Identificación Personal (NUIP) </option>
+                <option value=7> No de Identificación - Secretaría de Educación </option>
+                <option value=8> Certificado de Cabildo </option>
+            </select>
+            <label for="tipoDoc">Número de identificación</label>
+            <input type="number" name="numeroDoc" id="numeroDoc" class="inputAzul" placeholder="ejemplo 1234567890"/>
+            <label for="diaNac" style="width: 100%; float: left;">Fecha de nacimiento</label>
+            <input class = "inputAzul" type="text" id="fechaNac" onfocus="pauseRegisterFocusTrap()" onblur="unpauseRegisterFocusTrap()"/>
+            <label style="float: left; width: 100%;">Elija un rol</label>
+            <select  id="roles" class="inputAzul">
+                <option value="1">Directivo</option>
+                <option value="2">Docente</option>
+                <option value="3">Administrativo</option>
+                <option value="4">Padre de Familia/ Acudiente</option>
+                <option value="5">Estudiante</option>
+                <option value="6">Investigador</option>
+                <option value="7">Otros</option>
+            </select>
+
+            <div class = "botonera" style = "margin-top: 2px">
+
+                <button type="button" id="botonGuardar" class="Guardar2">Guardar y continuar</button>
+            </div>
+            <div class = "botonera">
+                <button id="volverPerfil" type="button" class="Guardar2"> Cancelar </button>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="botonSalir" class="botonSalir">
+        <div id= "imagenSalir"></div>
+    </div>
+
+    <div id="botonSalir2" class="botonSalir">
+        <div id= "imagenSalir"></div>
+    </div>
+
+
+
+    <div id="formularioActualizar">
+        <form>
+            <div class="titulo1">
+                <h1 id="updateDataTitle" tabindex="0" style="color:#52B8DA; margin-bottom: 3%; margin-top:0">Actualizar información</h1>
+            </div>
+            <label for="nombres">Nombres</label>
+            <p class="mensaje-error">
+                <input type="text" id="nombres" class="inputAzul" placeholder="ejemplo Lina Maria" data-validation="alphanumeric" data-validation-allowing="áéíóúñ " data-validation-error-msg="El nombre de usuario no debe tener caracteres especiales"/>
+            </p>
+            <label for="apellidos">Apellidos</label>
+            <p class="mensaje-error">
+                <input type="text" id="apellidos" class="inputAzul" placeholder="ejemplo Rodriguez Gonzales" data-validation="alphanumeric" data-validation-allowing="áéíóúñ " data-validation-error-msg="El apellido no debe tener caracteres especiales"/>
+            </p>
+            <label for="tipoDoc" style="float: left;">N° de identificación</label>
+            <select id="tipoDoc" name="tipoDoc" class="inputAzul" disabled style= "width:98%">
+                <option value="1" default> Cédula de ciudadanía</option>
+                <option value="2"> Tarjeta de Identidad</option>
+                <option value="3"> Cédula de extranjería o Identificación de Extranjería</option>
+                <option value="4"> Registro Civil de Nacimiento</option>
+                <option value="5"> Número de Identificación Personal (NIP) </option>
+                <option value="6"> Número Único de Identificación Personal (NUIP) </option>
+                <option value="7"> No de Identificación - Secretaría de Educación </option>
+                <option value="8"> Certificado de Cabildo </option>
+            </select>
+            <input type="number" name="numeroDoc" id="numeroDoc" class="inputAzul" style="width: 96%;" disabled/>
+            <div style= "width:98%;height:65px">
+                <label for="fechaNacAct" style="width: 100%; float: left;">Fecha de nacimiento</label>
+                <input class = "inputAzul" type="text" id="fechaNacAct"/>
+            </div>
+            <label style="float: left;">Elija un rol</label>
+            <select  id="roles" class="inputAzul" style= "width:98%">
+                <option value="1">Directivo</option>
+                <option value="2">Docente</option>
+                <option value="3">Administrativo</option>
+                <option value="4">Padre de Familia/ Acudiente</option>
+                <option value="5">Estudiante</option>
+                <option value="6">Investigador</option>
+                <option value="7">Otros</option>
+            </select>
+            <div class = "botonera" style = "margin-top: 20px">
+                <button type="button" id="botonActualizar" class="Guardar2">Actualizar</button>
+            </div>
+            <div class = "botonera">
+                <button id="volverPerfil2" type="button" class="Guardar2"> Cancelar </button>
+            </div>
+        </form>
+    </div>
+
+    <!---- Cargar Foto y Redes - Registro --->
+
+    <div id="seccionFoto" class="seccionFoto">
+        <div class="titulo1" style="height:50px">
+            <h1 tabindex="0" id="tituloNombre"></h1>
+        </div>
+        <div id="masInformacion">
+            <form id="form" action="http://geoportal.dane.gov.co/wssicole/cargue/uploadphp.php" method="post" enctype="multipart/form-data">
+                <div id="fotoUsuarioMask" class="fotoUsuario" style="opacity:1"></div>
+                <input id="file" class="fotoUsuario" aria-label="Agregar foto" type="file" name="file"/>
+                <input id="nombre" type="hidden" name="nombre"/>
+                <div id="emergenteImagen">
+                    <div id="preview">
+                    </div>
+
+                </div>
+                <input type="submit" id="botonload" name="submit" value="Subir"/>
+            </form>
+
+
+            <div id="infoUsuario">
+                <div id="actualizarInformacion" tabindex="0" aria-label='Abrir menú para actualizar los datos'>
+                    <img id="ImagenActualizar2" src="imagenes/actualizar.png" alt="icono actualizar" width="30px"/>
+                    <h3>Actualizar datos</h3>
+                </div>
+            </div>
+        </div>
+        <div id="sedes">
+            <div id="borde"></div>
+            <h2 tabindex="0">Sedes de interés</h2>
+            <div id="sedesAgregadas">
+            </div>
+            <button id="buscarSede" tabindex="0">
+                <img id="iconoSedes" alt="icono sedes" style="position:relative; float:left;" src="imagenes/sedes.png" width="36px"/>
+                <p>Agregar Nueva Sede</p>
+            </button>
+        </div>
+
+        <div id="redes">
+            <div class = "contenedorredesEsp" tabindex="0">
+                <div class="imagenredes" style="background-image:url(imagenes/telefono.png)"></div>
+                <p class="nombre2">Teléfono</p>
+                <p class="agregar">Agregar
+                    <img id="ImagenActualizar3" alt="icono actualizar" class="imagenActualizar"src="imagenes/actualizar.png" width="7%"/>
+                </p>
+            </div>
+            <div class = "contenedorredesEsp" tabindex="0">
+                <div class="imagenredes"></div>
+                <p class="nombre2">Facebook</p>
+                <p class="agregar">Agregar
+                    <img id="ImagenActualizar4" alt="icono actualizar" class="imagenActualizar"src="imagenes/actualizar.png" width="7%"/>
+                </p>
+            </div>
+
+            <div class = "contenedorredesEsp" tabindex="0">
+                <div class="imagenredes" style="background-image:url(imagenes/twitter.png)"></div>
+                <p class="nombre2">Twitter</p>
+                <p class="agregar">Agregar
+                    <img id="ImagenActualizar5" alt="icono actualizar" class="imagenActualizar"src="imagenes/actualizar.png" width="7%"/>
+                </p>
+            </div>
+
+            <div class = "contenedorredesEsp" tabindex="0">
+                <div class="imagenredes" style="background-image:url(imagenes/linkedin.png)"></div>
+                <p class="nombre2">Linkedin</p>
+                <p class="agregar">Agregar
+                    <img id="ImagenActualizar6" alt="icono actualizar" class="imagenActualizar"src="imagenes/actualizar.png" width="7%"/>
+                </p>
+            </div>
+        </div>
+        <div class = "botonera">
+            <button type="button" id="botonGrabar" class="Guardar2">Guardar</button>
+        </div>
+
+        <div class = "botonera">
+            <button id="volver2" type="button" class="Guardar2"> Volver </button>
+        </div>
+
+
+        <!--button id="botonGrabar">Crear Usuario</button>
+        <div id="volver2" style="margin-top:8%">Volver</div-->
+    </div>
+
+    <!------  Agregar Sede  -------->
+
+    <div  id="agregarSede" class="subventana" style=" margin-top: 14%;">
+        <div class="titulo1" style="height:40px">
+            <h1 id="tituloNombre3" tabindex="0"> </h1>
+        </div>
+        <label for="busquedacolegio">Nombre de la sede</label>
+        <input type="text" id="busquedacolegio" class="inputAzul" name="busquedacolegio" placeholder="ejemplo GIMNASIO SERES Y SABERES">
+        <div id="contenedorSedes">
+        </div>
+        <div id = "favoritosSede">
+            <p>Favoritos</p>
+        </div>
+        <div id = "contenedorFavoritos"></div>
+        <div class = "botonera" style = "margin-top:5%">
+            <button type="button" id="cancelarSede" class="Guardar2">Cancelar</button>
+        </div>
+
+
+    </div>
+
+    <div  id="contenedorJornadas" class="subventana" style="margin:10% 0 0 0; width:100%">
+
+        <div id="contenedorHorarios">
+            <h1 id="SchedulesSchoolTitle" tabindex="0">esto es un colegio</h1>
+            <fieldset aria-label="Formulario de selección de jornada" tabindex="0" class="schedule-checkboxGroup">
+                <div id = "ContenidoManana" class = "checkbox2">
+                    <div class="squaredOne">
+                        <input type="checkbox" value="manana" id="manana" name="manana" disabled = "true"/>
+                        <label for="manana"></label>
+                    </div>
+                    <div class = "textoCheck">Mañana</div>
+                </div>
+
+
+                <div id = "ContenidoTarde" class = "checkbox2">
+                    <div class="squaredOne">
+                        <input type="checkbox" id="tarde" class="checkbox-visible" name="tarde" value="tarde" disabled = "true"/>
+                        <label for = "tarde" ></label>
+                    </div>
+                    <div class = "textoCheck">Tarde</div>
+                </div>
+
+                <div id = "ContenidoNoche" class = "checkbox2">
+                    <div class="squaredOne">
+                        <input type="checkbox" class="checkbox-visible" name="noche" value="noche" id = "noche" disabled = "true"/>
+                        <label for = "noche" ></label>
+                    </div>
+                    <div class = "textoCheck">Noche</div>
+                </div>
+
+                <div id = "ContenidoFestivo" class = "checkbox2">
+                    <div class="squaredOne">
+                        <input type="checkbox" class="checkbox-visible" name="festivos" value="festivos" id ="festivos" disabled = "true"/>
+                        <label  for="festivos"></label>
+                    </div>
+                    <div class = "textoCheck">Fines de semana y festivos</div>
+                </div>
+
+                <div class = "checkbox2" id = "ContenidoCompleta">
+                    <div class="squaredOne">
+                        <input type="checkbox" class="checkbox-visible" value="completa" id="completa" name="completa" disabled = "true"/>
+                        <label for="completa"></label>
+                    </div>
+                    <div class = "textoCheck">Completa</div>
+                </div>
+            </fieldset>
+        </div>
+        <div class = "botonera" style = "margin-top:10%">
+            <button type="button" id="GuardarJornada" class="Guardar">Guardar</button>
+        </div>
+
+        <div class = "botonera">
+            <button id="volverJornada" type="button" class="Guardar" style = "background-color:rgb(238, 238, 238)"> Volver </button>
+        </div>
+    </div>
+
+
+
+
+    <!------  Perfil  -------->
+
+
+    <div id="seccionPerfil" class="seccionFoto" style="margin-top:12%; overflow-y: auto">
+        <div class="titulo1" style="height:50px">
+            <h1 id="tituloNombre" tabindex="0"></h1>
+        </div>
+        <div id="masInformacion">
+            <form id="form1" action="http://geoportal.dane.gov.co/wssicole/cargue/uploadphp.php" method="post" enctype="multipart/form-data">
+                <div id="fotoUsuarioMask" class="fotoUsuario" style="opacity:1"></div>
+                <input id="file2" class="fotoUsuario"  aria-label="Agregar foto" type="file" name="file2"></input>
+                <input id="nombre" type="hidden" name="nombre"/>
+                <div id="emergenteImagen">
+                    <div id="preview">
+                    </div>
+
+                </div>
+
+                <input type="submit" id="botonload" name="submit" value="Subir"/>
+            </form>
+
+
+            <div id="infoUsuario">
+                <div id="actualizarInformacion" tabindex="0" aria-label='Abrir menú para actualizar los datos'>
+                    <img  id="ImagenActualizar2" alt="icono actualizar" src="imagenes/actualizar.png" width="30px"/>
+                    <h3 tabindex="0">Actualizar datos</h3>
+                </div>
+            </div>
+        </div>
+        <div id="sedes">
+            <div id="borde"></div>
+            <h2 tabindex="0">Sedes donde estudias o trabajas:</h2>
+            <div id="sedesAgregadasPerfil"></div>
+            <button id="buscarSede">
+                <img id="iconoSedes2" alt="icono sedes"  style="position:relative; float:left;" src="imagenes/sedes.png" width="36px"/>
+                <p>Agregar Nueva Sede</p>
+            </button>
+        </div>
+        <div id="redes" style="margin-top:5%">
+            <div class = "contenedorredesEsp" tabindex="0">
+                <div class="imagenredes" style="background-image:url(imagenes/telefono.png)"></div>
+                <p class="nombre2">Teléfono</p>
+                <p class="agregar">Agregar
+                    <img id="ImagenActualizar7" alt="icono actualizar" class="imagenActualizar"src="imagenes/actualizar.png"/>
+                </p>
+            </div>
+
+            <div class = "contenedorredesEsp" tabindex="0">
+                <div class="imagenredes"></div>
+                <p class="nombre2">Facebook</p>
+                <p class="agregar">Agregar
+                    <img id="ImagenActualizar8" alt="icono actualizar" class="imagenActualizar"src="imagenes/actualizar.png"/>
+                </p>
+            </div>
+
+            <div class = "contenedorredesEsp" tabindex="0">
+                <div class="imagenredes" style="background-image:url(imagenes/twitter.png)"></div>
+                <p class="nombre2">Twitter</p>
+                <p class="agregar">Agregar
+                    <img id="ImagenActualizar9" alt="icono actualizar" class="imagenActualizar"src="imagenes/actualizar.png" />
+                </p>
+            </div>
+
+            <div class = "contenedorredesEsp" tabindex="0">
+                <div class="imagenredes" style="background-image:url(imagenes/linkedin.png)"></div>
+                <p class="nombre2">LinkedIn</p>
+                <p class="agregar">Agregar
+                    <img id="ImagenActualizar10" alt="icono actualizar" class="imagenActualizar"src="imagenes/actualizar.png"/>
+                </p>
+            </div>
+        </div>
+        <div class = "botonera">
+            <button type="button" id="grabarPerfil" class="Guardar2">Guardar</button>
+        </div>
+
+        <div class = "botonera">
+            <button id="volver6" type="button" class="Guardar2"> Volver </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="sedeCuentanos" class="subventana">
+        <div class="titulo2">
+            <h1 id="yourSchoolTellUs" tabindex="0" style="margin-top:-1px;margin-left:10%">Tu sede: Cuéntanos</h1>
+            <div class="linea" style="margin-left:10%"></div>
+        </div>
+        <div id="menuGrafico" class="menuGrafico">
+            <button id="infraestructura" class="opcionesMenu1">
+                <div class="imagenMenuGrafico"></div>
+                <div class="contenedorNombre">
+                    <h1>Infraestructura</h1>
+                </div>
+            </button>
+            <!--div id="infraestructuraMask" class="opcionesMenu1Mask"></div-->
+
+            <button id="dotacion" class="opcionesMenu1">
+                <div class="imagenMenuGrafico" style="background-image: url(imagenes/dotacion.png);"></div>
+                <div class="contenedorNombre">
+                    <h1>Dotación</h1>
+                </div>
+            </button>
+
+
+            <button id="convivencia" class="opcionesMenu1">
+                <div class="imagenMenuGrafico" style="background-image: url(imagenes/convivencia.png);"></div>
+                <div class="contenedorNombre">
+                    <h1>Clima Escolar</h1>
+                </div>
+            </button>
+
+            <button id="asistencia" class="opcionesMenu1">
+                <div class="imagenMenuGrafico" style="background-image: url(imagenes/asistencia.png);"></div>
+                <div class="contenedorNombre">
+                    <h1>¿Tu profesor ha faltado a clase?</h1>
+                </div>
+            </button>
+
+
+            <button id="transporteMenu" class="opcionesMenu1" >
+                <div class="imagenMenuGrafico" style="background-image: url(imagenes/transp.png); background-size: auto 80%;"></div>
+                <div class="contenedorNombre">
+                    <h1>Transporte</h1>
+                </div>
+            </button>
+
+            <button id="movilMenu" class="opcionesMenu1" >
+                <div class="imagenMenuGrafico" style="background-image: url(imagenes/conectividad.png); background-size: auto 80%;"></div>
+                <div class="contenedorNombre">
+                    <h1>Conectividad móvil</h1>
+                </div>
+            </button>
+
+        </div>
+    </div>
+
+    <div id="encabezadoInstitucion" class="subventana" style="height: auto; margin-top:20%;display:block">
+        <p id = "introduccion" style = "margin-top:0; display: none">SICOLE es un proyecto en crecimiento.  Aunque por ahora sólo estamos en Bogotá y Soacha, pronto estaremos en otras ciudades y ofreceremos nuevos servicios.  Para mantenerte informado nos gustaría contar con algunos datos tuyos.   Si quieres registrarte  por favor <a onClick="crearCuentaUsuario();">haz clic aquí</a>.  De lo contrario, continua con la encuesta. </p>
+        <div id="encabezado" class="titulo2">
+            <h1 id="surveyTitle" tabindex="0" style="margin-top:-1px"></h1>
+        </div>
+        <div id = "sedeEncuesta">
+            <label for="nombreSede">Nombre de la sede</label>
+            <select type="text" id="nombreSede" class="inputAzul" name="nombreSede">
+            </select>
+        </div>
+
+    </div>
+
+    <form id="infraestructuraVentana" class="subventana" style="height:60%">
+        <fieldset class="fieldset-radio-button">
+            <div class="radioButtons">
+                <input id="urbano" type="radio" name="categoria" value="U" required>
+                <label for="urbano">Urbano</label>
+                <input id="rural" type="radio" name="categoria" value="R" required>
+                <label for="rural">Rural</label>
+            </div>
+        </fieldset>
+
+
+        <div class="listas">
+            <label for="propiedadLote">Propiedad Lote</label>
+            <select id="propiedadLote" name="propiedad_lote" class="inputAzul" style="cursor:pointer;" required>
+                <option value="1" default>Nación</option>
+                <option value="2">Departamento</option>
+                <option value="3">Distrito</option>
+                <option value="4">Municipio</option>
+                <option value="5">No definido o se desconoce</option>
+                <option value="6">Otros</option>
+            </select>
+        </div>
+        <div class="listas">
+            <label>Propiedad Edificación</label>
+            <select id="propiedadEdificacion" name="propiedad_edifica" class="inputAzul" style="cursor:pointer">
+                <option value="1" default>Persona natural o sociedad</option>
+                <option value="2">Comunidad religiosa</option>
+                <option value="3">Asociación de padres de familia</option>
+                <option value="4">Cooperativa</option>
+                <option value="5">Otra</option>
+            </select>
+        </div>
+        <div class="listas">
+            <label for="bibliotecaCentral">No de Bibliotecas Centrales</label>
+            <!--<select id="bibliotecaCentral" name="biblioteca_central" class="inputAzul" style="cursor:pointer">
+               <option value="1" default>1</option>
+                <option value="NO">No</option>
+            </select>-->
+            <input type="number" value=0 min="o" max="20" id="bibliotecaCentral" class="inputAzul" style = "width:22%; margin-left:8%"/>
+        </div>
+        <div class="listas">
+            <label for="bibliotecaAula">No de Bibliotecas por Aula</label>
+            <!--<select id="bibliotecaAula" name="biblioteca_aula" class="inputAzul" style="cursor:pointer">
+               <option value="SI" default>Sí</option>
+                <option value="NO"> No</option>
+            </select>-->
+
+            <input type="number" min="o" max="20" value="0" id="bibliotecaAula" class="inputAzul" style="margin-left:39px; width:22%"/>
+        </div>
+        <div class = "botonera" style = "margin-top: 4%">
+            <!--<button id="volver96" type="button" class="Guardar2"> Volver </button>-->
+            <button type="button" id="GuardarInfraestructura" class="Guardar2">Enviar respuesta</button>
+        </div>
+        <div class = "botonera" style = "margin-top: 10px; margin-bottom:2%">
+            <button type="button"  class="Guardar2 volverMenu">Volver</button>
+        </div>
+    </form>
+    <div id = "avisoConvivencia">
+        <p tabindex="0" id = "mensajeError" style = "padding: 3px 10px;">Hola amigos</p>
+        <div class = "botonera" style = "margin-top: 10px; margin-bottom:2%">
+            <button type="button" class="Guardar2 volverMenu">Volver</button>
+        </div>
+        <div class = "botonera" style = "margin-top: 10px; margin-bottom:2%">
+            <button id = "irAPerfil" type="button" class="Guardar2">Ir a perfil</button>
+        </div>
+    </div>
+
+    <form id="convivenciaEscolar" class="subventana" style="margin-top:2%; height:100%">
+        <div id="convivenciaEncuesta" class="encuesta"style= "height: 81%">
+            <p tabindex="0" style = "font-size:0.8rem">El propósito de esta encuesta es poder conocer acerca del clima escolar de tu colegio, con el fin de poder generar información que pueda ser utilizada por los directores y maestros para mejorar la convivencia y el ambiente escolar. Tus respuestas son confidenciales. Gracias por acceder a completarla.</p>
+            <h2 tabindex="0">Seguridad y confianza</h2>
+            <p tabindex="0">¿Existe un ambiente agradable y de sana convivencia en tu colegio?</p>
+
+            <div>
+                <fieldset class="fieldset-radio-button">
+                    <input tabindex="0" id="seguridad1Si" type="radio" name="seguridad1" value="1" onchange = "comprobarConvivencia()" required/>
+                    <label for="seguridad1Si">Sí</label>
+                    <input tabindex="0" id="seguridad1No" type="radio" name="seguridad1" value="0" onchange = "comprobarConvivencia()" required/>
+                    <label for="seguridad1No">No</label>
+                </fieldset>
+            </div>
+            <p tabindex="0">¿Te sientes seguro en tu colegio?</p>
+            <div>
+                <fieldset class="fieldset-radio-button">
+                    <input id="seguridad2Si" type="radio" name="seguridad2" value="1" onchange = "comprobarConvivencia()" required/>
+                    <label for="seguridad2Si">Sí</label>
+                    <input id="seguridad2No" type="radio" name="seguridad2" value="0" onchange = "comprobarConvivencia()" required/>
+                    <label for="seguridad2No">No</label>
+                </fieldset>
+            </div>
+
+            <h2 tabindex="0">Agresividad y acoso</h2>
+            <p tabindex="0">La semana pasada alguien de tu colegio</p>
+            <div style = "width: 100%; height: 25px">
+                <div id = "agresividad1" class = "checkbox2" style="width: auto; height:auto; float:left">
+                    <div class="squaredOne">
+                        <input type="checkbox" value="manoteo" id="manoteo" name="manoteo"/>
+                        <label for="manoteo"></label>
+                    </div>
+                </div>
+                <p tabindex="0" style = "float: left; margin: 0px 0 0 10px;">de tu curso</p>
+
+                <div id = "agresividad2" class = "checkbox2" style="width: auto; height:auto; float:left; margin: 0px 0 0 10px;">
+                    <div class="squaredOne">
+                        <input type="checkbox" value="manoteo" id="manoteoOtro" name="manoteoOtro"/>
+                        <label for="manoteoOtro"></label>
+                    </div>
+                </div>
+                <p tabindex="0" style = "float: left; margin: 0px 0 0 10px;">de otro curso</p>
+            </div>
+
+
+            <div style = "width: 100%">
+                <p tabindex="0" style = "margin-bottom: 6px">¿Te insultó haciéndote sentir mal?</p>
+                <select id="agresividad3" name="agresividad3" class="inputAzul" style="cursor:pointer;" onchange ="ningunaVez(this.id)" required>
+                    <option value="1" default>Ninguna vez</option>
+                    <option value="2">Una vez</option>
+                    <option value="3">De 2 a 4 veces</option>
+                    <option value="4">5 o más veces</option>
+                </select>
+            </div>
+            <p tabindex="0" style = "margin: 2px 0 6px 0">¿Lo hace repetidamente?</p>
+            <div>
+                <fieldset class="fieldset-radio-button">
+                    <label for="agresividad4Si">Sí</label>
+                    <input id="agresividad4Si" type="radio" name="agresividad4" value="1" required/>
+                    <label for="agresividad4No">No</label>
+                    <input id="agresividad4No" type="radio" name="agresividad4" value="0" required checked/>
+                </fieldset>
+            </div>
+
+            <div style = "width: 100%">
+                <p tabindex="0" style = "margin-bottom: 6px">¿Amenazó con pegarte?</p>
+                <select id="agresividad5" name="agresividad5" class="inputAzul" style="cursor:pointer;" onchange ="ningunaVez(this.id)" required>
+                    <option value="1" default>Ninguna vez</option>
+                    <option value="2">Una vez</option>
+                    <option value="3">De 2 a 4 veces</option>
+                    <option value="4">5 o más veces</option>
+                </select>
+            </div>
+            <p tabindex="0" style = "margin: 2px 0 6px 0">¿Lo hace repetidamente?</p>
+            <div>
+                <fieldset class="fieldset-radio-button">
+                    <label for="agresividad6Si">Sí</label>
+                    <input id="agresividad6Si" type="radio" name="agresividad6" value="1" required/>
+                    <label for="agresividad6No">No</label>
+                    <input id="agresividad6No" type="radio" name="agresividad6" value="0" required checked/>
+                </fieldset>
+            </div>
+
+            <p tabindex="0" style = "margin-bottom: 6px">¿Te hizo daño intencionalmente dándote golpes?</p>
+            <select id="agresividad7" name="agresividad6" class="inputAzul" style="cursor:pointer;" onchange ="ningunaVez(this.id)" required>
+                <option value="1" default>Ninguna vez</option>
+                <option value="2">Una vez</option>
+                <option value="3">De 2 a 4 veces</option>
+                <option value="4">5 o más veces</option>
+            </select>
+            <p tabindex="0" style = "margin: 2px 0 6px 0">¿Lo hace repetidamente?</p>
+            <div>
+                <fieldset class="fieldset-radio-button">
+                    <label for="agresividad8Si">Sí</label>
+                    <input id="agresividad8Si" type="radio" name="agresividad8" value="1" required/>
+                    <label for="agresividad8No">No</label>
+                    <input id="agresividad8No" type="radio" name="agresividad8" value="0" required checked/>
+                </fieldset>
+            </div>
+            <h2 tabindex="0">Discriminación</h2>
+            <p tabindex="0">La semana pasada viste que alguien fuera discriminado por:</p>
+            <select id="discriminacion1" name="discriminacion1" class="inputAzul" style="cursor:pointer;" required>
+                <option value="1" default>Ninguna</option>
+                <option value="2">Su orientación sexual</option>
+                <option value="3">Su género</option>
+                <option value="4">Su raza</option>
+                <option value="5">Su condición socioeconómica</option>
+            </select>
+
+            <p tabindex="0" style = "margin: 2px 0 6px 0">¿Alguna vez te has sentido discriminado por alguna razón?</p>
+            <div>
+                <fieldset class="fieldset-radio-button">
+                    <label for="discriminacion2Si">Sí</label>
+                    <input id="discriminacion2Si" type="radio" name="discriminado" value="1" onchange = "comprobarConvivencia()" required/>
+                    <label for="discriminacion2No">No</label>
+                    <input id="discriminacion2No" type="radio" name="discriminado" value="0" onchange = "comprobarConvivencia()" required/>
+                </fieldset>
+            </div>
+
+            <h2 tabindex="0">Peleas</h2>
+            <p tabindex="0">La semana pasada</p>
+            <div>
+                <p tabindex="0">¿Insultaste o amenazaste con pegarle o le pegaste a alguien de tu colegio?</p>
+                <select id="peleas1" name="pegaste" class="inputAzul" style="cursor:pointer;" required>
+                    <option value="1" default>Ninguna vez</option>
+                    <option value="2">Una vez</option>
+                    <option value="3">De 2 a 4 veces</option>
+                    <option value="4">5 o más veces</option>
+                </select>
+            </div>
+            <div>
+                <p tabindex="0">¿Cuántas veces tuviste una pelea física con otra persona?</p>
+                <select id="peleas2" name="peleaInd" class="inputAzul" style="cursor:pointer;" required>
+                    <option value="1" default>Ninguna vez</option>
+                    <option value="2">Una vez</option>
+                    <option value="3">De 2 a 4 veces</option>
+                    <option value="4">5 o más veces</option>
+                </select>
+            </div>
+
+            <div>
+                <p tabindex="0">¿Cuántas veces tuviste una pelea física grupal?</p>
+                <select id="peleas3" name="peleGrupal" class="inputAzul" style="cursor:pointer;" required>
+                    <option value="1" default>Ninguna vez</option>
+                    <option value="2">Una vez</option>
+                    <option value="3">De 2 a 4 veces</option>
+                    <option value="4">5 o más veces</option>
+                </select>
+            </div>
+
+            <h2 tabindex="0">Armas</h2>
+            <p tabindex="0">¿La semana pasada viste que alguien utilizara armas en tu colegio?</p>
+            <div>
+                <fieldset class="fieldset-radio-button">
+                    <label for="armas1Si">Sí</label>
+                    <input id="armas1Si" type="radio" name="armas1" value="1"  onchange = "comprobarConvivencia()" required/>
+                    <label for="armas1No">No</label>
+                    <input id="armas1No" type="radio" name="armas1" value="0"  onchange = "comprobarConvivencia()" required/>
+                </fieldset>
+            </div>
+            <p tabindex="0">¿Cuántas veces alguien te amenazó con un arma?</p>
+            <select id="armas2" name="peleGrupal" class="inputAzul" style="cursor:pointer;" required>
+                <option value="1" default>Ninguna vez</option>
+                <option value="2">Una vez</option>
+                <option value="3">De 2 a 4 veces</option>
+                <option value="4">5 o más veces</option>
+            </select>
+            <div class = "botonera" style = "margin-top: 10px; margin-bottom:2%">
+                <button type="button" id="GuardarConvivencia" class="Guardar2" style = "background-color: #eee">Enviar respuestas</button>
+            </div>
+            <div class = "botonera" style = "margin-top: 10px; margin-bottom:2%">
+                <button type="button" class="Guardar2 volverMenu">Volver</button>
+            </div>
+            <div tabindex="0" class= "derechosEncuestas"></div>
+            <!--
+            9.	¿La semana pasada viste que alguien utilizara armas en tu colegio? (S/N)
+10.	¿Cuántas veces alguien te amenazó con un arma?
+ninguna, 1, 2 a 4,  5 o más
+            -->
+        </div>
+    </form>
+
+    <form id="asistenciaDocente" class="subventana" style="height:70%;">
+        <div class="listas">
+            <label for="mesDocente" style = "float: left; margin-right: 8%; margin-top: 5px;">Fecha</label>
+            <!--<select id="mesDocente" name="id_meses" class="inputAzul" style="cursor:pointer; width:45%; margin-top:0; height: 30px" onclick= "asistenciaDocenteClic()" required>
+                                <option value "" default></option>
+                                <option value="1" >Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                                <option value="7" >Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>-->
+            <input class = "inputAzul" type="text" id="fechaDoc"/>
+        </div>
+
+        <div class="listas">
+            <label for="gradoDocente" style = "float: left; margin-right: 5%; margin-top: 5px;">Grado</label>
+            <select id="gradoDocente" name="id_grado" class="inputAzul" style="cursor:pointer; width:45%; margin-top:0; height: 30px" onclick= "asistenciaDocenteClic()" required>
+                <option value = "" default></option>
+                <option value="1">Primero</option>
+                <option value="2"> Segundo</option>
+                <option value="3">Tercero</option>
+                <option value="4">Cuarto</option>
+                <option value="5">Quinto</option>
+                <option value="6">Sexto</option>
+                <option value="7">Séptimo</option>
+                <option value="8">Octavo</option>
+                <option value="9">Noveno</option>
+                <option value="10">Décimo</option>
+                <option value="11">Once</option>
+            </select>
+        </div>
+
+
+        <div class="listas" style="margin-top:20px">
+            <label for="materiaDocente">Área de conocimiento</label>
+            <select id="materiaDocente" name="id_materia" class="inputAzul" style="cursor:pointer;" onclick= "asistenciaDocenteClic()" required>
+                <option value "" default></option>
+                <option value="1" >Ciencias naturales y educación ambiental</option>
+                <option value="2"> Ciencias sociales, historia, geografía, constitución política y democracia</option>
+                <option value="3">Educación artística</option>
+                <option value="4">Educación ética y en valores humanos</option>
+                <option value="5">Educación física recreación y deportes</option>
+                <option value="6">Educación religiosa</option>
+                <option value="7">Humanidades, lengua castellana e idiomas extranjeros</option>
+                <option value="8">Matemáticas</option>
+                <option value="9">Tecnología e informática</option>
+            </select>
+        </div>
+        <p> Cuántas veces no ha asistido el docente a clase:</p>
+        <fieldset class="fieldset-radio-button">
+            <div style = "width: 100%">
+                <input id="asistencia1" type="radio" name="asistenciaDocente" value="1" onchange = "asistenciaDocenteClic()" checked required/>
+                <label for="asistencia1">Nunca</label>
+            </div>
+            <div style = "width: 100%">
+                <input id="asistencia2" type="radio" name="asistenciaDocente" value="2" onchange = "asistenciaDocenteClic()" required/>
+                <label for="asistencia2">De una a dos veces</label>
+            </div>
+            <div style = "width: 100%">
+                <input id="asistencia3" type="radio" name="asistenciaDocente" value="3" onchange = "asistenciaDocenteClic()" required/>
+                <label for="asistencia3">De 3 a 5 veces </label>
+            </div>
+            <div style = "width: 100%">
+                <input id="asistencia4" type="radio" name="asistenciaDocente" value="4" onchange = "asistenciaDocenteClic()" required/>
+                <label for="asistencia4">Más de cinco</label>
+            </div>
+        </fieldset>
+
+
+
+        <div class = "botonera" style = "margin-top: 10px; margin-bottom:2%">
+            <button type="button" id="botonAsistencia" class="Guardar2" style = "background-color: #EEE">Enviar respuestas</button>
+        </div>
+        <div class = "botonera" style = "margin-top: 10px; margin-bottom:2%">
+            <button type="button" class="Guardar2 volverMenu">Volver</button>
+        </div>
+        <!-- <button type="button" id="volver98" class="Guardar2" style="display:block"> Volver </button>-->
+    </form>
+
+
+    <form  id="transporteFormulario" class="subventana" style="height:60%;">
+
+        <p>Cuánto tiempo tardas en movilizarse de:</p>
+        <fieldset class="fieldset-radio-button">
+            <div style = "width: 100%">
+                <input id="transporte1" type="radio" name="transporte1" value="casacolegio" required checked/>
+                <label for="transporte1">De tu casa al colegio </label>
+            </div>
+            <div style = "width: 100%; margin-bottom: 4%;">
+                <input id="transporte2" type="radio" name="transporte1" value="colegiocasa" required/>
+                <label for="transporte2">Del colegio a tu casa </label>
+            </div>
+        </fieldset>
+
+
+        <p id = "letrasOrigen" style = "margin-bottom: 2px;">Casa</p>
+        <input type="text" id="rutaOrigen" name="rutaOrigen" class="inputAzul" style="cursor:pointer; width: 85%; height: 30px;"  placeholder="ejemplo Cl. 1 #12-34, Bogota Colombia" required onchange = "validarTransporte()"/>
+        <div id = "ubicadorOrigen" class = "ubicadorTransporte"> </div>
+
+        <p id = "letrasDestino" style = "margin-bottom: 2px;">Colegio</p>
+        <input type="text" id="rutaDestino" name="rutaDestino" class="inputAzul" style="cursor:pointer; width: 85%; height: 30px;"  placeholder = "ejemplo Cl. 2 #56-78, Bogota Colombia" required onchange = "validarTransporte()" />
+        <div id = "ubicadorDestino" class = "ubicadorTransporte"> </div>
+
+        <p class="mensaje-error">
+            <select id="medioTransporte" name="medioTransporte" class="inputAzul" style="cursor:pointer; margin-top:5%; height:30px" required onchange = "validarTransporte()" data-validation="required" data-validation-error-msg='Este campo es obligatorio' >
+
+                <option value="" default>Medio de transporte</option>
+                <option value="1">Ruta escolar</option>
+                <option value="2">Automóvil</option>
+                <option value="3">Bus de servicio público</option>
+                <option value="4">Bicicleta</option>
+                <option value="5">Caminando</option>
+                <option value="6">Otro</option>
+
+            </select>
+        </p>
+
+        <input type="number" id="horasTransporte" name="horasTransporte" class="inputAzul inputTiempos" placeholder="ejemplo 3" required data-validation="required" data-validation-error-msg=' '/>
+        <p class = "pTiempos" >horas</p>
+        <input type="number" id="minTransporte" name="minTransporte" class="inputAzul inputTiempos" placeholder="ejemplo 45" style= "margin-left: 60px;" required onchange = "validarTransporte()" required data-validation="required" data-validation-error-msg=' '/>
+        <p class = "pTiempos">minutos</p>
+
+        <div style="text-align:left"><p><br><br>     </p></div>
+
+        <div style=" text-align:left; width: 100%;" id = "errorHours" class = "errorHour"><p><br><br>Las horas son un campo obligatorio</p></div>
+        <div style=" width: 100%; display: inline-block;" id = "errorMinutes" class = "errorMinute"><p><br><br>Los minutos son un campo obligatorio</p></div>
+
+        <!--<div style="background: red;  width:50% " id = "errorMinutes" class = "errorMinut">Las contraseñas no coinciden</div>-->
+
+
+        <div class = "botonera" style="height:55px">
+            <button type="button" id="transportesub" class="Guardar2" style="margin-top:20px; background-color:#EEE">Enviar respuesta</button>
+        </div>
+        <div class = "botonera" style = "margin-top: 10px; margin-bottom:2%">
+            <button type="button" class="Guardar2 volverMenu">Volver</button>
+        </div>
+
+    </form>
+    <form action="mailto:aaarellanor@dane.gov.co?Subject=SICOLE" id="contactoVentana" class="subventana"  style = "margin-top:25% " method="POST" ENCTYPE="text/plain">
+        <div id="encabezado1" class="titulo2">
+            <h1 id="contactTitle" tabindex="0" style="margin-top:-1px">Contáctenos</h1>
+        </div>
+        <div id="nombreDiv" class="displayTexto">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="inputAzul" style="cursor:pointer;" required/>
+        </div>
+        <div class="displayTexto">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="E-mail" class="inputAzul" style="cursor:pointer;" required/>
+        </div>
+        <div class="displayTexto">
+            <label for="comentario">Deje su comentario</label>
+            <textarea rows="4" cols="50" name="comentario" id="comentario" class="inputAzul" form="contactoVentana" style="cursor:pointer; height: 110px" required></textarea>
+            <!---input type="texto" id="comentario" name="comentario" class="inputAzul" style="cursor:pointer; height:30%"--->
+        </div>
+        <div class="botonera" style="height:100px">
+            <!--<button type="button" id="volver99" class="Guardar2" style="margin-top:20px">Volver</button>-->
+            <button type="submit" id="Enviarcomentario" class="Guardar2" style="margin-top:20px">Enviar</button>
+        </div>
+    </form>
+
+
+    <div id="infoSicole">
+        <center id="aboutSicole" style="margin-top: 20px;"  tabindex="0">
+            <img id="sicoleLogo" alt="logo sicole" src="imagenes/sicoleLogo.png" width="80%"/>
+            <p><b>Sistema de Información Geográfica de Colegios</b></p>
+            <p><b>Sícole Versión 1.0</b></p>
+            <p>Departamento Administrativo Nacional de Estadística (DANE)</p>
+            <p>Todos los derechos reservados</p>
+        </center>
+        <div class="botonera" style="height:100px">
+            <button id="terminosUso" class="Guardar2">
+                Términos de Uso
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--<div id="abajobotones" style="">
+        <div id="botonmostrar" style="display: none;height: auto;position: fixed;z-index: 790;bottom: 50px; left: 0px;">
+                <img src="./imagenes/escuelas.png" width="58px" style="padding: 5px;"/>
+        </div>
+        <div id="barrabotones" style="display: none;height: auto;position: fixed;z-index: 790;top: 120px; right: 0px;">
+                <img id="botondatos" src="./imagenes/datos.png"  width="58px" style="padding: 5px;"/>
+                <img id="botonfiltro" src="./imagenes/filtro.png"  width="58px" style="padding: 5px;"/>
+                <img id="botondist" src="./imagenes/dist.png"  width="58px" style="padding: 5px;"/>
+                <img id="botonra" src="./imagenes/ra.png"  width="58px" style="display:none; padding: 5px;" onclick="ejecutarGuiar();"/>
+                <img id="botonradar" src="./imagenes/radar.png"  width="58px" style="padding: 5px;"/>
+<!--img id="botonisocronas" src="./imagenes/isocronas.png"  width="58px" style="padding: 5px;"/-->
+<!--</div>
+
+</div>-->
+
+<div id ="mostrarResultados">
+    <div id = "imagenMostrarFiltro"></div>
+    <div id = "LetrasMostrarFiltros">
+        <h2>Resultados del filtro </h2>
+    </div>
+</div>
+<div id = "ventanaEncuesta"></div>
+<div id = "contenedorEncuesta">
+
+    <div id= "tituloConectividad">
+        <div id = "iconoConectividad"></div>
+        <h1>Conectividad móvil</h1>
+    </div>
+
+    <div = id="loginMovil">
+        <p id = "introduccion" style = "margin-top:0; font-size:0.9rem ">SICOLE es un proyecto en crecimiento.  Aunque por ahora sólo estamos en Bogotá y Soacha, pronto estaremos en otras ciudades y ofreceremos nuevos servicios.  Para mantenerte informado nos gustaría contar con algunos datos tuyos.   Si quieres registrarte  por favor <a onClick="crearCuentaUsuario();">haz clic aquí</a>.  De lo contrario, continua con la encuesta. </p>
+        <label for="tipoDocMovil" style="width: 100%; float: left;">Tipo de documento</label>
+        <select id="tipoDocMovil" name="tipoDocMovil" class="inputAzul" style="height: 30px; width:98%">
+            <option value = "" default></option>
+            <option value=1> Cédula de ciudadanía</option>
+            <option value=2> Tarjeta de Identidad</option>
+            <option value=3> Cédula de extranjería o Identificación de Extranjería</option>
+            <option value=4> Registro Civil de Nacimiento</option>
+            <option value=5> Número de Identificación Personal (NIP) </option>
+            <option value=6> Número Único de Identificación Personal (NUIP) </option>
+            <option value=7> No de Identificación - Secretaría de Educación </option>
+            <option value=8> Certificado de Cabildo </option>
+        </select>
+        <label for="NumerodeDocumentoMoviles" style="width: 100%; float: left; margin-top:10px">Número de documento</label>
+        <input type="text" id="NumerodeDocumentoMoviles" name="NumerodeDocumentoMoviles" class="inputAzul" style="cursor: pointer"/>
+        <div class="botonera"  style = "margin-top: 10px; margin-bottom:40px">
+            <button type="button" id="botonComprobarId" class="Guardar2" style = "background-color: #eee">Validar documento</button>
+        </div>
+    </div>
+
+    <div id="regresarPregunta" class = "botonEncuestaMover" style = "margin-left: 5%;"><p> < </p></div>
+    <div = id="encuestaMovil">
+        <div  id = "0Movil" class = "encuestaOculta">
+            <p style = "margin-top:0">¿Tienes teléfono móvil inteligente (smartphone)?</p>
+            <label for="resp0">
+                <input id="resp0" type="radio" name="resp0" value="1" />
+                Sí</label>
+            <label for="resp0">
+                <input id="resp0" type="radio" name="resp0" value="0"/>
+                No</label>
+        </div>
+
+        <div id = "1Movil" class = "encuestaOculta">
+            <p>A pesar de no tener teléfono móvil inteligente (smartphone), accedes al servicio de telefonía móvil por:</p>
+            <div>
+                <label for="resp1">
+                    <input id="resp1" type="radio" name="resp1" value="1" required onchange = "otrosAccesos()"/>
+                    Teléfono familiar</label>
+                <label for="resp1">
+                    <input id="resp1" type="radio" name="resp1" value="2" required onchange = "otrosAccesos()"/>
+                    Teléfono de amigo</label>
+                <label for="resp1">
+                    <input id="resp1" type="radio" name="resp1" value="3" required onchange = "otrosAccesos()"/>
+                    No accedes</label>
+            </div>
+        </div>
+        <div id = "2Movil" class = "encuestaOculta">
+            <p>¿Dónde usas tu teléfono móvil inteligente (smartphone)?</p>
+            <div>
+                <label for="resp2">
+                    <input id="resp2" type="radio" name="resp2" value="colegio" required/>
+                    Colegio</label>
+                <label for="resp2">
+                    <input id="resp2" type="radio" name="resp2" value="casa" required/>
+                    Casa</label>
+                <label for="resp2">
+                    <input id="resp2" type="radio" name="resp2" value="ambas" required/>
+                    Ambas</label>
+            </div>
+        </div>
+        <div id = "3Movil" class = "encuestaOculta2">
+            <p>¿Dispones de conexión a internet en tu teléfono móvil inteligente (smartphone)?</p>
+            <div>
+                <label for="resp3">
+                    <input id="resp3" type="radio" name="resp3" value="1" required/>
+                    Sí</label>
+                <label for="resp3">
+                    <input id="resp3" type="radio" name="resp3" value="0" required/>
+                    No</label>
+            </div>
+        </div>
+        <div id = "31Movil" class = "encuestaOculta">
+            <p>¿Qué tipo de conexión?</p>
+            <div>
+                <label for="resp31">
+                    <input id="resp31" type="radio" name="resp31" value="1" required/>
+                    Plan de datos</label>
+                <label for="resp31">
+                    <input id="resp31" type="radio" name="resp31" value="0" required/>
+                    Conexión Wifi</label>
+            </div>
+        </div>
+        <div id = "4Movil" class = "encuestaOculta">
+            <p>¿Con qué frecuencia usas el teléfono móvil inteligente (smartphone)? </p>
+            <div>
+                <label for="resp4">
+                    <input id="resp4" type="radio" name="resp4" value="1" required/>
+                    Todos los días de la semana</label>
+                <label for="resp4">
+                    <input id="resp4" type="radio" name="resp4" value="2" required/>
+                    Al menos una vez a la semana</label>
+                <label for="resp4">
+                    <input id="resp4" type="radio" name="resp4" value="3" required/>
+                    Al menos una vez al mes</label>
+            </div>
+        </div>
+        <p id ="conQueFrec" style="display:none;">¿Con qué frecuencia usas las siguientes aplicaciones desde el teléfono móvil inteligente (smartphone)?</p>
+        <div id = "5Movil" class = "encuestaOculta">
+            <div class = "appEncuesta">
+                <div class = "imagenRedesSociales"></div>
+                <p style = "text-align: center; font-size: 0.9rem; font-weight: normal;">Facebook</p>
+                <div>
+                    <label for="resp5">
+                        <input id="resp5" type="radio" name="resp5" value="1" required/>
+                        Todos los días de la semana</label>
+                    <label for="resp5">
+                        <input id="resp5" type="radio" name="resp5" value="2" required/>
+                        Al menos una vez a la semana</label>
+                    <label for="resp5" style= "width: 100%">
+                        <input id="resp5" type="radio" name="resp5" value="3" required/>
+                        Al menos una vez al mes</label>
+                    <label for= "resp5">
+                        <input id="resp5" type="radio" name="resp5" value="4"required/>
+                        Nunca</label>
+                </div>
+            </div>
+        </div>
+        <div id = "6Movil" class = "encuestaOculta">
+            <div class = "imagenRedesSociales" style= "background-image: url(imagenes/whatsapp.png)" ></div>
+            <p style = "text-align: center; font-size: 0.9rem; font-weight: normal;">Whatsapp</p>
+            <div>
+                <label for="resp6">
+                    <input id="resp6" type="radio" name="resp6" value="1" onchange = "verificacionMovil(this.id)" required/>
+                    Todos los días de la semana</label>
+                <label for="resp6">
+                    <input id="resp6" type="radio" name="resp6" value="2" onchange = "verificacionMovil(this.id)" required/>
+                    Al menos una vez a la semana</label>
+                <label for="resp6" style= "width: 100%">
+                    <input id="resp6" type="radio" name="resp6" value="3" onchange = "verificacionMovil(this.id)" required/>
+                    Al menos una vez al mes</label>
+                <label for= "resp6">
+                    <input id="resp6" type="radio" name="resp6" value="4" onchange = "verificacionMovil(this.id)" required/>
+                    Nunca</label>
+            </div>
+        </div>
+        <div id = "7Movil" class = "encuestaOculta">
+            <div class = "imagenRedesSociales" style= "background-image: url(imagenes/youtube.png)" ></div>
+            <p style = "text-align: center; font-size: 0.9rem; font-weight: normal;">Youtube</p>
+            <div>
+                <label for="resp7">
+                    <input id="resp7" type="radio" name="resp7" value="1"  required/>
+                    Todos los días de la semana</label>
+                <label for="resp7">
+                    <input id="resp7" type="radio" name="resp7" value="2"  required/>
+                    Al menos una vez a la semana</label>
+                <label for="resp7" style= "width: 100%">
+                    <input id="resp7" type="radio" name="resp7" value="3" required/>
+                    Al menos una vez al mes</label>
+                <label for= "resp7">
+                    <input id="resp7" type="radio" name="resp7" value="4" required/>
+                    Nunca</label>
+            </div>
+        </div>
+
+        <div id = "8Movil" class = "encuestaOculta">
+            <div class = "imagenRedesSociales" style= "background-image: url(imagenes/navegadores.png)" ></div>
+            <p style = "text-align: center; font-size: 0.9rem; font-weight: normal;">Páginas web (navegadores)</p>
+            <div>
+                <label for="resp8">
+                    <input id="resp8" type="radio" name="resp8" value="1"  required/>
+                    Todos los días de la semana</label>
+                <label for="resp8">
+                    <input id="resp8" type="radio" name="resp8" value="2"  required/>
+                    Al menos una vez a la semana</label>
+                <label for="resp8" style= "width: 100%">
+                    <input id="resp8" type="radio" name="resp8" value="3"  required/>
+                    Al menos una vez al mes</label>
+                <label for= "resp8">
+                    <input id="resp8" type="radio" name="resp8" value="4"  required/>
+                    Nunca</label>
+            </div>
+        </div>
+        <div id = "9Movil" class = "encuestaOculta2">
+            <p>¿Utilizas otras aplicaciones de música, juegos, video, fotografía u otras redes sociales?</p>
+            <label for="resp9">
+                <input id="resp9" type="radio" name="resp9" value="1" required/>
+                Sí</label>
+            <label for="resp9">
+                <input id="resp9" type="radio" name="resp9" value="0" required/>
+                No</label>
+
+        </div>
+        <div id = "91Movil" class = "encuestaOculta2">
+            <p style = "font-weight:normal; margin: 14px 0 0 0;" ><font color= "black">¿Cuáles?</font></p>
+            <input type="text" id="otrasApp1" name="otrasApp1" class="inputAzul" style="cursor:pointer; height: 30px;" placeholder="Aplicaciones de entretenimiento" required/>
+            <div id = "frecAppMusica">
+                <label for="resp91">
+                    <input id="resp91" type="radio" name="resp91" value="1" required/>
+                    Todos los días de la semana</label>
+                <label for="resp91">
+                    <input id="resp91" type="radio" name="resp91" value="2" required/>
+                    Al menos una vez a la semana</label>
+                <label for="resp91" style= "width: 100%">
+                    <input id="resp91" type="radio" name="resp91" value="3" required/>
+                    Al menos una vez al mes</label>
+                <label for= "resp91">
+                    <input id="resp91" type="radio" name="resp91" value="4" onchange = "verificacionMovil()" required/>
+                    Nunca</label>
+            </div>
+        </div>
+
+        <div id = "10Movil" class = "encuestaOculta2">
+            <p>¿Utilizas aplicaciones geográficas o que usen mapas?</p>
+            <label for="resp10">
+                <input id="resp10" type="radio" name="resp10" value="1" required/>
+                Sí</label>
+            <label for="resp10">
+                <input id="resp10" type="radio" name="resp10" value="0" required/>
+                No</label>
+        </div>
+        <div id = "101Movil" class = "encuestaOculta">
+            <p style = "font-weight:normal; margin: 14px 0 0 0;"><font color= "black">¿Cuáles?</font></p>
+            <input type="text" id="otrasApp2" name="otrasApp2" class="inputAzul" style="cursor:pointer; height: 30px;" placeholder="Aplicaciones Geográficas" required/>
+            <div id = "frecAppGeo">
+                <label for="resp101">
+                    <input id="resp101" type="radio" name="resp101" value="1" required/>
+                    Todos los días de la semana</label>
+                <label for="resp101">
+                    <input id="resp101" type="radio" name="resp101" value="2" required/>
+                    Al menos una vez a la semana</label>
+                <label for="resp101">
+                    <input id="resp101" type="radio" name="resp101" value="3" required/>
+                    Al menos una vez al mes</label>
+            </div>
+        </div>
+        <div id = "11Movil" class = "encuestaOculta2">
+            <p>Otras aplicaciones</p>
+            <label for="resp11">
+                <input id="resp11" type="radio" name="resp11" value="1" required/>
+                Sí</label>
+            <label for="resp11">
+                <input id="resp11" type="radio" name="resp11" value="0" required/>
+                No</label>
+        </div>
+        <div id = "111Movil" class = "encuestaOculta">
+            <p style = "font-weight:normal;margin: 14px 0 0 0;" ><font color= "black">¿Cuáles?</font></p>
+            <input type="text" id="otrasApp3" name="otrasApp3" class="inputAzul" style="cursor:pointer; height: 30px;" placeholder="Otras aplicaciones" required/>
+            <div id = "frecAppOtras">
+                <label for="resp111">
+                    <input id="resp111" type="radio" name="resp111" value="1" required/>
+                    Todos los días de la semana</label>
+                <label for="resp111">
+                    <input id="resp111" type="radio" name="resp111" value="2" required/>
+                    Al menos una vez a la semana</label>
+                <label for="resp111">
+                    <input id="resp111" type="radio" name="resp111" value="3" required/>
+                    Al menos una vez al mes</label>
+            </div>
+        </div>
+        <p id = "quienTeComunicas" style =" display: none;">¿Con quién te comunicas a través del teléfono móvil inteligente (smartphone) y con qué frecuencia?</p>
+        <div class = "appEncuesta">
+            <div id = "12Movil" class = "encuestaOculta">
+                <p>Con tus papás</p>
+                <div>
+                    <label for="resp12">
+                        <input id="resp12" type="radio" name="resp12" value="1" onchange = "verificacionMovil()" required/>
+                        Todos los días de la semana</label>
+                    <label for="resp12">
+                        <input id="resp12" type="radio" name="resp12" value="2" onchange = "verificacionMovil()" required/>
+                        Al menos una vez a la semana</label>
+                    <label for="resp12">
+                        <input id="resp12" type="radio" name="resp12" value="3" onchange = "verificacionMovil()" required/>
+                        Al menos una vez al mes</label>
+                </div>
+            </div>
+            <div id = "13Movil" class = "encuestaOculta">
+                <p>Con familiares</p>
+                <div>
+                    <label for="resp13">
+                        <input id="resp13" type="radio" name="resp13" value="1" onchange = "verificacionMovil()" required/>
+                        Todos los días de la semana</label>
+                    <label for="resp13">
+                        <input id="resp13" type="radio" name="resp13" value="2" onchange = "verificacionMovil()" required/>
+                        Al menos una vez a la semana</label>
+                    <label for="resp13">
+                        <input id="resp13" type="radio" name="resp13" value="3" onchange = "verificacionMovil()" required/>
+                        Al menos una vez al mes</label>
+                </div>
+            </div>
+            <div id = "14Movil" class = "encuestaOculta">
+                <p>Con amigos</p>
+                <label for="resp14">
+                    <input id="resp14" type="radio" name="resp14" value="1" onchange = "verificacionMovil()" required/>
+                    Todos los días de la semana</label>
+                <label for="resp14">
+                    <input id="resp14" type="radio" name="resp14" value="2" onchange = "verificacionMovil()" required/>
+                    Al menos una vez a la semana</label>
+                <label for="resp14">
+                    <input id="resp14" type="radio" name="resp14" value="3" onchange = "verificacionMovil()" required/>
+                    Al menos una vez al mes</label>
+            </div>
+
+        </div>
+        <div id= "guardarConect" class="botonera"  style = "margin-top: 10px; margin-bottom:2%; display: none">
+            <button type="button" id="botonMoviles" class="Guardar2" style = "background-color: #eee">Enviar respuestas</button>
+        </div>
+        <div id = "volverConect" class="botonera"  style = "margin-top: 10px; margin-bottom:2%; display:none">
+            <button id = "volverIntroduccion" type="button" class="Guardar2">Volver</button>
+        </div>
+
+    </div>
+    <div id="adelantarPregunta" class = "botonEncuestaMover"><p>></p></div>
+    <p id= "lugarPregunta">1/15<p>
+
+</div>
+
+<div id = "numeroSedesFiltro"><p>200 de 100 sedes</p></div>
+<div id="map_canvas" class = 'bigmap_toda_pantalla'style="width:100%; height:100%;">
+</div>
+<div id = "divPanorama" ></div>
+<svg viewBox="0 0 50 50" id = "cerrarStreet">
+<circle  id ="circuloSalir" cx="25" cy="25" r="20" fill="#B6134E"/>
+<text id = "textoStreet" x="20" y="33" font-size="1.3rem" fill="white">X</text>
+</svg>
+<!--
+<div id="map2" class="map2">
+        <div id="map_canvas2" class='bigmap_toda_pantalla1'style="width:100%; height:100%;">
+                <table id="tablamapa1"></table>
+        </div>
+</div>
+-->
+<div id="sidebar" class="oculto">
+    <div id="map_canvas_izquierdo" class='bigmap_toda_pantalla' style="width:100% height:100%;"></div>
+    <div id="dragbar"></div>
+</div>
+<div id = "contenedorParalelos">
+    <div id= "map2_canvas" class = "mapParalelo"></div>
+    <div id = "lineaParalelo"></div>
+    <div id= "map3_canvas" class = "mapParalelo" style = "left: 1%"></div>
+</div>
+<div id = "recuadroDiv"></div>
+<div id ="indicadorOficial" class = "indicadoresSector">
+    <p>Público</p>
+</div>
+
+<div id = "indicadorNoOficial" class = "indicadoresSector">
+    <p style = "margin-left: 15%">Privado</p>
+</div>
+<div id = "functionOpen" style = "display: none">
+    <div id = "funcionalidadActual"><p>Cerca a tu sede</p></div>
+    <svg viewBox="0 0 50 50" id = "cerrarFuncionalidad">
+    <circle  id ="salirFuncion" cx="25" cy="25" r="20" fill="#B6134E"/>
+    <text  id = "textoFuncion" x="20" y="33" font-size="1.3rem" fill="white">X</text>
+    </svg>
+</div>
+<svg id="ocultarClusters" svg="" viewBox="0 0 100 100">
+<circle r="30" id="circleCluster"  fill="#CCC" cy="50" cx="120"></circle>
+<circle r="20" id="circleCluster2" style= "cursor:pointer" fill="#B6134E" cy="51" cx="121"></circle>
+<text id="textoCluster" font-size="2.3rem" fill="white" x="-50" y="45">Ocultar</text>
+<text id="textoCluster2" font-size="2.0rem" fill="white" x="-38" y="80">Sedes</text>
+</svg>
+<!--<div id = "botonGuardarMenu"></div>-->
+<svg id = "botonPlegar" tabindex="0" role="button" class = "botonPlegar" svg="" viewBox="0 0 100 100" style = "display: none" title= "Cerrar menú">
+<circle id = "circuloPlegar" r="45" fill="#01B4ED" cy="50" cx="50"></circle>
+<text id="textoFuncion" x="25" y="76" font-size="5rem" fill="white">&lt;</text>
+</svg>
+
+<svg id = "botonPlegar2" tabindex="0" role="button" aria-label="Cerrar menú botón" class = "botonPlegar" svg="" viewBox="0 0 100 100" title= "Cerrar menú">
+<circle id = "circuloPlegar2" r="45" fill="#01B4ED" cy="50" cx="50"></circle>
+<text x="25" y="76" font-size="5rem" fill="white">></text>
+</svg>
+
+<div id ="sectorPopUp">
+
+    <div class="legend-clusters-container">
+        <div class="legend-clusters-container">
+            <div class ="imagenTuUbicación"></div>
+            <div tabindex="0" class ="textoSector2 textoSectorAgrupacion">Tu ubicación</div>
+        </div>
+    </div>
+
+    <div class="legend-clusters-container">
+        <div class="legend-clusters-container">
+            <div class ="imagenSitiosCerca"></div>
+            <div tabindex="0" class ="textoSector2 textoSectorAgrupacion">Sedes cercanas</div>
+        </div>
+    </div>
+
+    <div class="legend-clusters-container">
+        <div class="legend-clusters-container">
+            <div class ="imagenAgrupacionOficial"></div>
+            <div tabindex="0" class ="textoSector2 textoSectorAgrupacion">Agrupación de colegios públicos</div>
+        </div>
+        <div class="legend-clusters-container">
+            <div class ="imagenAgrupacionNoOficial"></div>
+            <div tabindex="0" class ="textoSector2 textoSectorAgrupacion">Agrupación de colegios privados</div>
+        </div>
+    </div>
+    <div class="legend-clusters-container">
+        <div class= "sector2">
+            <div class ="imagenSector2"></div>
+            <div class ="textoSector2">Colegio público</div>
+            <div class = "checkbox2 checkbox-legend-left-margin" style = "width: 15%; height: 24px; margin-top:3px;">
+                <div class="squaredOne">
+                    <input type="checkbox" value="oficial" id="sectorOficial" name="sectorOficial" class="checkbox-visible" checked/>
+                    <label for="sectorOficial"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="legend-clusters-container">
+        <div class= "sector2">
+            <div class ="imagenSector2" style = " background-image: url(imagenes/no-oficial.png)"></div>
+            <div class ="textoSector2">Colegio privado</div>
+            <div class = "checkbox2 checkbox-legend-left-margin-no-oficial" style = "width: 15%; height: 24px; margin-top:3px">
+                <div class="squaredOne">
+                    <input type="checkbox" value="noOficial" id="sectorNoOficial" name="sectorNoOficial" class="checkbox-visible" checked/>
+                    <label for="sectorNoOficial"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = "iconosSatelite"></div>
+<div id = "bocadillo">
+    <h1> Esta función se encuentra disponible actualmente sólo para <b>Bogotá</b> y <b>Soacha</b></h1>
+</div>
+<script src="js/encuestas.js"></script>
+<script src="js/eventos.js"></script>
+<script src="js/mapasDeslizar.js"></script>
+<script src="js/textosMapas.js"></script>
+<script src="js/bundle-focus-traps.js"></script>
+</body>
+</html>

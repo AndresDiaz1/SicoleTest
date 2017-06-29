@@ -1,0 +1,148 @@
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/*
+    PROYECTO DANE MODERNO
+    ********************************************************************************
+    ********************************************************************************
+    ********************************************************************************
+    Hojas de Estilo en Cascada (CCS3) para el componente de autocompletación
+    ********************************************************************************
+    ********************************************************************************
+    ********************************************************************************
+
+    DIRECCIÓN DE INVESTIGACIONES EN GEOESTADÍSTICA
+    GRUPO DE TRABAJO DANE MODERNO
+    CENTRO DE EXCELENCIA SOA DE INTEROPERABILIDAD DANE - PROGRAMA GOBIERNO EN LÍNEA
+
+    ELABORÓ:
+    INGENIERO JAIME ALBERTO GUTIÉRREZ MEJÍA
+    INGENIERO DE DESARROLLO
+    CONTRATISTA DE LA DIRECCIÓN DE INVESTIGACIONES EN GEOESTADÍSTICA
+
+    Modulo de autocompletación optimizado para el desarrollo del módulo
+    de búsqueda de información Catastral del formulario de e-Censo
+
+    Proyecto colaborativo entre el grupo MODERNIZACIÓN SIGE y el Área de Sistemas del
+    Departamento Administrativo Nacional de Estadísticas DANE
+*/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/**
+ * Plugin  : Autocompletar con jQuery
+ *   Autor : Lucas Forchino
+ * WebSite : http://www.tutorialjquery.com
+ * version : 1.0
+ * Licencia: Pueden usar libremenete este código siempre y cuando no sea para 
+ *           publicarlo como ejemplo de autocompletar en otro sitio.
+ */
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/* El cuadro donde se encontrara nuestra caja de autocompletar*/
+/**********************************************************************/
+/**********************************************************************/
+/*
+ * Resultados
+ */
+.autocomplete{
+    height: auto;
+    width: 100%;
+    float: left;
+    border-radius: 6px;
+}
+    
+.autocomplete-jquery-results{
+    width:100%;
+    left:0;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+    border:1px solid silver;
+    float:right;
+    margin-top:11%;
+    position:absolute;
+    display: none;
+    z-index: 999;
+    overflow: hidden;
+    background-color: white;
+}
+
+.autocomplete-jquery-results a{
+    
+    width:83%;
+    font-size:0.8rem;
+}
+
+
+/**********************************************************************/
+/**********************************************************************/
+/*Esta clase se activa cuando el usuario se mueve por las sugerencias*/
+.autocomplete-jquery-mark{
+    color:black;
+    background-color: #E0F0FF !important;
+}
+/**********************************************************************/
+/**********************************************************************/
+/* Cada sugerencia va a llevar esta clase, por lo tanto tomara el estilo siguiente */
+.autocomplete-jquery-item{
+    display: block;
+    height: auto;
+    min-height: 25px;
+    padding-top: 10px;
+    text-decoration: none;     
+    background-color: white;
+    color:#333;
+    float:left;
+    text-align: left;
+    overflow: hidden;
+    padding-bottom: 3px;
+}
+
+.textoAutocomplete{
+    
+    width:90%;
+    height:100%;
+    background-color: aqua;
+}
+
+/**********************************************************************/
+/**********************************************************************/
+.autocomplete-jquery-results{
+     box-shadow: 1px 1px 3px black;
+}
+/**********************************************************************/
+/**********************************************************************/
+/* Al pasar por encima de las sugerencias*/
+.autocomplete-jquery-item:hover{
+    background-color: #E0F0FF;
+    color:black;
+}
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+
+
+.imagenUbicador{
+    
+    height: 25px;
+    width: 45px;
+    float: left;
+    background-image: url(../imagenes/ubicador.png);
+    background-repeat: no-repeat;
+    background-size: 55% auto;
+    background-position: top;
+    margin-top: -3px;
+    margin-left: -2%;
+}

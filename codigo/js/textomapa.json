@@ -1,0 +1,17 @@
+{"textosMapa": {
+    "texto": {
+        "title": " Total de estudiantes matriculados, sector oficial",
+        "texto1": "Esta variable hace referencia al total de la matrícula.  De acuerdo a la ley 115 de 1994, también conocida como ley general de educación, “La matrícula es el acto que formaliza la vinculación del educando al servicio educativo. Se realizará por una sola vez, al ingresar el alumno a un establecimiento educativo, pudiéndose establecer renovaciones para cada periodo académico” (artículo 95).  El acto de matrícula en educación formal implica la inserción en un sistema educativo que conduce al educando por un conjunto de ciclos lectivos, con sujeción a pautas progresivas, condiciona su permanencia al cumplimiento de determinados requisitos y es conducente a grados y títulos.",
+        "texto2":"Este mapa muestra una aproximación a la densidad de estudiantes por sede educativa medida como estudiantes por kilómetro cuadrado.  Las zonas más oscuras tienen una densidad aproximada de 6.800 y están ubicadas principalmente al sur y al occidente del área de estudio, lo que coincide con los lugares de residencia de la mayoría de la población de Bogotá y Soacha.",
+        "texto3": "El  método utilizado para generar este mapa fue un estimador de densidad kernel, que  calcula a partir de un conjunto de puntos una densidad espacial. Dichos puntos pueden tener más o menos peso específico en función de la variable con la que se esté trabajando. En el presente caso, los puntos fueron las sedes educativas y el peso estuvo dado por el número de estudiantes matriculados. El resultado del mapa puede entenderse como una aproximación al total de la matrícula en el área de estudio." ,
+        "texto4": ""
+    },
+    "texto": { 
+        "title": "2.	Estudiantes matriculados en preescolar, sector oficial",
+        "texto1": "La ley general de educación -115 de 1994- define tres niveles de la educación formal: preescolar, básica –primaria y secundaria- y media, los cuales se organizan por grados secuenciales. El preescolar comprende mínimo un grado obligatorio; la educación básica comprende 9 grados, 5 en primaria y 4 en secundaria; mientras que la educación media comprende dos grados.",
+        "texto2": "El preescolar, de acuerdo a la ley 115 es la educación “ofrecida al niño para su desarrollo en los aspectos biológico, cognoscitivo, sicomotriz, socio-afectivo y espiritual, a través de experiencias de socialización pedagógicas y recreativas”,  comprende al menos un grado obligatorio: transición.  La edad teórica para realizar este grado es desde los cinco hasta los 6 años.",
+        "texto3": "El mapa muestra que las zonas con mayor densidad de estudiantes de preescolar se encuentran al sur y al occidente del área de estudio. La máxima densidad estimada es de 595 estudiantes por kilómetro cuadrado",
+        "texto4": "El  método utilizado para generar este mapa fue un estimador de densidad kernel, que  calcula a partir de un conjunto de puntos una densidad espacial. Dichos puntos pueden tener más o menos peso específico en función de la variable con la que se esté trabajando. En el presente caso, los puntos fueron las sedes educativas y el peso estuvo dado por el número de estudiantes matriculados. El resultado del mapa puede entenderse como una aproximación al total de la matrícula en el área de estudio." 
+    }
+}}  
+

@@ -1,0 +1,93 @@
+.fieldset-radio-button{
+    border:0
+}
+
+.register-button{
+    font-size: 16px !important;
+}
+
+.help-button{
+    width: 30px;
+    height: 80%;
+    float: left;
+    background-position: center;
+    background-size: auto 71%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 1%;
+    top: 4px;
+}
+
+.a-tag-no-decoration{
+    text-decoration: none;
+}
+
+.li-heatmap{
+    color: #01B4ED !important;
+}
+
+.li-heatmap a{
+    color:#333;
+}
+
+.subCategorySiMapa a{
+    color: #01B4ED;
+}
+
+.menu-element-no-decoration{
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+
+.school-name{
+    font-weight: bold;
+}
+
+.change-map-button-text{
+    display: block !important;
+}
+
+.checkbox-visible{
+    visibility: visible !important;
+}
+
+.forgot-password-font-size{
+    font-size: 0.9rem !important;
+}
+
+.login-links{
+    display: block;
+    font-size: 1.27rem !important;
+    color: #b6134e !important;
+}
+
+.links-hamburg-menu li a{
+    color: white !important;
+}
+
+.text-align-initial{
+    text-align: initial;
+}
+
+.schedule-checkboxGroup{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.sicoleSearchCheckboxHeight{
+    height: auto !important;
+}
+
+.gm-style a{
+    display: none;
+}
+
+.gm-style img{
+    /*display: none*/;
+}
+
+.a-white-color{
+    color: white !important;
+}

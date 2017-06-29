@@ -1,0 +1,178 @@
+@media (max-width: 1000px) {
+    /*#infocole img{
+            height: 100% !important;
+            width: auto !important;
+            margin-top: 0px !important;
+    }*/
+    #infocolepar{
+        /*width: 250px;*/
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width:700px){
+
+    #infocolecerca{
+
+        margin-top:1%;
+        right:1%;
+        top:0;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    #infocolecerca{
+        margin-top:0;
+        right:0;
+        top:73%;
+        width: 100% !important;
+
+    }
+}
+
+
+@media only screen and (min-width:400px){
+
+    #slider_cerca{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:400px){
+
+    #slider_cerca{
+        width: 65%;
+
+    }
+}
+
+
+
+@media (min-height: 630px) {
+    #coleinfo{
+        height: 75%;
+
+    }
+
+    .seccionInformacion{
+        height: 275px;
+    }
+}
+
+
+@media (max-height: 630px) {
+    #coleinfo{
+        height: 70%;
+
+    }
+
+    .seccionInformacion{
+        height: 220px;
+    }
+}
+
+@media (max-height: 580px) {
+
+    .seccionInformacion{
+        height: 177px;
+    }
+}
+
+@media (max-height: 505px) {
+
+    .seccionInformacion{
+        height: 110px;
+    }
+}
+
+
+@media (max-height: 440px) {
+
+    .seccionInformacion{
+        height: 53px;
+    }
+}
+
+@media (max-height: 512px) {
+    #coleinfo{
+        height: 65%;
+
+    }
+}
+
+@media (max-height: 460px) {
+    #coleinfo{
+        height: 60%;
+
+    }
+}
+
+@media (max-height: 420px) {
+    #coleinfo{
+        height: 53%;
+
+    }
+}
+
+@media (max-height: 340px) {
+    #coleinfo{
+        height: 40%;
+
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    #infocolepar,
+    #infocolepardist,
+    #barramenu,
+    #barrafiltro{
+        width: 100% !important;
+    }
+    #imgsicole{
+        width: 60% !important;
+    }
+    /*.divpresent{
+            height: 200px !important;
+    }*/
+    #supercaja_inferior{
+        width: 100%;
+        bottom: 50px;
+    }
+    #infocoledistancia{
+        display: none;
+    }	
+    .opcionesMenu1 h1 {
+        font-size: 0.9rem !important;
+    }
+    #sedes h1 {
+        font-size: 20px !important;
+    }
+    #buscarSede p {
+        font-size: 1.0rem;
+    }
+    /*#infocolepar{
+            top: 90%;
+    }*/
+    /*
+    #infocolepar div{
+            height: 135px !important;
+    }
+    .divpresent div{
+            padding-top: 10px;
+            padding-bottom: 10px;
+    }*/
+}
+@media (max-width: 500px) {
+    #imgsicole{
+        width: 70% !important;
+    }
+}
+@media (max-width: 400px) {
+    #imgsicole{
+        width: 100% !important;
+    }
+}
