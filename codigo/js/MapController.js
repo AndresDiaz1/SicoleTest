@@ -3968,7 +3968,7 @@ function zoomTo(){
 	            $("#busquedaPopup").show(anima);
             $(".menusDesplegables").show(anima);
             $("#logoTips").focus();
-            showLanding();
+            //showLanding();
             var focusTrapTipsPopUp=returnFocusTrapTipsPopUp();
             focusTrapTipsPopUp.activate();
 			if($(window).height>700){
