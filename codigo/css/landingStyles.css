@@ -8,13 +8,671 @@
     flex-basis: 100%;
 }
 
+.landing-container{
+    height: 100%;
+    width: 100%;
+}
+
+.landing-desktop-half-part{
+    height: 50%;
+
+}
+
+.landing-desktop-margin-left-up{
+    flex: 3.05
+}
+
+.landing-desktop-upper-content-container{
+    flex: 5.0
+}
+
+.full-height{
+    height: 100%;
+}
+
+.landing-desktop-upper-content-column{
+    height: 80%;
+    margin-top:auto;
+    margin-bottom: auto
+}
+
+.landing-desktop-logo-container{
+    height: 44%
+}
+
+.landing-desktop-separators-upper-half{
+    height: 6.1%;
+}
+
+.landing-desktop-logo-column{
+    height: 100%;
+    flex:0.85;
+    text-align: start;
+}
+
+.landing-desktop-page-slogan-container{
+    height: 25%;
+}
+
+.landing-desktop-slogan-text-line{
+    height: 50%;
+}
+
+.landing-desktop-close-button-row{
+    height: 12.5%;
+}
+
+.landing-desktop-close-button-column{
+    height: 100%;
+    flex: 0.46;
+    text-align: start;
+}
+
+.landing-desktop-column-side-margin-bottom{
+    flex: 0.19;
+}
+
+.landing-desktop-column-container{
+    flex: 0.29;
+}
+
+.landing-desktop-separator-between-user-types{
+    flex: 0.04;
+}
+
+.landing-desktop-bottom-container-column{
+    height: 90%;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.landing-desktop-user-type-container{
+    height: 29%;
+}
+
+.landing-desktop-user-type-image-container{
+    flex: 0.37;
+    height: 100%;
+}
+
+.landing-desktop-user-type-text-container{
+    flex: 0.63;
+    height: 100%;
+}
+
+.landing-desktop-user-type-title-container{
+    height: 30%;
+}
+
+.landing-desktop-user-type-description-container{
+    height: 70%;
+}
+
+.landing-desktop-feature-description-container{
+    height: 20%;
+}
+
+.landing-desktop-space-between-features{
+    height: 2%;
+}
+
+.landing-desktop-feature-image-container{
+    height: 100%;
+    flex: 0.13;
+}
+
+.landing-desktop-feature-description-column{
+    flex: 0.87;
+    height: 100%;
+}
+
+.landing-desktop-feature-title-container{
+    height: 30%;
+}
+
+.landing-desktop-feature-explanation-container{
+    height: 70%;
+}
+
+.landing-mobile-upper-container{
+    height: 38.5%;
+    background-color: #e3e4e5;
+}
+
+.landing-mobile-bottom-container{
+    height: 68.5%
+}
+
+.landing-mobile-upper-column{
+    height: 80%;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto
+}
+
+.landing-mobile-logo-row{
+    height: 58%;
+}
+
+.landing-mobile-logo-left-margin{
+    flex: 0.063;
+    height: 100%;
+}
+
+.landing-mobile-logo-container{
+    flex: 0.71;
+    height: 100%;
+    text-align: left;
+}
+
+.landing-mobile-space-between-logo-and-slogan{
+    height: 9%;
+}
+
+.landing-mobile-slogan-row{
+    height: 33%;
+}
+
+.landing-mobile-slogan-container{
+    flex: 0.83;
+    height: 100%;
+}
+
+.landing-mobile-slogan-text{
+    height: 50%;
+}
+
+.landing-mobile-bottom-column{
+    height: 90%;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto
+}
+
+.landing-mobile-feature-row{
+    height: 23%;
+}
+
+.landing-mobile-bottom-left-margin{
+    flex: 0.05;
+    height: 100%
+}
+
+.landing-mobile-feature-column{
+    flex: 0.9;
+    height: 100%
+}
+
+.landing-mobile-user-type-image-container{
+    flex: 0.3;
+}
+
+.landing-mobile-feature-description-container{
+    flex: 0.7;
+}
+
+.landing-mobile-feature-title-container{
+    height: 33%;
+}
+
+.landing-mobile-feature-explanation-container{
+    height: 66%;
+}
+
+.landing-mobile-feature-explanation-column{
+    flex: 1.0;
+}
+
+.landing-mobile-user-type-features-row{
+    height: 10%;
+}
+
+.landing-type-user-feature-container{
+    flex: 0.3;
+}
+
+.landing-mobile-feature-icon-container{
+    flex: 0.3;
+}
+
+.landing-mobile-feature-title-column{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 0.7;
+}
+
+.landing-mobile-space-between-features{
+    flex: 0.06;
+}
+
+.landing-mobile-space-between-feature-and-go-to-map-button{
+    height: 3%;
+}
+
+.landing-mobile-go-to-map-container{
+    height: 10%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-desktop-upper-half{
+    background-color: #e3e4e5;
+}
+
+.landing-desktop-logo-image{
+    height:19vh
+}
+
+.desktop-landing-slogan-text{
+    margin: 0px;
+    color: #2f424f;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.desktop-landing-slogan-text-2{
+    line-height: 45px;
+}
+
+.go-to-map-button{
+    color: white;
+    background-color: #00B6EA;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 100%;
+    font-family: Roboto;
+}
+
+.landing-desktop-father-student-title{
+    font-weight: bold;
+    font-family: Roboto;
+    color: black;
+    margin: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.student-father-image{
+    background: url(../imagenes/landing/father-student.png) no-repeat center center;
+}
+
+.goverment-agent-image{
+    background: url(../imagenes/landing/goverment-agent.png) no-repeat center center;
+}
+
+.landing-desktop-user-type-description-text{
+    font-family: Roboto;
+    font-weight: lighter;
+    margin: 0px;
+    text-align: left;
+}
+
+.landing-desktop-feature-icons{
+    background-position-x: center !important;
+    background-position-y: 5% !important;
+}
+
+.landing-desktop-favorites-image{
+    background: url(../imagenes/landing/favorites.png) no-repeat;
+}
+
+.landing-desktop-filters-image{
+    background: url(../imagenes/landing/filters.png) no-repeat;
+}
+
+.landing-desktop-trasnport-image{
+    background: url(../imagenes/landing/transport.png) no-repeat;
+}
+
+.landing-desktop-simapas-image{
+    background: url(../imagenes/landing/simapas.png) no-repeat;
+}
+
+.landing-desktop-advanced-description-image{
+    background: url(../imagenes/landing/advanced-description.png) no-repeat;
+}
+
+.landing-desktop-feature-title{
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.landing-desktop-feature-description{
+    font-family: Roboto;
+    font-weight: lighter;
+    margin: 0px;
+    text-align: left;
+}
+
+.landing-mobile-slogan-text{
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 0px !important;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.landing-mobile-feature-icon-container{
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.landing-mobile-feature-title{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.landing-mobile-go-to-map-button{
+    background-color: #00B6EA;
+    color: white;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.landing-mobile-separator-between-user-types{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+}
+
+.landing-mobile-line-separator{
+    height: 2px;
+    width: 90%;
+    background-color: #B6134E;
+}
+
+@media screen and (max-width: 320px) {
+    .landing-mobile-logo-image{
+        height: 18vh;
+    }
+
+    .landing-mobile-slogan-text{
+        font-size: 23px;
+    }
+
+    .landing-mobile-slogan-text-2{
+        line-height: 20px;
+    }
+
+    .landing-mobile-user-type-image-container{
+        background-size: 14vh;
+    }
+
+    .landing-mobile-user-type-title{
+        font-size: 17px;
+    }
+
+    .landing-mobile-user-type-explanation-text{
+        font-size: 13px;
+    }
+
+    .landing-mobile-feature-icon-container{
+        background-size: 4.2vh !important;
+    }
+
+    .landing-mobile-feature-title{
+        font-size: 12px;
+    }
+
+    .landing-mobile-go-to-map-button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:480px)  {
+    .landing-mobile-logo-image{
+        height: 18vh;
+    }
+
+    .landing-mobile-slogan-text{
+        font-size: 23px;
+    }
+
+    .landing-mobile-slogan-text-2{
+        line-height: 20px;
+    }
+
+    .landing-mobile-user-type-image-container{
+        background-size: 13vh;
+    }
+
+    .landing-mobile-user-type-title{
+        font-size: 17px;
+    }
+
+    .landing-mobile-user-type-explanation-text{
+        font-size: 15px;
+    }
+
+    .landing-mobile-feature-icon-container{
+        background-size: 3.3vh !important;
+    }
+
+    .landing-mobile-feature-title{
+        font-size: 12px;
+    }
+
+    .landing-mobile-go-to-map-button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:799px)  {
+    .landing-mobile-logo-image{
+        height: 20vh;
+    }
+
+    .landing-mobile-slogan-text{
+        font-size: 35px;
+    }
+
+    .landing-mobile-slogan-text-2{
+        line-height: 43px;
+    }
+
+    .landing-mobile-user-type-image-container{
+        background-size: 14vh;
+    }
+
+    .landing-mobile-user-type-title{
+        font-size: 24px;
+    }
+
+    .landing-mobile-user-type-explanation-text{
+        font-size: 18px;
+    }
+
+    .landing-mobile-feature-icon-container{
+        background-size: 5vh !important;
+    }
+
+    .landing-mobile-feature-title{
+        font-size: 16px;
+    }
+
+    .landing-mobile-go-to-map-button{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:992px) {
+
+    .landing-desktop-logo-image{
+        height: 21vh;
+    }
+
+    .desktop-landing-slogan-text{
+        font-size: 32px;
+    }
+
+    .desktop-landing-slogan-text-2{
+        line-height: 35px;
+    }
+
+    .landing-desktop-close-button-row{
+        height: 16.5%;
+    }
+
+    .go-to-map-button{
+        font-size:20px;
+    }
+
+    .landing-desktop-user-type-image-container{
+        background-size: 13vh !important;
+    }
+
+    .landing-desktop-father-student-title{
+        font-size: 12px;
+    }
+
+    .landing-desktop-user-type-description-text{
+        font-size: 12px;
+    }
+
+    .landing-desktop-feature-icons{
+        background-size: 4vh !important;
+    }
+
+    .landing-desktop-feature-title{
+        font-size: 17px;
+    }
+
+    .landing-desktop-feature-description{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width:1200px) {
+
+    .landing-desktop-upper-content-column{
+        height: 90%;
+    }
+
+    .landing-desktop-separators-upper-half{
+        height: 7.1%;
+    }
+
+    .landing-desktop-logo-image{
+        height: 24vh;
+    }
+
+    .desktop-landing-slogan-text{
+        font-size: 40px;
+    }
+
+    .desktop-landing-slogan-text-2{
+        line-height: 55px;
+    }
+
+    .landing-desktop-close-button-row{
+        height: 16.5%;
+    }
+
+    .go-to-map-button{
+        font-size:23px;
+    }
+
+    .landing-desktop-user-type-image-container{
+        background-size: 13vh !important;
+    }
+
+    .landing-desktop-father-student-title{
+        font-size: 15px;
+    }
+
+    .landing-desktop-user-type-description-text{
+        font-size: 14px;
+    }
+
+    .landing-desktop-feature-icons{
+        background-size: 5vh !important;
+    }
+
+    .landing-desktop-feature-title{
+        font-size: 17px;
+    }
+
+    .landing-desktop-feature-description{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (min-width: 1201px) and (max-width:2560px) {
+
+    .landing-desktop-upper-content-column{
+        height: 90%;
+    }
+
+    .landing-desktop-separators-upper-half{
+        height: 7.1%;
+    }
+
+    .landing-desktop-separators-upper-half-2{
+        height: 13.1%;
+    }
+
+    .landing-desktop-logo-image{
+        height: 26vh;
+    }
+
+    .desktop-landing-slogan-text{
+        font-size: 48px;
+    }
+
+    .desktop-landing-slogan-text-2{
+        line-height: 82px;
+    }
+
+    .landing-desktop-close-button-column{
+        flex: 0.40 !important;
+    }
+
+    .go-to-map-button{
+        font-size: 24px;
+    }
+
+    .landing-desktop-user-type-image-container{
+        background-size: 13vh !important;
+    }
+
+    .landing-desktop-father-student-title{
+        font-size: 18px;
+    }
+
+    .landing-desktop-user-type-description-text{
+        font-size: 16px;
+    }
+
+    .landing-desktop-feature-icons{
+        background-size: 5vh !important;
+    }
+
+    .landing-desktop-feature-title{
+        font-size: 17px;
+    }
+
+    .landing-desktop-feature-description{
+        font-size: 13px;
+    }
+}
+
+
 @media screen and (min-width: 800px) {
 
-    #type-of-users-desktop-layout{
+    #display-desktop-landing{
         display: inherit;
     }
 
-    #type-of-users-mobile-layout{
+    #display-mobile-landing{
         display: none;
     }
 
@@ -49,11 +707,11 @@
 }
 
 @media screen and (max-width: 799px) {
-    #type-of-users-desktop-layout{
+    #display-desktop-landing{
         display: none;
     }
 
-    #type-of-users-mobile-layout{
+    #display-mobile-landing{
         display: inherit;
     }
 }

@@ -1014,6 +1014,7 @@ $("#NumerodeDocumentoMoviles").keypress(function (e){
 
 
 function validarTransporte(){
+    validarOrigenDestino();
 	console.log("medio " + $("#horasTransporte").val());
 	if($("#rutaOrigen").val()!= $("#rutaDestino").val()&& $("#medioTransporte").val()!= "") {
 		$("#transportesub").css("background-color","#B6134E");

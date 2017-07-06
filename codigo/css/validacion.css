@@ -3,3 +3,9 @@
     color: #B6134E;
     font-size: small;
 }
+.form-error {
+    display: block;
+    margin: auto;
+    color: #B6134E;
+    font-size: small;
+}

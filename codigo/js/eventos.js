@@ -1309,16 +1309,15 @@ $(function () {
        console.log("busqueda" + vector);*/
 
     $("#inputBusqueda").keyup(function(e){
-     if($(this).val().length <= 3){
-         
+     if($(this).val().length <= 1){
          $("#ui-id-1").hide(anima);
      }else{
      } 
     });
     $("#inputBusqueda").autocomplete({
-        minLength: 0,
+        minLength: 2,
         source: function(request, response) {
-            if(request.term.length>3){
+            if(request.term.length>1){
             var salida = "http://geoportal.dane.gov.co/wssicole/serviciobusqueda.php?palabrasclave=" +request.term,
                 salida2 = "http://geoportal.dane.gov.co/wssicole/serviciobusqueda.php?direccion=" +request.term,    
                  vector = [];
@@ -1356,10 +1355,29 @@ $(function () {
 			//realizarBusquedaPredio(res[0]);
             realizarBusquedaPredio(ui.item.value);
 			return false;
+        },
+
+		response: function(event, ui) {
+            // ui.content is the array that's about to be sent to the response callback.
+            $('#spinner').hide();
+            if (ui.content.length === 0) {
+                $('#spinner').hide();
+                $("#ui-id-1").empty();
+                $("#ui-id-1").append("<li><p>no hay resultados</p></li>");
+
+
+
+            } else {
+                $('#spinner').hide();
+
+            }
         }
+
     })
 		
         .data("ui-autocomplete")._renderItem = function (ul, item) {
+		console.log("el ul");
+		console.log(ul);
 		var res = item.label.split("ZZZ");
         return $("<li>")
             .data("ui-autocomplete-item", item)
@@ -4460,3 +4478,14 @@ google.maps.LatLng.prototype.destinationPoint = function(brng, dist) {
 
    return new google.maps.LatLng(lat2.toDeg(), lon2.toDeg());
 }
+
+$(".errorOD").css("display","none");
+function validarOrigenDestino() {
+    if ($("#rutaOrigen").val() == $("#rutaDestino").val()) {
+        $(".errorOD").css("display", "block").css("color", "#B6134E");
+    }else{
+        $(".errorOD").css("display","none");
+	}
+}
+
+

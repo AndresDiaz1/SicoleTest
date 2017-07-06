@@ -531,6 +531,7 @@ function onClickMap(){
     if ($("#barraCercaAtuSede").css("display")=="block"){
         $("#barraCercaAtuSede").hide(anima);
         $("#seleccioneSede").show();
+        $("#tip-sites-near").show();
         if(circulo != null){
             circulo.setMap(null);
         }
@@ -1345,7 +1346,8 @@ function addMarkerIni() {
 		icon: 'imagenes/sige/neogeografia/iconos-geoportal/gps-local.png',
 		position: centroInicial,
 		draggable: true,
-		map: map
+		map: map,
+		zIndex: 1000
 	});
 
 	drawSitesNearCircle(markerini);
@@ -1439,7 +1441,7 @@ function drawUserLocationPin(){
         draggable: false,
         label:{
             text:"Tu ubicación",
-            color:"#662D91",
+            color:"#E50057",
             fontWeight: "bold"
         },
         map: map,
@@ -1752,6 +1754,7 @@ function clickenSede(sitioini){
             
 			$("#barraCercaAtuSede").show(anima)
 			$("#seleccioneSede").hide();
+            $("#tip-sites-near").hide();
             sitiosCerca(myLatlng);
 		}
 		
@@ -2081,6 +2084,7 @@ function mostrarSitioIni2(sitioini, filtroTasas, todos , posicion){
 					sitiosCerca(markerPlaceini.getPosition());
 					$("#barraCercaAtuSede").show(anima)
 					$("#seleccioneSede").hide();
+					$("#tip-sites-near").hide();
 				}
 				
 				
@@ -3825,10 +3829,14 @@ $("#cerrarFuncionalidad").click(function (){
                 sitiosCerca(posicionSedeActual);
 				$("#barraCercaAtuSede").show(anima);
 				$("#seleccioneSede").hide();
-			}else{
+                $("#tip-sites-near").hide();
+
+            }else{
 				$("#barraCercaAtuSede").hide();
 				$("#seleccioneSede").show(anima);
-			}
+                $("#tip-sites-near").show();
+
+            }
 			$("#funcionalidadActual p").text("Cerca a tu sede");
 			$("#functionOpen").show(anima);
 			conInfocolegio();
@@ -3849,7 +3857,8 @@ $("#cerrarFuncionalidad").click(function (){
 	    $("#hombrecito").show(anima);
 		$("#barraCercaAtuSede").hide(anima);
 		$("#seleccioneSede").hide();
-		$("#despliegueCerca").css("background-image","url(imagenes/trianguloVerde.png)");
+        $("#tip-sites-near").hide();
+        $("#despliegueCerca").css("background-image","url(imagenes/trianguloVerde.png)");
 		cercaHabilitado = false;
         
 		if(circulo != null){
@@ -3968,7 +3977,7 @@ function zoomTo(){
 	            $("#busquedaPopup").show(anima);
             $(".menusDesplegables").show(anima);
             $("#logoTips").focus();
-            //showLanding();
+            showLanding();
             var focusTrapTipsPopUp=returnFocusTrapTipsPopUp();
             focusTrapTipsPopUp.activate();
 			if($(window).height>700){

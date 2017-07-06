@@ -47,158 +47,298 @@
     <body>
         <div id="boxes">
             <div tabindex="0" id="landing" class="window">
-
-                <div class="row_flex" style="height: 50%">
-                    <div class="column_flex" style="flex: 3.05"></div>
-                    <div class="column_flex" style="flex: 5.0">
-                        <div class="row_flex" style="height: 100%">
-                            <div class="column" style="height: 80%; margin-top:auto; margin-bottom: auto">
-                                <div class="row_flex" style="height: 44%">
-                                    <div class="column" style="background-color: blue; height: 100%; flex:0.85">
-
+                <div id="display-desktop-landing" class="landing-container">
+                    <div class="row_flex landing-desktop-half-part landing-desktop-upper-half">
+                        <div class="column_flex landing-desktop-margin-left-up"></div>
+                        <div class="column_flex landing-desktop-upper-content-container">
+                            <div class="row_flex full-height">
+                                <div class="column_flex landing-desktop-upper-content-column">
+                                    <div  class="row_flex landing-desktop-logo-container">
+                                        <div class="column_flex landing-desktop-logo-column">
+                                            <img class="landing-desktop-logo-image" alt="logo sicole" src="imagenes/logo_sicoleg.png"/>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row_flex" style="height: 25%; margin-top: 4.6%">
-                                    <div class="column" style="background-color: purple; height: 100%">
-
+                                    <div class="row_flex landing-desktop-separators-upper-half"></div>
+                                    <div class="row_flex landing-desktop-page-slogan-container">
+                                        <div class="column_flex full-height">
+                                            <div class="row_flex landing-desktop-slogan-text-line">
+                                                <h1 class="desktop-landing-slogan-text">El mapa con estadísticas</h1>
+                                            </div>
+                                            <div class="row_flex landing-desktop-slogan-text-line">
+                                                <h1 class="desktop-landing-slogan-text desktop-landing-slogan-text-2">y colegios a la mano</h1>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row_flex" style="height: 12.5%; margin-top: 2.6%">
-                                    <div class="column" style="background-color: orange; height: 100%; flex: 0.46">
-                                        <button onclick="onClickCloseLandingpage()">ir al mapa</button>
+                                    <div  class="row_flex landing-desktop-separators-upper-half landing-desktop-separators-upper-half-2"></div>
+                                    <div  class="row_flex landing-desktop-close-button-row">
+                                        <div class="column_flex landing-desktop-close-button-column" style="flex: 0.46">
+                                            <button class="go-to-map-button" onclick="onClickCloseLandingpage()">Ir al mapa</button>
+                                        </div>
                                     </div>
                                 </div>
 
                             </div>
-
                         </div>
+                        <div class="column_flex landing-desktop-margin-left-up"></div>
                     </div>
-                    <div class="column_flex" style="flex: 3.05"></div>
+
+
+                    <div class="row_flex landing-desktop-half-part">
+                        <div class="column_flex landing-desktop-column-side-margin-bottom"></div>
+                        <div class="column_flex landing-desktop-column-container">
+                            <div class="row_flex full-height">
+                                <div class="column_flex landing-desktop-bottom-container-column">
+                                    <div class="row_flex landing-desktop-user-type-container">
+                                        <div class="column_flex landing-desktop-user-type-image-container student-father-image" style="flex: 0.37;"></div>
+                                        <div class="column_flex landing-desktop-user-type-text-container">
+                                            <div class="row_flex landing-desktop-user-type-title-container">
+                                                <h2 class="landing-desktop-father-student-title">Si eres Padre o Estudiante</h2>
+                                            </div>
+                                            <div class="row_flex landing-desktop-user-type-description-container">
+                                                <p class="landing-desktop-user-type-description-text">Puedes buscar en el mapa la ubicación de los colegios dentro de un área específica.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="landing-desktop-space-between-features"></div>
+                                    <div class="row_flex landing-desktop-feature-description-container">
+                                        <div class="column_flex" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex landing-desktop-feature-icons landing-desktop-favorites-image" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex" style="flex: 0.74; height: 100%">
+                                            <div class="row_flex landing-desktop-feature-title-container">
+                                                <h3 class="landing-desktop-feature-title">Favoritos</h3>
+                                            </div>
+                                            <div class="row_flex landing-desktop-feature-explanation-container">
+                                                <p class="landing-desktop-feature-description">Guarda tu colegio de interés; podrás ingresar a tu sede, cuéntanos y danos tú opinión</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="landing-desktop-space-between-features"></div>
+                                    <div class="row_flex landing-desktop-feature-description-container">
+                                        <div class="column_flex" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex landing-desktop-feature-icons landing-desktop-filters-image" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex" style="flex: 0.74; height: 100%">
+                                            <div class="row_flex landing-desktop-feature-title-container">
+                                                <h3 class="landing-desktop-feature-title">Filtros</h3>
+                                            </div>
+                                            <div class="row_flex landing-desktop-feature-explanation-container">
+                                                <p class="landing-desktop-feature-description">Encuentra el colegio que buscas usando criterios específicos como jornada o tipo de calendario</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="landing-desktop-space-between-features"></div>
+                                    <div class="row_flex landing-desktop-feature-description-container">
+                                        <div class="column_flex" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex landing-desktop-feature-icons landing-desktop-trasnport-image" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex" style="flex: 0.74; height: 100%">
+                                            <div class="row_flex landing-desktop-feature-title-container">
+                                                <h3 class="landing-desktop-feature-title">Transporte</h3>
+                                            </div>
+                                            <div class="row_flex landing-desktop-feature-explanation-container">
+                                                <p class="landing-desktop-feature-description">Ingresa el punto de origen, el colegio de destino y encuentra la mejor ruta para llegar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_flex landing-desktop-separator-between-user-types"></div>
+                        <div class="column_flex landing-desktop-column-container">
+                            <div class="row_flex full-height">
+                                <div class="column_flex landing-desktop-bottom-container-column">
+                                    <div class="row_flex landing-desktop-user-type-container">
+                                        <div class="column_flex landing-desktop-user-type-image-container goverment-agent-image" style="flex: 0.37; height: 100%"></div>
+                                        <div class="column_flex landing-desktop-user-type-text-container">
+                                            <div class="row_flex landing-desktop-user-type-title-container">
+                                                <h2 class="landing-desktop-father-student-title">Si eres funcionario</h2>
+                                            </div>
+                                            <div class="row_flex landing-desktop-user-type-description-container">
+                                                <p class="landing-desktop-user-type-description-text">Puedes comparar y ver en el mapa datos estadísticos de entidades educativas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="landing-desktop-space-between-features"></div>
+                                    <div class="row_flex landing-desktop-feature-description-container">
+                                        <div class="column_flex landing-desktop-feature-image-container" style="flex: 0.13; height: 100%;"></div>
+                                        <div class="column_flex landing-desktop-feature-icons landing-desktop-simapas-image" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex landing-desktop-feature-description-column" style="flex: 0.74; height: 100%">
+                                            <div class="row_flex landing-desktop-feature-title-container">
+                                                <h3 class="landing-desktop-feature-title">Sí-Mapas</h3>
+                                            </div>
+                                            <div class="row_flex landing-desktop-feature-explanation-container">
+                                                <p class="landing-desktop-feature-description">Visualiza la distribución de algunas variables educativas a través de mapas de calor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="landing-desktop-space-between-features"></div>
+                                    <div class="row_flex landing-desktop-feature-description-container">
+                                        <div class="column_flex" style="flex: 0.13; height: 100%;"></div>
+                                        <div  class="column_flex landing-desktop-feature-icons landing-desktop-filters-image" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex" style="flex: 0.74; height: 100%">
+                                            <div class="row_flex landing-desktop-feature-title-container">
+                                                <h3 class="landing-desktop-feature-title">Filtros avanzados</h3>
+                                            </div>
+                                            <div class="row_flex landing-desktop-feature-explanation-container">
+                                                <p class="landing-desktop-feature-description">Encuentra el valor de tasas que indican la eficiencia interna de las instituciones educativas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="landing-desktop-space-between-features"></div>
+                                    <div class="row_flex landing-desktop-feature-description-container">
+                                        <div class="column_flex" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex landing-desktop-feature-icons landing-desktop-advanced-description-image" style="flex: 0.13; height: 100%"></div>
+                                        <div class="column_flex" style="flex: 0.74; height: 100%">
+                                            <div class="row_flex landing-desktop-feature-title-container">
+                                                <h3 class="landing-desktop-feature-title">Descripción avanzada</h3>
+                                            </div>
+                                            <div class="row_flex landing-desktop-feature-explanation-container">
+                                                <p class="landing-desktop-feature-description">Encuentra información institucional como: eficiencia interna, recursos humanos y pruebas de calidad</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_flex landing-desktop-column-side-margin-bottom"></div>
+                    </div>
                 </div>
 
-                
-                <div class="row_flex" style="height: 50%">
-                    <div class="column_flex" style="flex: 2.2"></div>
-                    <div class="column_flex" style="flex: 2.2">
-                        <div class="row_flex" style="height: 100%;">
-                            <div class="column" style="height: 85%; margin-top:auto; margin-bottom: auto;">
-                                <div class="row_flex" style="height: 25%; background-color: purple">
-                                    <div class="column" style="flex: 0.37; height: 100%; background-color: orange">
-
-                                    </div>
-                                    <div class="column" style="flex: 0.63; height: 100%; background-color: green">
-                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
-
-                                        </div>
-                                        <div class="row_flex" style="height: 70%; background-color: gray">
-
-                                        </div>
-                                    </div>
+                <div id="display-mobile-landing" class="landing-container">
+                    <div class="row_flex landing-mobile-upper-container">
+                        <div class="column_flex landing-mobile-upper-column">
+                            <div class="row_flex landing-mobile-logo-row">
+                                <div class="column_flex landing-mobile-logo-left-margin"></div>
+                                <div class="column_flex landing-mobile-logo-container">
+                                    <img class="landing-mobile-logo-image" alt="logo sicole" src="imagenes/logo_sicoleg.png"/>
                                 </div>
-                                <div class="row_flex" style="height: 22%; margin-top: 2%; background-color: purple">
-                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
-
+                            </div>
+                            <div class="row_flex landing-mobile-space-between-logo-and-slogan"></div>
+                            <div class="row_flex landing-mobile-slogan-row">
+                                <div class="column_flex landing-mobile-logo-left-margin"></div>
+                                <div class="column_flex landing-mobile-slogan-container">
+                                    <div class="row_flex landing-mobile-slogan-text">
+                                        <h1 class="landing-mobile-slogan-text">El mapa con estadísticas</h1>
                                     </div>
-                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
-                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
-
-                                        </div>
-                                        <div class="row_flex" style="height: 70%; background-color: gray">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row_flex" style="height: 22%; margin-top: 2%;">
-                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
-
-                                    </div>
-                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
-                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
-
-                                        </div>
-                                        <div class="row_flex" style="height: 70%; background-color: gray">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row_flex" style="height: 22%; margin-top: 2%; background-color: purple">
-                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
-
-                                    </div>
-                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
-                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
-
-                                        </div>
-                                        <div class="row_flex" style="height: 70%; background-color: gray">
-
-                                        </div>
+                                    <div class="row_flex landing-mobile-slogan-text">
+                                        <h1 class="landing-mobile-slogan-text landing-mobile-slogan-text-2">y colegios a la mano</h1>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column_flex" style="flex: 0.83"></div>
-                    <div class="column_flex" style="flex: 2.2">
-                        <div class="row_flex" style="height: 100%;">
-                            <div class="column" style="height: 85%; margin-top:auto; margin-bottom: auto;">
-                                <div class="row_flex" style="height: 25%;">
-                                    <div class="column" style="flex: 0.37; height: 100%; background-color: orange">
-
-                                    </div>
-                                    <div class="column" style="flex: 0.63; height: 100%; background-color: green">
-                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
-
-                                        </div>
-                                        <div class="row_flex" style="height: 70%; background-color: gray">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row_flex" style="height: 22%; margin-top: 2%;">
-                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
-
-                                    </div>
-                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
-                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
-
-                                        </div>
-                                        <div class="row_flex" style="height: 70%; background-color: gray">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row_flex" style="height: 22%; margin-top: 2%;">
-                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
-
-                                    </div>
-                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
-                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
-
-                                        </div>
-                                        <div class="row_flex" style="height: 70%; background-color: gray">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row_flex" style="height: 22%; margin-top: 2%;">
-                                    <div class="column" style="flex: 0.13; height: 100%; background-color: orange">
-
-                                    </div>
-                                    <div class="column" style="flex: 0.87; height: 100%; background-color: green">
-                                        <div class="row_flex" style="height: 30%; background-color: saddlebrown">
-
-                                        </div>
-                                        <div class="row_flex" style="height: 70%; background-color: gray">
-
+                    <div class="row_flex landing-mobile-bottom-container" >
+                        <div class="column_flex landing-mobile-bottom-column">
+                            <div class="row_flex landing-mobile-feature-row">
+                                <div class="column_flex landing-mobile-bottom-left-margin"></div>
+                                <div class="column_flex landing-mobile-feature-column">
+                                    <div class="row_flex full-height">
+                                        <div class="column_flex landing-mobile-user-type-image-container student-father-image"></div>
+                                        <div class="column_flex landing-mobile-feature-description-container">
+                                            <div class="row_flex landing-mobile-feature-title-container">
+                                                <h2 class="landing-desktop-father-student-title landing-mobile-user-type-title">Si eres Padre o Estudiante</h2>
+                                            </div>
+                                            <div class="row_flex landing-mobile-feature-explanation-container">
+                                                <div class="column_flex landing-mobile-feature-explanation-column">
+                                                    <p class="landing-mobile-user-type-explanation-text landing-desktop-user-type-description-text">Puedes buscar en el mapa la ubicación de los colegios dentro de un área específica.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row_flex landing-mobile-user-type-features-row">
+                                <div class="column_flex landing-mobile-bottom-left-margin"></div>
+                                <div class="column_flex landing-mobile-feature-column">
+                                    <div class="row_flex full-height">
+                                        <div class="column_flex landing-type-user-feature-container" >
+                                            <div class="row_flex full-height">
+                                                <div class="column_flex landing-mobile-feature-icon-container landing-desktop-favorites-image"></div>
+                                                <div class="column_flex landing-mobile-feature-title-column">
+                                                    <h3 class="landing-mobile-feature-title landing-desktop-feature-title">Favoritos</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column_flex landing-mobile-space-between-features"></div>
+                                        <div class="column_flex landing-type-user-feature-container">
+                                            <div class="row_flex full-height">
+                                                <div class="column_flex landing-mobile-feature-icon-container landing-desktop-filters-image"></div>
+                                                <div class="column_flex landing-mobile-feature-title-column">
+                                                    <h3 class="landing-mobile-feature-title landing-desktop-feature-title">Filtros</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column_flex landing-mobile-space-between-features"></div>
+                                        <div class="column_flex landing-type-user-feature-container">
+                                            <div class="row_flex full-height">
+                                                <div class="column_flex landing-mobile-feature-icon-container landing-desktop-trasnport-image"></div>
+                                                <div class="column_flex landing-mobile-feature-title-column">
+                                                    <h3 class="landing-mobile-feature-title landing-desktop-feature-title">Transporte</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_flex landing-mobile-separator-between-user-types">
+                                <div class="landing-mobile-line-separator"></div>
+                            </div>
+                            <div class="row_flex landing-mobile-feature-row">
+                                <div class="column_flex landing-mobile-bottom-left-margin"></div>
+                                <div class="column_flex landing-mobile-feature-column">
+                                    <div class="row_flex full-height">
+                                        <div class="column_flex landing-mobile-user-type-image-container landing-mobile-user-type-image-container goverment-agent-image"></div>
+                                        <div class="column_flex landing-mobile-feature-description-container">
+                                            <div class="row_flex landing-mobile-feature-title-container">
+                                                <h1 class="landing-desktop-father-student-title landing-mobile-user-type-title">Si eres funcionario</h1>
+                                            </div>
+                                            <div class="row_flex landing-mobile-feature-explanation-container">
+                                                <div class="column_flex landing-mobile-feature-explanation-column">
+                                                    <p class="landing-mobile-user-type-explanation-text landing-desktop-user-type-description-text">Puedes comparar y ver en el mapa datos estadísticos de entidades educativas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_flex landing-mobile-user-type-features-row">
+                                <div class="column_flex landing-mobile-bottom-left-margin"></div>
+                                <div class="column_flex landing-mobile-feature-column">
+                                    <div class="row_flex full-height">
+                                        <div class="column_flex landing-type-user-feature-container">
+                                            <div class="row_flex full-height">
+                                                <div class="column_flex landing-mobile-feature-icon-container landing-desktop-simapas-image"></div>
+                                                <div class="column_flex landing-mobile-feature-title-column">
+                                                    <h3 class="landing-mobile-feature-title landing-desktop-feature-title">Sí-Mapas</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column_flex landing-mobile-space-between-features"></div>
+                                        <div class="column_flex landing-type-user-feature-container">
+                                            <div class="row_flex full-height">
+                                                <div class="column_flex landing-mobile-feature-icon-container landing-desktop-filters-image"></div>
+                                                <div class="column_flex landing-mobile-feature-title-column">
+                                                    <h3 class="landing-mobile-feature-title landing-desktop-feature-title">Filtros Avanzados</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column_flex landing-mobile-space-between-features"></div>
+                                        <div class="column_flex landing-type-user-feature-container">
+                                            <div class="row_flex full-height">
+                                                <div class="column_flex landing-mobile-feature-icon-container landing-desktop-advanced-description-image"></div>
+                                                <div class="column_flex landing-mobile-feature-title-column">
+                                                    <h3 class="landing-mobile-feature-title landing-desktop-feature-title">Descripción Avanzada</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_flex landing-mobile-space-between-feature-and-go-to-map-button"></div>
+                            <div class="row_flex landing-mobile-go-to-map-container">
+                                <button class="landing-mobile-go-to-map-button" onclick="onClickCloseLandingpage()">Ir al mapa</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="column_flex" style="flex: 2.2"></div>
                 </div>
-
             </div>
         </div>
 
@@ -786,6 +926,7 @@
         </div>
 
         <div id="transporte" class = "ventanasCategorias" style="text-align:center;">
+            <p class="main-features-tips tip-transport">Ingresa el punto de origen, el colegio de destino y encuentra la mejor ruta para llegar.</p>
             <div style = "width:auto">
                 <input type="text" id="desde_distancia" name="desde_distancia" class="inputAzul" style="cursor: pointer; width: 75%; height: 29px; margin-left: -10%; margin-top: 5%;" placeholder="Origen (Dirección o nombre de colegio)" required onclick="setUbicacionGeocodigo('marker_origen')">
             </div>
@@ -817,6 +958,7 @@
         </div>
         <div id ="barraMapa" class = "ventanasCategorias">
             <div class = "categoriasMargen">
+                <p class="main-features-tips tip-si-mapa">Visualiza la distribuación de algunas variables educativas a través de mapas de calor.</p>
                 <div id = "botoneraSiMapa">
                     <div id = "oficialSiMapa" class = "botonSectorSiMapa gradiante1" style = "margin-left:0%">
                         <div class= "imagenSectorSiMapa"></div>
@@ -875,6 +1017,7 @@
         </div>
 
         <div id="barrafiltro" class = "ventanasCategorias" style="text-align:center; height:auto">
+            <p class="main-features-tips tip-filter">Encuentra el colegio que buscas usando criterios específicos como jornada o tipo de calendario</p>
             <div id = "encabezadoFiltro">
                 <div id = "filtrosNormales" tabindex="0" role="button" aria-expanded="true" aria-label="Filtros pestaña de menú" class= "pestana"><p style = "color:#01B4ED">Filtros</p></div>
                 <div id = "filtrosOtros" tabindex="0"  role="button" aria-expanded="false" aria-label="Filtros avanzados pestaña de menú" class= "pestana sombra" style = "background-color:#01B4ED"><p style = "color: white">Filtros avanzados</p></div>
@@ -1122,7 +1265,7 @@
             <div class= "textoCategorias"><a href="#" class="a-tag-no-decoration textoCategorias">Cerca a tu sede</a></div>
             <div id = "despliegueCerca" class = "trianguloVerde"></div>
         </div>
-
+        <p id="tip-sites-near" class="main-features-tips tip-transport">Encuentra cerca al colegio que selecciones lugares de interés como: parques, bibliotecas, centros de salud entre otros.</p>
         <h1 id = "seleccioneSede">Seleccione una sede en el mapa</h1>
         <div id="barraCercaAtuSede" class = "ventanasCategorias" style="text-align:center; height:auto;">
             <div class = "categoriasMargen">
@@ -1578,20 +1721,25 @@
         <div id = "contenedorColegiosCercanos"></div>
     </div>
     <div id="iniciar">
+        <form>
         <div class="titulo1">
             <h1 id="LoginTitle" tabindex="0" style="color:#52B8DA; margin-bottom: 0px;"><strong>Iniciar Sesión</strong></h1>
         </div>
+
         <div style="margin-top:8%">
             <label>Usuario</label>
-            <input type="text" id="usuario" class="inputAzul" name="usuario" placeholder="Usuario">
+            <input type="text" id="usuario" class="inputAzul" name="usuario" placeholder="Usuario" required data-validation="required" data-validation-error-msg='El usuario es un campo obligatorio' />
+            <!--<input type="number" id="minTransporte" name="minTransporte" class="inputAzul inputTiempos" placeholder="ejemplo 45" style= "margin-left: 60px;" required onchange = "validarTransporte()" required data-validation="required" data-validation-error-msg=' '/>-->
+
         </div>
         <div style="margin-top: 6%; color:#AAA;">
             <label>Contraseña</label>
-            <input type="password" id="contrasena" class="inputAzul" name="contrasena" placeholder="Contraseña">
+            <input type="password" id="contrasena" class="inputAzul" name="contrasena" placeholder="Contraseña" data-validation="required" data-validation-error-msg='La contraseña es un campo obligatorio' />
         </div>
         <a id="olvidoSuContrasena" class="a-tag-no-decoration forgot-password-font-size" tabindex="0" href="#">¿Olvidó su contraseña?</a>
         <a id ="botonIniciar" class="botonesIniciar a-tag-no-decoration login-links" tabindex="0" href="#">Iniciar</a>
         <a  id="crearPerfilBoton" class="botonesIniciar2 a-tag-no-decoration login-links" tabindex="0" href="#">Registrarse</a>
+        </form>
     </div>
 
     <div id="formularioSesion" >
@@ -1650,7 +1798,7 @@ Repeat password
             <label for="tipoDoc">Número de identificación</label>
             <input type="number" name="numeroDoc" id="numeroDoc" class="inputAzul" placeholder="ejemplo 1234567890"/>
             <label for="diaNac" style="width: 100%; float: left;">Fecha de nacimiento</label>
-            <input class = "inputAzul" type="text" id="fechaNac" onfocus="pauseRegisterFocusTrap()" onblur="unpauseRegisterFocusTrap()"/>
+            <input class = "inputAzul" type="text" id="fechaNac" placeholder="dd/mm/aaaa" onfocus="pauseRegisterFocusTrap()" onblur="unpauseRegisterFocusTrap()"/>
             <label style="float: left; width: 100%;">Elija un rol</label>
             <select  id="roles" class="inputAzul">
                 <option value="1">Directivo</option>
@@ -2085,8 +2233,7 @@ Repeat password
                <option value="1" default>1</option>
                 <option value="NO">No</option>
             </select>-->
-            <input type="number" value=0 min="o" max="20" id="bibliotecaCentral" class="inputAzul" style = "width:22%; margin-left:8%"/>
-        </div>
+            <input type="text" value=0 min="o" max="20" id="bibliotecaCentral" class="inputAzul" style = "width:22%; margin-left:8%" data-validation="number" data-validation-allowing="range[0;20]" data-validation-error-msg='El valor ingresado no es un numero correcto'/>        </div>
         <div class="listas">
             <label for="bibliotecaAula">No de Bibliotecas por Aula</label>
             <!--<select id="bibliotecaAula" name="biblioteca_aula" class="inputAzul" style="cursor:pointer">
@@ -2094,7 +2241,8 @@ Repeat password
                 <option value="NO"> No</option>
             </select>-->
 
-            <input type="number" min="o" max="20" value="0" id="bibliotecaAula" class="inputAzul" style="margin-left:39px; width:22%"/>
+            <!--<input type="text" value=0 min="o" max="20" id="bibliotecaCentral" class="inputAzul" style = "width:22%; margin-left:8%" data-validation="number" data-validation-allowing="range[0;20]" data-validation-error-msg='El valor ingresado no es un numero correcto'/></div>-->
+        <input type="text" min="o" max="20" value="0" id="bibliotecaAula" class="inputAzul" style="margin-left:39px; width:22%" data-validation="number" data-validation-allowing="range[0;20]" data-validation-error-msg='El valor ingresado no es un numero correcto'/>
         </div>
         <div class = "botonera" style = "margin-top: 4%">
             <!--<button id="volver96" type="button" class="Guardar2"> Volver </button>-->
@@ -2405,6 +2553,8 @@ ninguna, 1, 2 a 4,  5 o más
         <p id = "letrasDestino" style = "margin-bottom: 2px;">Colegio</p>
         <input type="text" id="rutaDestino" name="rutaDestino" class="inputAzul" style="cursor:pointer; width: 85%; height: 30px;"  placeholder = "ejemplo Cl. 2 #56-78, Bogota Colombia" required onchange = "validarTransporte()" />
         <div id = "ubicadorDestino" class = "ubicadorTransporte"> </div>
+
+        <div id = "errorOriginDestiny" class = "errorOD"><p>Los campos de origen y destino deben ser diferentes</p></div>
 
         <p class="mensaje-error">
             <select id="medioTransporte" name="medioTransporte" class="inputAzul" style="cursor:pointer; margin-top:5%; height:30px" required onchange = "validarTransporte()" data-validation="required" data-validation-error-msg='Este campo es obligatorio' >
@@ -2896,11 +3046,11 @@ ninguna, 1, 2 a 4,  5 o más
     <div class="legend-clusters-container">
         <div class="legend-clusters-container">
             <div class ="imagenAgrupacionOficial"></div>
-            <div tabindex="0" class ="textoSector2 textoSectorAgrupacion">Agrupación de colegios públicos</div>
+            <div tabindex="0" class ="textoSector2 textoSectorAgrupacion">Cantidad de colegios públicos en la zona</div>
         </div>
         <div class="legend-clusters-container">
             <div class ="imagenAgrupacionNoOficial"></div>
-            <div tabindex="0" class ="textoSector2 textoSectorAgrupacion">Agrupación de colegios privados</div>
+            <div tabindex="0" class ="textoSector2 textoSectorAgrupacion">Cantidad de colegios privados en la zona</div>
         </div>
     </div>
     <div class="legend-clusters-container">

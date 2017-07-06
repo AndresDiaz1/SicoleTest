@@ -2890,6 +2890,40 @@ form input:required {
     margin-right: 50px;
 }
 
+.main-features-tips{
+    text-align: left;
+    margin-bottom: 0px;
+    margin-right: 3%;
+}
+
+.main-features-tips{
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+.tip-transport{
+    margin-left: 6%;
+}
+
+.tip-si-mapa{
+    margin-left: 1%;
+}
+
+.tip-filter{
+    margin-left: 2%;
+    color: black !important;
+    font-size: 16px !important;
+    margin-right: 1%;
+}
+
+#tip-sites-near{
+    margin-left: 9%;
+    display: none;
+    font-size: 14px !important;
+}
+
 @media (max-width: 800px) {
     
     .header-sicole .section-search .search-city{
